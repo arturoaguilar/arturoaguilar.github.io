@@ -1,0 +1,59 @@
+body{
+   /* font-family: Georgia, "Times New Roman", Times, serif;*/
+    font-family: "Space Mono",Arial,serif;
+}
+
+.row.seccion {
+padding-top: 3%;
+padding-bottom: 3%;
+
+}
+.mini-item{
+    margin-top: 5px;
+    color: white;
+    margin-right: 10px;
+ background-color: #FF9000;
+ border-radius: 30px;
+ padding: 5px;
+}
+#app  .titulo-seccion{
+    font-size: 170%;
+    display: block;
+    margin-bottom: 5%;
+}
+#app .nombre{
+    font-size: 170%;
+    display: block;
+}
+#app .profesion{
+    font-size: 120%;
+    display: block;
+}
+
+#app .hero{
+    color: white;
+    background-color: #FF9000;
+    padding-top: 20%;
+    padding-bottom: 10%;
+    text-align: center;
+}
+
+#app .habilidades{
+    text-align: center;
+}
+
+#app .sobremi{
+    text-align: center;
+}
+
+.dark-area {
+    background-color: #fff;
+    padding: 40px;
+    margin: 0 -40px 20px -40px;
+    clear: both;
+}
+
+.clearfix:before,.clearfix:after {content: " "; display: table;}
+.clearfix:after {clear: both;}
+.clearfix {*zoom: 1;}
+

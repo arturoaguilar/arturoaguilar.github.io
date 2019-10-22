@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Hola</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="/proyectos/cv/css/styles.css">
+  <link rel="stylesheet" href="/proyectos/cv/css/bootstrap/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="/proyectos/cv/js/bootstrap/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div id="app">
+
+            <!-- /orange -->
+            <p>
+                <router-link to="/">home</router-link>
+              <router-link to="/user/foo">/user/foo</router-link>
+              <router-link to="/user/foo/profile">/user/foo/profile</router-link>
+              <router-link to="/user/foo/posts">/user/foo/posts</router-link>
+            </p>
+            <router-view></router-view>
+          </div>
+
+ 
+  <script src="/proyectos/cv/js/vue.min.js"></script>
+  <script src="/proyectos/cv/js/vue-router.js"></script>
+  <script src="/proyectos/cv/js/scripts.js"></script>
+
+</div>
+</body>
+</html>
