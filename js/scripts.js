@@ -169,7 +169,7 @@ const Proyecto = {
 
 </div>
 
-<div data-aos="zoom-in" class="col-12" style="padding-top:20px;">
+<div  class="col-12" style="padding-top:20px;">
 <a class="btnmail" v-bind:href="[\'mailto:\' + mail]">Enviar Mensaje</a>
 </div>
 </div>
