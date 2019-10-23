@@ -1,0 +1,224 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Hola</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="/proyectos/cv/css/styles.css">
+  <link rel="stylesheet" href="/proyectos/cv/css/bootstrap/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="/proyectos/cv/js/bootstrap/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div id="app">
+            <h1>Hello App!</h1>
+            <p>
+              <!-- use router-link component for navigation. -->
+              <!-- specify the link by passing the `to` prop. -->
+              <!-- <router-link> will be rendered as an `<a>` tag by default -->
+              <router-link to="/foo">Go to Foo</router-link>
+              <router-link to="/bar">Go to Bar</router-link>
+            </p>
+            <!-- route outlet -->
+            <!-- component matched by the route will render here -->
+            <router-view></router-view>
+          </div>
+
+
+
+<!-- <div id="app">
+      <div class="row seccion">   
+   <span class="perfil nombre">{{ nombre }}</span> 
+    <span class="perfil apellido">{{ profesion}}</span>
+    <p class="perfil descripcion">{{ descripcion}}</p>
+      </div>
+<div class="row seccion">
+<span class="col-12 titulo-seccion">Habilidades</span> 
+
+<span class="mini-item" v-for="competencia in competencias">
+    {{ competencia.nombre }}
+  </span>
+
+</div>
+
+<div class="row seccion">
+    <span class="col-12 titulo-seccion">Proyectos</span> 
+<div v-for="proyecto in proyectos" class="col-4">
+     
+     <img v-bind:src="proyecto.foto" class="img-fluid">
+    {{ proyecto.nombre }}
+  </div>
+
+</div>
+
+<div class="seccion">
+    <span class="col-12 titulo-seccion">Estudios</span> 
+    
+    
+    <router-link to="/foo">Go to Foo</router-link>
+    <router-link to="/bar">Go to Bar</router-link>
+
+<li v-for="estudio in estudios">
+   <b>{{ estudio.nombre }}</b>- {{ estudio.lugar }}-{{ estudio.desc }}
+  </li>
+</div>
+
+  </div> -->
+ 
+  <script src="/proyectos/cv/js/vue.min.js"></script>
+  <script src="/proyectos/cv/js/vue-router.js"></script>
+  <script src="/proyectos/cv/js/scripts.js"></script>
+
+</div>
+
+
+
+
+
+<div> <div class="row seccion hero">   
+  <div class="col-12 nombre">{{ nombre }}</div> 
+   <div class="col-12 profesion">{{ profesion}}</div>
+   
+
+     </div>
+     <div class="row seccion sobremi">
+     <div class="col-12 titulo-seccion">Sobre mí</div> 
+     <div class="col-12">
+     <p class="col-12  descripcion">{{ descripcion }}</p>
+    </div>
+     </div>
+<div class="row seccion habilidades">
+<div class="col-12 titulo-seccion">Habilidades</div> 
+
+<div class="row">
+<div class="col-3">
+Diseño de productos
+</div>
+<div class="col-9">
+<span class="mini-item" v-for="competencia in competencias"  v-if="competencia.tipo==1 ">
+   {{ competencia.nombre }}
+ </span>
+ </div>
+ </div>
+ 
+ 
+ <div class="row">
+ <div class="col-3">
+ Gestión 
+ </div>
+ <div class="col-9">
+<span class="mini-item" v-for="competencia in competencias"  v-if="competencia.tipo==2 ">
+   {{ competencia.nombre }}
+ </span>
+ </div>
+ </div>
+ 
+ <div class="row">
+ <div class="col-3">
+ Desarrollo
+ </div>
+ <div class="col-9">
+<span class="mini-item" v-for="competencia in competencias"  v-if="competencia.tipo==3 ">
+   {{ competencia.nombre }}
+ </span>
+ </div>
+ </div>
+ 
+</div>
+<div class="row seccion">
+   <span class="col-12 titulo-seccion">Proyectos</span> 
+<div v-for="proyecto in proyectos" v-on:click="say(proyecto.id)" class="col-4" style="cursor: pointer;">
+{{ proyecto.cliente }}-{{ proyecto.nombre }}    
+<img v-bind:src="proyecto.foto" class="img-fluid">
+  
+ </div>
+
+</div>
+
+<div class="seccion">
+   <span class="col-12 titulo-seccion">Estudios</span> 
+<li v-for="estudio in estudios">
+  <b>{{ estudio.nombre }}</b>- {{ estudio.lugar }}-{{ estudio.desc }}
+ </li>
+</div></div>
+
+
+
+<!--afas
+-->
+
+<div> <div class="row seccion hero">   
+    <div class="col-12 nombre">{{ nombre }}</div> 
+     <div class="col-12 profesion">{{ profesion}}</div>
+     
+  
+       </div>
+       <div class="row seccion sobremi">
+       <div class="col-12 titulo-seccion">Sobre mí</div> 
+       <div class="col-12">
+       <p class="col-12  descripcion">{{ descripcion }}</p>
+      </div>
+       </div>
+  <div class="row seccion habilidades">
+  <div class="col-12 titulo-seccion">Habilidades</div> 
+  
+  <div class="row">
+  <div class="col-2" style="text-align:right">
+  Diseño de productos
+  </div>
+  <div class="col-10" style="text-align:left">
+  <span class="mini-item" v-for="competencia in competencias"  v-if="competencia.tipo==1 ">
+     {{ competencia.nombre }}
+   </span>
+   </div>
+   </div>
+   
+   
+   <div class="row">
+   <div class="col-2" style="text-align:right">
+   Gestión 
+   </div>
+   <div class="col-10" style="text-align:left">
+  <span class="mini-item" v-for="competencia in competencias"  v-if="competencia.tipo==2 ">
+     {{ competencia.nombre }}
+   </span>
+   </div>
+   </div>
+   
+   <div class="row">
+   <div class="col-2" style="text-align:right">
+   Desarrollo
+   </div>
+   <div class="col-10" style="text-align:left">
+  <span class="mini-item" v-for="competencia in competencias"  v-if="competencia.tipo==3 ">
+     {{ competencia.nombre }}
+   </span>
+   </div>
+   </div>
+  
+  </div>
+  <div class="row seccion">
+     <span class="col-12 titulo-seccion">Proyectos</span> 
+  <div v-for="proyecto in proyectos" v-on:click="say(proyecto.id)" class="col-4" style="cursor: pointer;">
+  {{ proyecto.cliente }}-{{ proyecto.nombre }}    
+  <img v-bind:src="proyecto.foto" class="img-fluid">
+    
+   </div>
+  
+  </div>
+  
+  <div class="seccion">
+     <span class="col-12 titulo-seccion">Estudios</span> 
+  <li v-for="estudio in estudios">
+    <b>{{ estudio.nombre }}</b>- {{ estudio.lugar }}-{{ estudio.desc }}
+   </li>
+  </div></div> 
+
+</body>
+</html>

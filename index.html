@@ -10,21 +10,61 @@
   <link rel="stylesheet" href="/proyectos/cv/css/bootstrap/bootstrap.min.css">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="/proyectos/cv/js/bootstrap/bootstrap.min.js"></script>
-
+  <style>
+      .img_container {
+        position: relative;
+        width: 50%;
+      }
+      
+      .image {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      
+      .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #fff;
+      }
+      
+      .img_container:hover .overlay {
+        opacity: 1;
+      }
+      
+      .text {
+        color: #fd7166;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      </style>
 </head>
 
 <body>
 
-    <div class="container-fluid">
+    <div class="container-fluid" style="background-color: #f0f4f6">
         <div id="app">
 
-            <!-- /orange -->
+            <!-- /orange 
             <p>
                 <router-link to="/">home</router-link>
               <router-link to="/user/foo">/user/foo</router-link>
               <router-link to="/user/foo/profile">/user/foo/profile</router-link>
               <router-link to="/user/foo/posts">/user/foo/posts</router-link>
-            </p>
+            </p> -->
             <router-view></router-view>
           </div>
 
