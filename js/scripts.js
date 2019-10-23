@@ -124,7 +124,7 @@ const Proyecto = {
 <div data-aos="fade-up" class="col-12 titulo-seccion">Habilidades</div> 
 <div class="col-12">
 
-<div class="row" style="padding-top:3%;padding-bottom:3%;background-color: #F5F5F5;">
+<div data-aos="fade-right" class="row" style="padding-top:3%;padding-bottom:3%;background-color: #F5F5F5;">
 <div class="col-2" style="text-align:right">
 <img src="img/icon/web_design.png" style="max-width:70px">
 </div>
@@ -136,7 +136,7 @@ const Proyecto = {
  </div>
  
  
- <div class="row" style="padding-top:3%;padding-bottom:3%;">
+ <div data-aos="fade-left class="row" style="padding-top:3%;padding-bottom:3%;">
  <div class="col-2" style="text-align:right">
  <img src="img/icon/management.png" style="max-width:70px">
  </div>
@@ -147,7 +147,7 @@ const Proyecto = {
  </div>
  </div>
  
- <div class="row" style="padding-top:3%;padding-bottom:3%;background-color: #F5F5F5;">
+ <div data-aos="fade-right" class="row" style="padding-top:3%;padding-bottom:3%;background-color: #F5F5F5;">
  <div class="col-2" style="text-align:right">
  <img src="img/icon/web_developement.png" style="max-width:70px">
  </div>
@@ -169,7 +169,7 @@ const Proyecto = {
 
 </div>
 
-<div class="col-12" style="padding-top:20px;">
+<div data-aos="zoom-in-up" class="col-12" style="padding-top:20px;">
 <a class="btnmail" v-bind:href="[\'mailto:\' + mail]">Enviar Mensaje</a>
 </div>
 </div>
