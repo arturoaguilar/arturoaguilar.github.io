@@ -8,13 +8,13 @@ const Proyecto = {
     data: function () {
         return {
             proyectos: [
-              {id:1,nombre: 'Web',cliente:'Bright Loritos',foto:'/proyectos/cv/img/portadas/brightloritos_prin.png',foto_portada:'/proyectos/cv/img/portadas/bright_lori_port.png', desc:'Brightloritos, es una academia de idiomas enfocada en los niños, teniendo en cuenta siempre a la diversión como parte fundamental en el aprendizaje de sus alumnos. Debido a las distintas sucursales, distintos horarios y distintas edades de los alumnos se tuvieron que realizar un procesos de diseño de la información de la mano con el cliente segun las prioridades y necesidades del negocio. El desarrollo de esta página, se hizo en paralelo con un centro de aprendizaje online para los profesores de Brightloritos.',meta_pro:'Arquitectura de la información / Design Thinking / User Experience / Customer Journey Map' },
-              {id:2,nombre: 'Sistema para voluntarios',cliente:'VivaGYM',foto:'/proyectos/cv/img/portadas/vivagymejprin.png',foto_portada:'/proyectos/cv/img/portadas/vivagymej.png', desc:'Desc proyecto 1',meta_pro:'meta 1' },
-              {id:3,nombre: 'Sistema de entregas de departamentos',cliente:'VivaGYM',foto:'/proyectos/cv/img/portadas/vivagymadminprin.png',foto_portada:'/proyectos/cv/img/portadas/vivagymadmin.png', desc:'Desc proyecto 2' ,meta_pro:'meta 2'},
-              {id:4,nombre: 'Sistema de reservas',cliente:'Pawadin',foto:'/proyectos/cv/img/portadas/pawadinprin.png',foto_portada:'/proyectos/cv/img/portadas/port_pawadin.png', desc:'Desc proyecto 3' ,meta_pro:'meta 3'},
-              {id:5,nombre: 'pawadin school',cliente:'Pawadin',foto:'/proyectos/cv/img/portadas/paw_school_prin.png',foto_portada:'/proyectos/cv/img/portadas/pawschool_port.png', desc:'Desc proyecto 4' ,meta_pro:'meta 4' },
-              {id:6,nombre: 'CRM',cliente:'Inet',foto:'/proyectos/cv/img/portadas/inet_principal.png',foto_portada:'/proyectos/cv/img/portadas/inet_portada.png', desc:'Desc proyecto 5' ,meta_pro:'meta 5' },
-              {id:7,nombre: 'App Reservas',cliente:'Pawadin',foto:'/proyectos/cv/img/portadas/app_paw_prin.png',foto_portada:'/proyectos/cv/img/portadas/apw_app_port.png', desc:'Desc proyecto 6' ,meta_pro:'meta 6' }
+              {id:1,nombre: 'Web',cliente:'Bright Loritos',foto:'/img/portadas/brightloritos_prin.png',foto_portada:'/img/portadas/bright_lori_port.png', desc:'Brightloritos, es una academia de idiomas enfocada en los niños, teniendo en cuenta siempre a la diversión como parte fundamental en el aprendizaje de sus alumnos. Debido a las distintas sucursales, distintos horarios y distintas edades de los alumnos se tuvieron que realizar un procesos de diseño de la información de la mano con el cliente segun las prioridades y necesidades del negocio. El desarrollo de esta página, se hizo en paralelo con un centro de aprendizaje online para los profesores de Brightloritos.',meta_pro:'Arquitectura de la información / Design Thinking / User Experience / Customer Journey Map' },
+              {id:2,nombre: 'Sistema para voluntarios',cliente:'VivaGYM',foto:'/img/portadas/vivagymejprin.png',foto_portada:'/img/portadas/vivagymej.png', desc:'Desc proyecto 1',meta_pro:'meta 1' },
+              {id:3,nombre: 'Sistema de entregas de departamentos',cliente:'VivaGYM',foto:'/img/portadas/vivagymadminprin.png',foto_portada:'/img/portadas/vivagymadmin.png', desc:'Desc proyecto 2' ,meta_pro:'meta 2'},
+              {id:4,nombre: 'Sistema de reservas',cliente:'Pawadin',foto:'/img/portadas/pawadinprin.png',foto_portada:'/img/portadas/port_pawadin.png', desc:'Desc proyecto 3' ,meta_pro:'meta 3'},
+              {id:5,nombre: 'pawadin school',cliente:'Pawadin',foto:'/img/portadas/paw_school_prin.png',foto_portada:'/img/portadas/pawschool_port.png', desc:'Desc proyecto 4' ,meta_pro:'meta 4' },
+              {id:6,nombre: 'CRM',cliente:'Inet',foto:'/img/portadas/inet_principal.png',foto_portada:'/img/portadas/inet_portada.png', desc:'Desc proyecto 5' ,meta_pro:'meta 5' },
+              {id:7,nombre: 'App Reservas',cliente:'Pawadin',foto:'/img/portadas/app_paw_prin.png',foto_portada:'/img/portadas/apw_app_port.png', desc:'Desc proyecto 6' ,meta_pro:'meta 6' }
             ]
           }
     },
@@ -69,13 +69,13 @@ const Proyecto = {
           { nombre: 'wordpress y woocommerce',tipo:3}
         ],
         proyectos: [
-          {id:1,nombre: 'Web',cliente:'Bright Loritos',foto:'/proyectos/cv/img/portadas/brightloritos_prin.png', desc:'Desc proyecto 0',meta_pro:'meta 0' },
-          {id:2,nombre: 'Sistema para voluntarios ',cliente:'VivaGYM',foto:'/proyectos/cv/img/portadas/vivagymejprin.png', desc:'Desc proyecto 1',meta_pro:'meta 1' },
-          {id:3,nombre: 'Sistema de entregas de departamentos',cliente:'VivaGYM',foto:'/proyectos/cv/img/portadas/vivagymadminprin.png', desc:'Desc proyecto 2' ,meta_pro:'meta 2'},
-          {id:4,nombre: 'Sistema de reservas',cliente:'Pawadin',foto:'/proyectos/cv/img/portadas/pawadinprin.png', desc:'Desc proyecto 3' ,meta_pro:'meta 3'},
-          {id:5,nombre: 'pawadin school',cliente:'Pawadin',foto:'/proyectos/cv/img/portadas/paw_school_prin.png', desc:'Desc proyecto 4' ,meta_pro:'meta 4' },
-          {id:6,nombre: 'CRM',cliente:'Inet',foto:'/proyectos/cv/img/portadas/inet_principal.png', desc:'Desc proyecto 5' ,meta_pro:'meta 5' },
-          {id:7,nombre: 'App Reservas',cliente:'Pawadin',foto:'/proyectos/cv/img/portadas/app_paw_prin.png', desc:'Desc proyecto 6' ,meta_pro:'meta 6' }
+          {id:1,nombre: 'Web',cliente:'Bright Loritos',foto:'/img/portadas/brightloritos_prin.png', desc:'Desc proyecto 0',meta_pro:'meta 0' },
+          {id:2,nombre: 'Sistema para voluntarios ',cliente:'VivaGYM',foto:'/img/portadas/vivagymejprin.png', desc:'Desc proyecto 1',meta_pro:'meta 1' },
+          {id:3,nombre: 'Sistema de entregas de departamentos',cliente:'VivaGYM',foto:'/img/portadas/vivagymadminprin.png', desc:'Desc proyecto 2' ,meta_pro:'meta 2'},
+          {id:4,nombre: 'Sistema de reservas',cliente:'Pawadin',foto:'/img/portadas/pawadinprin.png', desc:'Desc proyecto 3' ,meta_pro:'meta 3'},
+          {id:5,nombre: 'pawadin school',cliente:'Pawadin',foto:'/img/portadas/paw_school_prin.png', desc:'Desc proyecto 4' ,meta_pro:'meta 4' },
+          {id:6,nombre: 'CRM',cliente:'Inet',foto:'/img/portadas/inet_principal.png', desc:'Desc proyecto 5' ,meta_pro:'meta 5' },
+          {id:7,nombre: 'App Reservas',cliente:'Pawadin',foto:'/img/portadas/app_paw_prin.png', desc:'Desc proyecto 6' ,meta_pro:'meta 6' }
         ],
         estudios: [
           { nombre: 'Master en Neuromarketing',lugar:'link foto 1', desc:'Desc estudios 1' },
@@ -238,13 +238,13 @@ const app = new Vue({
         { nombre: 'Web development'}
       ],
       proyectos: [
-        { id:1,nombre: 'Web',cliente:'Bright Loritos',foto:'/proyectos/cv/img/proyecto.png', desc:'Desc proyecto 0',meta_pro:'meta 0' },
-        { id:2,nombre: 'vivagym ',cliente:'VivaGYM',foto:'/proyectos/cv/img/proyecto.png', desc:'Desc proyecto 1',meta_pro:'meta 1' },
-        { id:3,nombre: 'vivagym User',cliente:'VivaGYM',foto:'/proyectos/cv/img/portadas/vivagymadminprin.png', desc:'Desc proyecto 2' ,meta_pro:'meta 2'},
-        { id:4,nombre: 'Sistema de reservas',cliente:'Pawadin',foto:'/proyectos/cv/img/proyecto.png', desc:'Desc proyecto 3' ,meta_pro:'meta 3'},
-        { id:5,nombre: 'pawadin school',cliente:'Pawadin',foto:'/proyectos/cv/img/proyecto.png', desc:'Desc proyecto 4' ,meta_pro:'meta 4' },
-        { id:6,nombre: 'CRM',cliente:'Inet',foto:'/proyectos/cv/img/proyecto.png', desc:'Desc proyecto 5' ,meta_pro:'meta 5' },
-        { id:7,nombre: 'App Reservas',cliente:'Pawadin',foto:'/proyectos/cv/img/proyecto.png', desc:'Desc proyecto 6' ,meta_pro:'meta 6' }
+        { id:1,nombre: 'Web',cliente:'Bright Loritos',foto:'/img/proyecto.png', desc:'Desc proyecto 0',meta_pro:'meta 0' },
+        { id:2,nombre: 'vivagym ',cliente:'VivaGYM',foto:'/img/proyecto.png', desc:'Desc proyecto 1',meta_pro:'meta 1' },
+        { id:3,nombre: 'vivagym User',cliente:'VivaGYM',foto:'/img/portadas/vivagymadminprin.png', desc:'Desc proyecto 2' ,meta_pro:'meta 2'},
+        { id:4,nombre: 'Sistema de reservas',cliente:'Pawadin',foto:'/img/proyecto.png', desc:'Desc proyecto 3' ,meta_pro:'meta 3'},
+        { id:5,nombre: 'pawadin school',cliente:'Pawadin',foto:'/img/proyecto.png', desc:'Desc proyecto 4' ,meta_pro:'meta 4' },
+        { id:6,nombre: 'CRM',cliente:'Inet',foto:'/img/proyecto.png', desc:'Desc proyecto 5' ,meta_pro:'meta 5' },
+        { id:7,nombre: 'App Reservas',cliente:'Pawadin',foto:'/img/proyecto.png', desc:'Desc proyecto 6' ,meta_pro:'meta 6' }
       ],
       estudios: [
         { nombre: 'Master en Neuromarketing',lugar:'link foto 1', desc:'Desc estudios 1' },
