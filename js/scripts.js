@@ -106,11 +106,11 @@ const Proyecto = {
      </div>
 
      <div class="row seccion proyectos">
-     <div class="col-12 titulo-seccion ">Proyectos</div> 
+     <div data-aos="fade-up" class="col-12 titulo-seccion ">Proyectos</div> 
      
      
      
-     <div v-for="proyecto in proyectos" v-on:click="say(proyecto.id)" class="col-4 img_container" style="cursor: pointer; margin-top:10px;margin-bottom:10px;">
+     <div data-aos="fade-up" v-for="proyecto in proyectos" v-on:click="say(proyecto.id)" class="col-4 img_container" style="cursor: pointer; margin-top:10px;margin-bottom:10px;">
      
      <img v-bind:src="proyecto.foto" class="img-fluid image">
      <div class="overlay">
