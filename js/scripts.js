@@ -136,7 +136,7 @@ const Proyecto = {
  </div>
  
  
- <div data-aos="fade-left class="row" style="padding-top:3%;padding-bottom:3%;">
+ <div data-aos="fade-left" class="row" style="padding-top:3%;padding-bottom:3%;">
  <div class="col-2" style="text-align:right">
  <img src="img/icon/management.png" style="max-width:70px">
  </div>
