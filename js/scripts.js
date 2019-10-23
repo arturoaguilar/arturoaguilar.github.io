@@ -162,9 +162,11 @@ const Proyecto = {
 
 
 <div class="row seccion contacto"  >
+<div data-aos="zoom-in-up">
    <div class="col-12 titulo-seccion">Conversemos</div> 
    <div class="col-12">
 <p>{{ despedida }}</p>
+</div>
 </div>
 
 <div class="col-12" style="padding-top:20px;">
