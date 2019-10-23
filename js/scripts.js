@@ -121,7 +121,7 @@ const Proyecto = {
      </div>
 
 <div class="row seccion habilidades">
-<div class="col-12 titulo-seccion">Habilidades</div> 
+<div data-aos="fade-up" class="col-12 titulo-seccion">Habilidades</div> 
 <div class="col-12">
 
 <div class="row" style="padding-top:3%;padding-bottom:3%;background-color: #F5F5F5;">
@@ -162,11 +162,11 @@ const Proyecto = {
 
 
 <div class="row seccion contacto"  >
-<div data-aos="zoom-in-up">
-   <div class="col-12 titulo-seccion">Conversemos</div> 
-   <div class="col-12">
+
+   <div data-aos="fade-up" class="col-12 titulo-seccion">Conversemos</div> 
+   <div data-aos="zoom-in-up" class="col-12">
 <p>{{ despedida }}</p>
-</div>
+
 </div>
 
 <div class="col-12" style="padding-top:20px;">
