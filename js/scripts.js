@@ -141,10 +141,10 @@ const Proyecto = {
 <div class="col-12">
 
 <div  class="row" style="padding-top:3%;padding-bottom:3%;background-color: #F5F5F5;">
-<div class="col-2" style="text-align:right">
+<div class="col-md-2" style="text-align:right">
 <img src="img/icon/web_design.png" style="max-width:70px">
 </div>
-<div class="col-10" style="text-align:left">
+<div class="col-md-10" style="text-align:left">
 <span class="mini-item" v-for="competencia in competencias"  v-if="competencia.tipo==1 ">
    {{ competencia.nombre }}
  </span>
@@ -153,10 +153,10 @@ const Proyecto = {
  
  
  <div  class="row" style="padding-top:3%;padding-bottom:3%;">
- <div class="col-2" style="text-align:right">
+ <div class="col-md-2" style="text-align:right">
  <img src="img/icon/management.png" style="max-width:70px">
  </div>
- <div class="col-10" style="text-align:left">
+ <div class="col-md-10" style="text-align:left">
 <span class="mini-item" v-for="competencia in competencias"  v-if="competencia.tipo==2 ">
    {{ competencia.nombre }}
  </span>
@@ -164,10 +164,10 @@ const Proyecto = {
  </div>
  
  <div  class="row" style="padding-top:3%;padding-bottom:3%;background-color: #F5F5F5;">
- <div class="col-2" style="text-align:right">
+ <div class="col-md-2" style="text-align:right">
  <img src="img/icon/web_developement.png" style="max-width:70px">
  </div>
- <div class="col-10" style="text-align:left">
+ <div class="col-md-10" style="text-align:left">
 <span class="mini-item" v-for="competencia in competencias"  v-if="competencia.tipo==3 ">
    {{ competencia.nombre }}
  </span>
