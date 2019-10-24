@@ -114,19 +114,19 @@ const Proyecto = {
    </div>
      </div>
      <div class="row seccion sobremi">
-     <div data-aos="fade-up" class="col-12 titulo-seccion">Sobre mí</div> 
-     <div data-aos="fade-up" class="col-12">
+     <div  class="col-12 titulo-seccion">Sobre mí</div> 
+     <div  class="col-12">
      <p class="col-12  descripcion">{{ descripcion }}</p>
     </div>
 
      </div>
 
      <div class="row seccion proyectos">
-     <div data-aos="fade-up" class="col-12 titulo-seccion ">Proyectos</div> 
+     <div  class="col-12 titulo-seccion ">Proyectos</div> 
      
      
      
-     <div data-aos="fade-up" v-for="proyecto in proyectos" v-on:click="say(proyecto.id)" class="col-4 img_container" style="cursor: pointer; margin-top:10px;margin-bottom:10px;">
+     <div  v-for="proyecto in proyectos" v-on:click="say(proyecto.id)" class="col-4 img_container" style="cursor: pointer; margin-top:10px;margin-bottom:10px;">
      
      <img v-bind:src="proyecto.foto" class="img-fluid image">
      <div class="overlay">
@@ -137,10 +137,10 @@ const Proyecto = {
      </div>
 
 <div class="row seccion habilidades">
-<div data-aos="fade-up" class="col-12 titulo-seccion">Habilidades</div> 
+<div  class="col-12 titulo-seccion">Habilidades</div> 
 <div class="col-12">
 
-<div data-aos="fade-right" class="row" style="padding-top:3%;padding-bottom:3%;background-color: #F5F5F5;">
+<div  class="row" style="padding-top:3%;padding-bottom:3%;background-color: #F5F5F5;">
 <div class="col-2" style="text-align:right">
 <img src="img/icon/web_design.png" style="max-width:70px">
 </div>
@@ -152,7 +152,7 @@ const Proyecto = {
  </div>
  
  
- <div data-aos="fade-left" class="row" style="padding-top:3%;padding-bottom:3%;">
+ <div  class="row" style="padding-top:3%;padding-bottom:3%;">
  <div class="col-2" style="text-align:right">
  <img src="img/icon/management.png" style="max-width:70px">
  </div>
@@ -163,7 +163,7 @@ const Proyecto = {
  </div>
  </div>
  
- <div data-aos="fade-right" class="row" style="padding-top:3%;padding-bottom:3%;background-color: #F5F5F5;">
+ <div  class="row" style="padding-top:3%;padding-bottom:3%;background-color: #F5F5F5;">
  <div class="col-2" style="text-align:right">
  <img src="img/icon/web_developement.png" style="max-width:70px">
  </div>
@@ -179,8 +179,8 @@ const Proyecto = {
 
 <div class="row seccion contacto"  >
 
-   <div data-aos="fade-up" class="col-12 titulo-seccion">Conversemos</div> 
-   <div data-aos="zoom-in-up" class="col-12">
+   <div  class="col-12 titulo-seccion">Conversemos</div> 
+   <div  class="col-12">
 <p>{{ despedida }}</p>
 
 </div>
