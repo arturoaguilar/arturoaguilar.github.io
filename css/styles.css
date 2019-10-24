@@ -113,4 +113,13 @@ padding-top: 1%;
     color: #fd7166;
 
 }
+.titulo_grupo_habilidades {
+    text-align:"right";
+ }
+@media only screen and (max-width: 768px) {
 
+    .titulo_grupo_habilidades {
+       text-align:"center";
+    }
+
+  }
