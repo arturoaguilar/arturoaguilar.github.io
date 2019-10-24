@@ -17,12 +17,21 @@ const Proyecto = {
               {id:7,nombre: 'App Reservas',cliente:'Pawadin',foto:'/img/portadas/app_paw_prin.png',foto_portada:'/img/portadas/apw_app_port.png', desc:'Decidimos llevar la heramienta de gestión de reservas que suan los cuidadores y paseadores caninos a los móviles de los proveedores registrados, así que desarrollamos una app que puedan descargar.' ,meta_pro:'Arquitectura de la información / Design Thinking / User Experience / Customer Journey Map' }
             ]
           }
+    },methods: {
+          
+      back: function (id) {
+          this.$router.push('/')
+        /*alert(message)*/
+      }
     },
     template: `
       <div class="proyecto_detalle">
         <div v-for="proyecto in proyectos" class="row">
-        <div class="col-12">
-        <router-link to="/">regresar</router-link>
+        <div class="col-3">
+        <div v-on:click="Back()">regresar</div>
+        </div>
+        <div class="col-9">
+        <div>Detalle proyecto</div>
         </div>
         <div v-if="proyecto.id==$route.params.id " class="col-12">
         <img v-bind:src="proyecto.foto_portada" class="img-fluid portada_proyecto">
