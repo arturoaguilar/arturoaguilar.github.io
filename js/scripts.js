@@ -28,10 +28,9 @@ const Proyecto = {
       <div class="proyecto_detalle">
       <div class="row">
       <div class="col-3">
-        <div v-on:click="back()">regresar</div>
-        <a href="https://arturoaguilar.github.io.">Home</a>
+        <div v-on:click="back()"> <span style="cursor: pointer;">Regresar</span></div>
         </div>
-        <div class="col-9">
+        <div class="col-9" style="text-align:center">
         <div>Detalle proyecto</div>
         </div>
       </div> 
