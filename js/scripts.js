@@ -28,7 +28,7 @@ const Proyecto = {
       <div class="proyecto_detalle">
       <div class="row">
       <div class="col-3">
-        <div v-on:click="back()"> <span style="cursor: pointer;">Regresar</span></div>
+        <div v-on:click="back()"> <span style="cursor: pointer; margin-bottom:20px;">Regresar</span></div>
         </div>
         <div class="col-9" style="text-align:center">
         <div>Detalle proyecto</div>
