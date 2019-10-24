@@ -26,14 +26,18 @@ const Proyecto = {
     },
     template: `
       <div class="proyecto_detalle">
-        <div v-for="proyecto in proyectos" class="row">
-        <div class="col-3">
-        <div v-on:click="Back()">regresar</div>
+      <div class="row">
+      <div class="col-3">
+        <div v-on:click="back()">regresar</div>
         </div>
         <div class="col-9">
         <div>Detalle proyecto</div>
         </div>
+      </div> 
+      <div v-for="proyecto in proyectos" class="row">
+        
         <div v-if="proyecto.id==$route.params.id " class="col-12">
+
         <img v-bind:src="proyecto.foto_portada" class="img-fluid portada_proyecto">
         <div class="titulo_detalle" >Proyecto: <b >{{ proyecto.nombre }}</b></div>
         <div class="sub_titulo_detalle" >Cliente: <b >{{ proyecto.cliente }}</b></div>
