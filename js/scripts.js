@@ -29,6 +29,7 @@ const Proyecto = {
       <div class="row">
       <div class="col-3">
         <div v-on:click="back()">regresar</div>
+        <a href="https://arturoaguilar.github.io.">Home</a>
         </div>
         <div class="col-9">
         <div>Detalle proyecto</div>
