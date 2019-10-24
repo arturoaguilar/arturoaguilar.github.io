@@ -21,7 +21,9 @@ const Proyecto = {
     template: `
       <div class="proyecto_detalle">
         <div v-for="proyecto in proyectos" class="row">
-
+        <div class="col-12">
+        <router-link to="/">regresar</router-link>
+        </div>
         <div v-if="proyecto.id==$route.params.id " class="col-12">
         <img v-bind:src="proyecto.foto_portada" class="img-fluid portada_proyecto">
         <div class="titulo_detalle" >Proyecto: <b >{{ proyecto.nombre }}</b></div>
