@@ -52,11 +52,9 @@ const Proyecto = {
         /*alert(message)*/
       },
       saludo: function () {
+        console.log("HOLAAAA");
         alert("Hello! I am an alert box!!");
-    }
-
-      
-    }, beforeMount(){
+    }}, beforeMount(){
     	this.saludo();
     },
     template: `
