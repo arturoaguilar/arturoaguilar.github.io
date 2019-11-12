@@ -62,7 +62,7 @@ const Proyecto = {
              }
              );*/
              
-       console.log("HOLAAAA22");
+       console.log("HOLAAAA23");
        /* alert("Hello! I am an alert box!!");*/
     }},
     template: `
