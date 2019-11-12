@@ -61,7 +61,7 @@ const Proyecto = {
             adaptiveHeight: true
              }
              );
-       console.log("HOLAAAA3");
+       console.log("HOLAAAA4");
        /* alert("Hello! I am an alert box!!");*/
     }},
     template: `
