@@ -52,6 +52,9 @@ const Proyecto = {
         /*alert(message)*/
       },
       instanciarsesiones: function () {
+        $('.carousel').carousel({
+          interval: false
+        })
         /*$('.your-class').slick(
           {
             dots: true,
