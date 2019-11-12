@@ -61,8 +61,8 @@ const Proyecto = {
             adaptiveHeight: true
              }
              );*/
-             $('.carousel').carousel()
-       console.log("HOLAAAA4");
+             
+       console.log("HOLAAAA5");
        /* alert("Hello! I am an alert box!!");*/
     }},
     template: `
@@ -90,9 +90,7 @@ const Proyecto = {
         <div class="your-class">
         <div  v-for="proyectoimg in proyecto.fotos" >
         <img v-bind:src="proyectoimg.foto"  style="width:300px;">
-         
-        
-        </div>
+         </div>
          </div>
         </div>
         
@@ -128,8 +126,7 @@ const Proyecto = {
         <!--slider-->
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
-  
-  <div class="carousel-item active">
+    <div class="carousel-item active">
       <img class="d-block w-100" src="/img/proyectos/pawschool01.png" alt="First slide">
     </div>
     <div class="carousel-item">
