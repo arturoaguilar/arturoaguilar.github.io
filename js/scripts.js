@@ -52,7 +52,7 @@ const Proyecto = {
         /*alert(message)*/
       },
       instanciarsesiones: function () {
-        $('.your-class').slick(
+        /*$('.your-class').slick(
           {
             dots: true,
             infinite: true,
@@ -60,7 +60,8 @@ const Proyecto = {
             slidesToShow: 1,
             adaptiveHeight: true
              }
-             );
+             );*/
+             $('.carousel').carousel()
        console.log("HOLAAAA4");
        /* alert("Hello! I am an alert box!!");*/
     }},
