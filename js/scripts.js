@@ -35,9 +35,9 @@ const Proyecto = {
         </div>
       </div> 
       <div class="your-class">
-  <div>your content</div>
-  <div>your content</div>
-  <div>your content</div>
+  <div>your content 1</div>
+  <div>your content 2</div>
+  <div>your content 3</div>
 </div>
       <div v-for="proyecto in proyectos" class="row">
         
