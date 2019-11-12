@@ -92,6 +92,9 @@ const Proyecto = {
 
      
         </div>
+       
+        </div>
+
         <!--slider-->
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
@@ -109,7 +112,6 @@ const Proyecto = {
   </a>
 </div>
    <!-- Fin slider -->
-        </div>
 
         </div>
 
