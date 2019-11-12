@@ -62,7 +62,7 @@ const Proyecto = {
              }
              );*/
              $('.carousel').carousel()
-       console.log("HOLAAAA5");
+       console.log("HOLAAAA4");
        /* alert("Hello! I am an alert box!!");*/
     }},
     template: `
@@ -86,37 +86,14 @@ const Proyecto = {
         <p style="opacity: 0.57;">{{ proyecto.meta_pro }}</p>
         <p>{{ proyecto.desc }}</p>
         
-        <!--SLIDER -->
-
-
-        <!--slider-->
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-  
-  <div v-for="proyectoimg in proyecto.fotos" class="carousel-item ">
-      <img class="d-block w-100"  v-bind:src="proyectoimg.foto" alt="First slide">
-  </div>
-
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-
-
-
-
-        <!--FIN SLIDER-->
-
-
-
-    
         
+        <div class="your-class">
+        <div  v-for="proyectoimg in proyecto.fotos" >
+        <img v-bind:src="proyectoimg.foto"  style="width:300px;">
+         
+        
+        </div>
+         </div>
         </div>
         
         </div>
@@ -148,7 +125,24 @@ const Proyecto = {
           </div>
         </div>
 
+        <!--slider-->
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+  
+  <div v-for="proyectoimg in proyecto.fotos" class="carousel-item active">
+      <img class="d-block w-100"  v-bind:src="proyectoimg.foto" alt="First slide">
+  </div>
 
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
 
         
 
