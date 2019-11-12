@@ -50,7 +50,14 @@ const Proyecto = {
       back: function (id) {
           this.$router.push('/')
         /*alert(message)*/
-      }
+      },
+      saludo: function () {
+        alert("Hello! I am an alert box!!");
+    }
+
+      
+    }, beforeMount(){
+    	this.saludo();
     },
     template: `
       <div class="proyecto_detalle">
