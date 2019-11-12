@@ -62,7 +62,7 @@ const Proyecto = {
              }
              );*/
              
-       console.log("HOLAAAA12");
+       console.log("HOLAAAA22");
        /* alert("Hello! I am an alert box!!");*/
     }},
     template: `
@@ -97,7 +97,7 @@ const Proyecto = {
         <!--slider-->
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
-    <div v-for="proyectoimg in proyecto.fotos"  class="carousel-item"  v-bind:class="{  active: isActive, 'proyectoimg.id': 1 }">
+    <div v-for="proyectoimg in proyecto.fotos"  class="carousel-item"  v-bind:class="{  active: ('proyectoimg.id'=== 1) }">
       <img class="d-block w-100" v-bind:src="proyectoimg.foto"  alt="First slide">
     </div>
   </div>
