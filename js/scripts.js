@@ -119,7 +119,7 @@ const Proyecto = {
         <!--slider-->
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
-    <div   class="carousel-item ">
+    <div   class="carousel-item active">
       <img class="d-block w-100"  src="/img/proyectos/pawschool01.png" alt="First slide">
     </div>
   </div>
