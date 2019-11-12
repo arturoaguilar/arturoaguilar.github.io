@@ -77,7 +77,7 @@ const Proyecto = {
         <div class="your-class">
         <div  v-for="proyectoimg in proyecto.fotos" >
 
-        <img v-bind:src="proyectoimg.foto" class="img-fluid image">
+        <img v-bind:src="proyectoimg.foto" class="img-fluid image" style="width:300px;">
    
          </div>
          </div>
