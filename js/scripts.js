@@ -63,9 +63,7 @@ const Proyecto = {
              );
        console.log("HOLAAAA3");
        /* alert("Hello! I am an alert box!!");*/
-    }}, mounted(){
-    	this.instanciarsesiones();
-    },
+    }},
     template: `
       <div class="proyecto_detalle">
       <div class="row" style="margin-bottom:20px;">
@@ -101,7 +99,9 @@ const Proyecto = {
       
 
       </div>
-    `
+    `, mounted(){
+      this.instanciarsesiones();
+    }
   }
   const Home ={
     data: function () {
