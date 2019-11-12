@@ -76,9 +76,8 @@ const Proyecto = {
         <p>{{ proyecto.desc }}</p>
         
         
-        <div class="your-class ">
-        <div class="col-12 col-md-4" v-for="proyectoimg in proyecto.fotos"   >
-       
+        <div class="your-class">
+        <div class="col-12 col-md-4" v-for="proyectoimg in proyecto.fotos" >
         <img v-bind:src="proyectoimg.foto" class="img-fluid image">
         </div>
          </div>
