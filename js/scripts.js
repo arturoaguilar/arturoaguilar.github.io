@@ -74,6 +74,13 @@ const Proyecto = {
         <div>
         <p style="opacity: 0.57;">{{ proyecto.meta_pro }}</p>
         <p>{{ proyecto.desc }}</p>
+       
+        <div class="your-class"  v-for="proyectoimg in proyecto.fotos"  class="col-12 col-md-4" >
+        <div>
+        <img v-bind:src="proyectoimg" class="img-fluid image">
+        </div>
+         </div>
+       
         </div>
         
         </div>
