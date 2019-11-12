@@ -87,6 +87,9 @@ const Proyecto = {
         <p>{{ proyecto.desc }}</p>
         
         
+
+     
+        </div>
         <!--slider-->
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
@@ -104,9 +107,6 @@ const Proyecto = {
   </a>
 </div>
    <!-- Fin slider -->
-     
-        </div>
-        
         </div>
 
         </div>
