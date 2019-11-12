@@ -96,7 +96,7 @@ const Proyecto = {
 
         </div>
 
-<div class="col-12">
+<div v-if="proyecto.id==$route.params.id " class="col-12">
         <!--slider-->
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" sli>
   <div class="carousel-inner">
