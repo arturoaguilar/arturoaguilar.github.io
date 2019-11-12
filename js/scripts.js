@@ -63,7 +63,7 @@ const Proyecto = {
              );
        console.log("HOLAAAA3");
        /* alert("Hello! I am an alert box!!");*/
-    }}, beforeUpdate(){
+    }}, mounted(){
     	this.instanciarsesiones();
     },
     template: `
