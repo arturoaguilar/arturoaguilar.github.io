@@ -51,11 +51,19 @@ const Proyecto = {
           this.$router.push('/')
         /*alert(message)*/
       },
-      saludo: function () {
-        console.log("HOLAAAA");
-        alert("Hello! I am an alert box!!");
+      instanciarsesiones: function () {
+        $('.your-class').slick(
+          {
+           infinite: true,
+           slidesToShow: 3,
+           slidesToScroll: 3
+             }
+             
+             );
+       console.log("HOLAAAA");
+       /* alert("Hello! I am an alert box!!");*/
     }}, beforeMount(){
-    	this.saludo();
+    	this.instanciarsesiones();
     },
     template: `
       <div class="proyecto_detalle">
