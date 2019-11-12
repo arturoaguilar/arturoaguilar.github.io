@@ -94,7 +94,7 @@ const Proyecto = {
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div v-for="proyectoimg in proyecto.fotos"  class="carousel-item ">
-      <img class="d-block w-100" v-bind:src="proyectoimg.foto"  alt="First slide">
+      <img class="d-block w-100"  src="/img/proyectos/pawschool01.png" alt="First slide">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
