@@ -61,7 +61,7 @@ const Proyecto = {
             adaptiveHeight: true
              }
              );
-       console.log("HOLAAAA2");
+       console.log("HOLAAAA3");
        /* alert("Hello! I am an alert box!!");*/
     }}, mounted(){
     	this.instanciarsesiones();
