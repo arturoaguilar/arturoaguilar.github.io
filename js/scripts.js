@@ -58,11 +58,10 @@ const Proyecto = {
            slidesToShow: 3,
            slidesToScroll: 3
              }
-             
              );
-       console.log("HOLAAAA");
+       console.log("HOLAAAA2");
        /* alert("Hello! I am an alert box!!");*/
-    }}, beforeMount(){
+    }}, mounted(){
     	this.instanciarsesiones();
     },
     template: `
