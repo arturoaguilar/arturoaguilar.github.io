@@ -62,7 +62,7 @@ const Proyecto = {
              }
              );*/
              $('.carousel').carousel()
-       console.log("HOLAAAA4");
+       console.log("HOLAAAA5");
        /* alert("Hello! I am an alert box!!");*/
     }},
     template: `
@@ -93,7 +93,7 @@ const Proyecto = {
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
   
-  <div v-for="proyectoimg in proyecto.fotos" class="carousel-item active">
+  <div v-for="proyectoimg in proyecto.fotos" class="carousel-item ">
       <img class="d-block w-100"  v-bind:src="proyectoimg.foto" alt="First slide">
   </div>
 
