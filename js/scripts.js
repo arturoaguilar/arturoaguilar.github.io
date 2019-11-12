@@ -54,6 +54,7 @@ const Proyecto = {
     },
     template: `
       <div class="proyecto_detalle">
+      <basico/>
       <div class="row" style="margin-bottom:20px;">
       <div class="col-3">
         <div v-on:click="back()"> <span style="cursor: pointer;">Regresar</span></div>
@@ -76,9 +77,7 @@ const Proyecto = {
         
         <div class="your-class">
         <div  v-for="proyectoimg in proyecto.fotos" >
-
         <img v-bind:src="proyectoimg.foto"  style="width:300px;">
-   
          </div>
          </div>
         </div>
