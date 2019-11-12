@@ -64,7 +64,7 @@ const Proyecto = {
              }
              );*/
              
-       console.log("HOLAAAA6");
+       console.log("HOLAAAA7");
        /* alert("Hello! I am an alert box!!");*/
     }},
     template: `
@@ -116,7 +116,23 @@ const Proyecto = {
         </div>
 
         
-
+        <!--slider-->
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div   class="carousel-item ">
+      <img class="d-block w-100"  src="/img/proyectos/pawschool01.png" alt="First slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+   <!-- Fin slider -->
 
 
         
