@@ -1,3 +1,7 @@
+// Importamos JQuery
+const $ = require('jquery')
+// Lo declaramos globalmente
+window.$ = $ 
 
 // 0. If using a module system (e.g. via vue-cli), import Vue and VueRouter
 // and then call `Vue.use(VueRouter)`.
