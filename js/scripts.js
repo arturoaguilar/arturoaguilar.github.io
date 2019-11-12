@@ -34,6 +34,11 @@ const Proyecto = {
         <div>Detalle proyecto</div>
         </div>
       </div> 
+      <div class="your-class">
+  <div>your content</div>
+  <div>your content</div>
+  <div>your content</div>
+</div>
       <div v-for="proyecto in proyectos" class="row">
         
         <div v-if="proyecto.id==$route.params.id " class="col-12">
