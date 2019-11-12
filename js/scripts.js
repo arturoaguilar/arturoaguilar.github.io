@@ -101,6 +101,7 @@ const Proyecto = {
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div v-for="proyectoimg in proyecto.fotos"  class="carousel-item"  v-bind:class="{ active: (proyectoimg.id== 1)}">
+    <p>hola {{proyectoimg.id}}</p>
       <img class="d-block w-100" v-bind:src="proyectoimg.foto"  alt="First slide">
     </div>
   </div>
