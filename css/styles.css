@@ -123,7 +123,11 @@ padding-top: 1%;
     max-height : 300px;
     width : 100%;
   }
-  
+
+  #carouselExampleControls {
+      width: 300px;
+  }
+
 @media only screen and (max-width: 768px) {
 
     #app .titulo_grupo_habilidades {

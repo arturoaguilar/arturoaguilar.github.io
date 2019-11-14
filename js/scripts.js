@@ -81,22 +81,8 @@ const Proyecto = {
 
       <div v-for="proyecto in proyectos" class="row">
         
-        <div v-if="proyecto.id==$route.params.id " class="col-12">
-        <div class="titulo_detalle" >Proyecto: <b >{{ proyecto.nombre }}</b></div>
-        <div class="sub_titulo_detalle" >Cliente: <b >{{ proyecto.cliente }}</b></div>
-        
-        <div>
-        <p style="opacity: 0.57;">{{ proyecto.meta_pro }}</p>
-        <p>{{ proyecto.desc }}</p>
-        
-        
 
-     
-        </div>
-
-        </div>
-
-<div v-if="proyecto.id==$route.params.id " class="col-12">
+      <div v-if="proyecto.id==$route.params.id " class="col-12">
         <!--slider-->
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" sli>
   <div class="carousel-inner">
@@ -116,6 +102,24 @@ const Proyecto = {
 </div>
    <!-- Fin slider -->
 </div>
+
+
+        <div v-if="proyecto.id==$route.params.id " class="col-12">
+        <div class="titulo_detalle" >Proyecto: <b >{{ proyecto.nombre }}</b></div>
+        <div class="sub_titulo_detalle" >Cliente: <b >{{ proyecto.cliente }}</b></div>
+        
+        <div>
+        <p style="opacity: 0.57;">{{ proyecto.meta_pro }}</p>
+        <p>{{ proyecto.desc }}</p>
+        
+        
+
+     
+        </div>
+
+        </div>
+
+
 
         </div>
 
