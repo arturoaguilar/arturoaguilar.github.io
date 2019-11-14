@@ -78,147 +78,72 @@
 </div>
 
 
+<!-----------HHHHHHHHHHHHHH-->
 
-
-
-<div> <div class="row seccion hero">   
-  <div class="col-12 nombre">{{ nombre }}</div> 
-   <div class="col-12 profesion">{{ profesion}}</div>
-   
-
-     </div>
-     <div class="row seccion sobremi">
-     <div class="col-12 titulo-seccion">Sobre mí</div> 
-     <div class="col-12">
-     <p class="col-12  descripcion">{{ descripcion }}</p>
+<div class="proyecto_detalle">
+  <div class="row" style="margin-bottom:20px;">
+  <div class="col-3">
+    <div v-on:click="back()"> <span style="cursor: pointer;">Regresar</span></div>
     </div>
-     </div>
-<div class="row seccion habilidades">
-<div class="col-12 titulo-seccion">Habilidades</div> 
+    <div class="col-9" style="text-align:center">
+    <div>Detalle proyecto</div>
+    </div>
+  </div> 
 
-<div class="row">
-<div class="col-3">
-Diseño de productos
-</div>
-<div class="col-9">
-<span class="mini-item" v-for="competencia in competencias"  v-if="competencia.tipo==1 ">
-   {{ competencia.nombre }}
- </span>
- </div>
- </div>
- 
- 
- <div class="row">
- <div class="col-3">
- Gestión 
- </div>
- <div class="col-9">
-<span class="mini-item" v-for="competencia in competencias"  v-if="competencia.tipo==2 ">
-   {{ competencia.nombre }}
- </span>
- </div>
- </div>
- 
- <div class="row">
- <div class="col-3">
- Desarrollo
- </div>
- <div class="col-9">
-<span class="mini-item" v-for="competencia in competencias"  v-if="competencia.tipo==3 ">
-   {{ competencia.nombre }}
- </span>
- </div>
- </div>
- 
-</div>
-<div class="row seccion">
-   <span class="col-12 titulo-seccion">Proyectos</span> 
-<div v-for="proyecto in proyectos" v-on:click="say(proyecto.id)" class="col-4" style="cursor: pointer;">
-{{ proyecto.cliente }}-{{ proyecto.nombre }}    
-<img v-bind:src="proyecto.foto" class="img-fluid">
-  
- </div>
-
-</div>
-
-<div class="seccion">
-   <span class="col-12 titulo-seccion">Estudios</span> 
-<li v-for="estudio in estudios">
-  <b>{{ estudio.nombre }}</b>- {{ estudio.lugar }}-{{ estudio.desc }}
- </li>
-</div></div>
-
-
-
-<!--afas
--->
-
-<div> <div class="row seccion hero">   
-    <div class="col-12 nombre">{{ nombre }}</div> 
-     <div class="col-12 profesion">{{ profesion}}</div>
-     
-  
-       </div>
-       <div class="row seccion sobremi">
-       <div class="col-12 titulo-seccion">Sobre mí</div> 
-       <div class="col-12">
-       <p class="col-12  descripcion">{{ descripcion }}</p>
-      </div>
-       </div>
-  <div class="row seccion habilidades">
-  <div class="col-12 titulo-seccion">Habilidades</div> 
-  
-  <div class="row">
-  <div class="col-2" style="text-align:right">
-  Diseño de productos
-  </div>
-  <div class="col-10" style="text-align:left">
-  <span class="mini-item" v-for="competencia in competencias"  v-if="competencia.tipo==1 ">
-     {{ competencia.nombre }}
-   </span>
-   </div>
-   </div>
-   
-   
-   <div class="row">
-   <div class="col-2" style="text-align:right">
-   Gestión 
-   </div>
-   <div class="col-10" style="text-align:left">
-  <span class="mini-item" v-for="competencia in competencias"  v-if="competencia.tipo==2 ">
-     {{ competencia.nombre }}
-   </span>
-   </div>
-   </div>
-   
-   <div class="row">
-   <div class="col-2" style="text-align:right">
-   Desarrollo
-   </div>
-   <div class="col-10" style="text-align:left">
-  <span class="mini-item" v-for="competencia in competencias"  v-if="competencia.tipo==3 ">
-     {{ competencia.nombre }}
-   </span>
-   </div>
-   </div>
-  
-  </div>
-  <div class="row seccion">
-     <span class="col-12 titulo-seccion">Proyectos</span> 
-  <div v-for="proyecto in proyectos" v-on:click="say(proyecto.id)" class="col-4" style="cursor: pointer;">
-  {{ proyecto.cliente }}-{{ proyecto.nombre }}    
-  <img v-bind:src="proyecto.foto" class="img-fluid">
+  <div v-for="proyecto in proyectos" class="row">
     
-   </div>
-  
+    <div v-if="proyecto.id==$route.params.id " class="col-12">
+    <div class="titulo_detalle" >Proyecto: <b >{{ proyecto.nombre }}</b></div>
+    <div class="sub_titulo_detalle" >Cliente: <b >{{ proyecto.cliente }}</b></div>
+    
+    <div>
+    <p style="opacity: 0.57;">{{ proyecto.meta_pro }}</p>
+    <p>{{ proyecto.desc }}</p>
+    
+    
+
+ 
+    </div>
+
+    </div>
+
+<div class="col-12">
+    <!--slider-->
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+<div class="carousel-inner">
+<div v-for="proyectoimg in proyecto.fotos"  class="carousel-item"  v-bind:class="{ active: (proyectoimg.id== 1)}">
+  <img class="d-block w-100" v-bind:src="proyectoimg.foto"  alt="First slide">
+</div>
+</div>
+<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+<span class="sr-only">Previous</span>
+</a>
+<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+<span class="carousel-control-next-icon" aria-hidden="true"></span>
+<span class="sr-only">Next</span>
+</a>
+</div>
+<!-- Fin slider -->
+</div>
+
+    </div>
+
+    
+
+
+
+    
+
   </div>
-  
-  <div class="seccion">
-     <span class="col-12 titulo-seccion">Estudios</span> 
-  <li v-for="estudio in estudios">
-    <b>{{ estudio.nombre }}</b>- {{ estudio.lugar }}-{{ estudio.desc }}
-   </li>
-  </div></div> 
+
+
+
+
+
+
+
+<!--------------------HHHHHHHHHHHHHHH-->
 
 </body>
 </html>
