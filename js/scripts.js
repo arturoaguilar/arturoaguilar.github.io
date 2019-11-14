@@ -66,14 +66,13 @@ const Proyecto = {
              );*/
              
        console.log("HOLAAAA25");
-       /* alert("Hello! I am an alert box!!");*/
-    }},
-    template: `
-    <style scoped>
+       /* alert("Hello! I am an alert box!!");    <style scoped>
 body {
   background-color: #fcd853;
 }
-</style>
+</style>*/
+    }},
+    template: `
       <div class="proyecto_detalle">
       <div class="row" style="margin-bottom:20px;">
       <div class="col-3">
