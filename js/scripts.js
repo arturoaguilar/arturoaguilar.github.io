@@ -70,7 +70,6 @@ const Proyecto = {
     }},
     template: `
 
-
       <div class="proyecto_detalle">
       <div class="row" style="margin-bottom:20px;">
       <div class="col-3">
@@ -132,6 +131,7 @@ const Proyecto = {
     `, mounted(){
       console.log('CAMBIANDO COLOR');
       document.body.style.backgroundColor = "#fcd853";
+     
       this.instanciarsesiones();
     }
   }
