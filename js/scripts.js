@@ -121,13 +121,7 @@ const Proyecto = {
 
 
 
-        </div>
-
-        
-
-
-
-        
+        </div>    
 
       </div>
       <style scoped>
