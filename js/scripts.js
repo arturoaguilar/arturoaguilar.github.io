@@ -66,11 +66,7 @@ const Proyecto = {
              );*/
              
        console.log("HOLAAAA25");
-       /* alert("Hello! I am an alert box!!");    <style scoped>
-body {
-  background-color: #fcd853;
-}
-</style>*/
+       /* alert("Hello! I am an alert box!!");    */
     }},
     template: `
       <div class="proyecto_detalle">
@@ -134,6 +130,11 @@ body {
         
 
       </div>
+      <style scoped>
+body {
+  background-color: #fcd853;
+}
+</style>
     `, mounted(){
       this.instanciarsesiones();
     }
