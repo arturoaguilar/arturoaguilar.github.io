@@ -69,7 +69,7 @@ const Proyecto = {
        /* alert("Hello! I am an alert box!!");    */
     }},
     template: `
-    <style scoped>
+    <style>
     body {
       background-color: red;
     }
