@@ -269,7 +269,12 @@ const Proyecto = {
 <a class="btnmail" v-bind:href="[\'mailto:\' + mail]">Enviar Mensaje</a>
 </div>
 </div>
-</div> ` 
+</div> `,
+mounted(){
+  console.log('CAMBIANDO COLOR BLANCO');
+  document.body.style.backgroundColor = "#f0f4f6";
+
+} 
 
 }
   const UserHome = { template: `<div>Home</div>` }
