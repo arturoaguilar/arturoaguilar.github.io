@@ -131,7 +131,7 @@ const Proyecto = {
 
     `, mounted(){
       console.log('CAMBIANDO COLOR');
-      document.body.style.backgroundColor = "red";
+      document.body.style.backgroundColor = "#fcd853";
       this.instanciarsesiones();
     }
   }
