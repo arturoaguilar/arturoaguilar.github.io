@@ -69,6 +69,11 @@ const Proyecto = {
        /* alert("Hello! I am an alert box!!");    */
     }},
     template: `
+    <style scoped>
+    body {
+      background-color: red;
+    }
+    </style>
     <template>
       <div class="proyecto_detalle">
       <div class="row" style="margin-bottom:20px;">
@@ -126,11 +131,7 @@ const Proyecto = {
 
       </div>
       </template>
-      <style scoped>
-body {
-  background-color: red;
-}
-</style>
+
 
     `, mounted(){
       this.instanciarsesiones();
