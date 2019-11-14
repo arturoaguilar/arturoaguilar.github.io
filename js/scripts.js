@@ -70,7 +70,7 @@ const Proyecto = {
     }},
     template: `
 
-    <template>
+
       <div class="proyecto_detalle">
       <div class="row" style="margin-bottom:20px;">
       <div class="col-3">
@@ -126,7 +126,7 @@ const Proyecto = {
         </div>    
 
       </div>
-      </template>
+
 
 
     `, mounted(){
