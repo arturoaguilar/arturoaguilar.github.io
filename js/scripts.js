@@ -130,6 +130,7 @@ const Proyecto = {
 
 
     `, mounted(){
+      document.body.style.backgroundColor = "red";
       this.instanciarsesiones();
     }
   }
