@@ -130,6 +130,7 @@ const Proyecto = {
 
 
     `, mounted(){
+      console.log('CAMBIANDO COLOR');
       document.body.style.backgroundColor = "red";
       this.instanciarsesiones();
     }
