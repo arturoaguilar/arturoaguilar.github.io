@@ -7,18 +7,26 @@
 </head>
 <body>
     <div id="app">
-      {{ message }} 
+      Hola, soy {{ name }}, y {{ message }} 
     </div>
 
     <script>
 
       const PortafolioApp= {
 	data(){
-	  message: "Bienvenido a mi portafolio"
+	  return{
+	  name: "Arturo Aguilar";
+	  profession:[
+	    {name:"User Experience ",link:"url UX"},
+	    {name:"Diseño de producto", link:" Link Diseño de producto"},
+	    {name:"User Research", link: "Link User Research"},
+	    {name:"Frontend Developer", link: "Link Fron end"}];  
+	  message: "Bienvenido a mi portafolio";
+	  }
 	}
       }
 
-Vue.createApp(PortafolioApp).mount('#app');
+Vue.createApp(PortafolioApp).mount('#app')
        
     </script>
 </body>
