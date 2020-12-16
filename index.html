@@ -11,8 +11,21 @@
     </div>
 
     <script>
+
+
         const {createApp} = Vue;
-        const application = createApp({});
+        const application = createApp({
+	  data() {
+    return {
+      counter: 0
+    }
+  },
+  mounted() {
+    setInterval(() => {
+      this.counter++
+    }, 1000)
+  }
+	});
         application.mount('#app')
     </script>
 </body>
