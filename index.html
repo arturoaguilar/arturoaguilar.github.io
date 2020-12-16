@@ -7,26 +7,19 @@
 </head>
 <body>
     <div id="app">
-          Counter: {{ counter }}
+      {{ message }} 
     </div>
 
     <script>
 
+      const PortafolioApp= {
+	data(){
+	  message: "Bienvenido a mi portafolio"
+	}
+      }
 
-        const {createApp} = Vue;
-        const application = createApp({
-	  data() {
-    return {
-      counter: 0
-    }
-  },
-  mounted() {
-    setInterval(() => {
-      this.counter++
-    }, 1000)
-  }
-	});
-        application.mount('#app')
+Vue.createApp(PortafolioApp).mount('#app');
+       
     </script>
 </body>
 </html>
