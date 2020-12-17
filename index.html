@@ -16,14 +16,28 @@
 	data(){
 	  return{
 	    portfolio:{
-	  name: "Arturo Aguilar",
-	  profession:[
-	    {name:"User Experience ",link:"url UX"},
-	    {name:"Diseño de producto", link:" Link Diseño de producto"},
-	    {name:"User Research", link: "Link User Research"},
-	    {name:"Frontend Developer", link: "Link Fron end"}],  
-	  message: "Bienvenido a mi portafolio"
-	    }
+	    name: "Arturo Aguilar",
+	    profession:[
+	    {name:"User Experience ",link:"url UX",state:1,icono:"url imagen ícono A "},
+	    {name:"Diseño de producto", link:" Link Diseño de producto", state:1,icono:"url imagen B "},
+	    {name:"User Research", link: "Link User Research",state:1,icono:"url imagen C"},
+	      {name:"Frontend Developer", link: "Link Fron end",state:1,icono:"url imagen D"}
+	    ],  
+	      message: "Bienvenido a mi portafolio"
+	  
+	    },
+	    Proyectos:
+	    [{name:"Sistema de entregas de departamepentos",
+	      client:"Viva ",
+	      problemText:"Se necesitaba un medio para incentivar",
+	      problemImg:"urlImage del problema",
+	      problemPrototypeText:"", 
+	      problemPrototypeImg:"url img prototipo",
+	      finalProductText:"",
+	      finalProductImg1:"1) urlProducto imagen 1",
+	      finalProductImg2:"2)urlProducto Imagen 2",
+	      finalProductImg3:"3 urlProduct Imagen 3"}]
+	    
 	  }
 	}
       }
