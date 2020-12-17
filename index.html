@@ -8,6 +8,10 @@
 <body>
     <div id="app">
       Hola, soy {{ portfolio.name }}, y {{ portfolio.message }} 
+    
+      <li v-for="profession in portfolio.profession">
+    {{ profession.name }}
+  </li>
     </div>
 
     <script>
@@ -43,7 +47,7 @@
       }
 
 Vue.createApp(PortafolioApp).mount('#app')
-       
+      //<p v-if="seen">Now you see me</p> 
     </script>
 </body>
 </html>
