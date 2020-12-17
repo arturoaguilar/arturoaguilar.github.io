@@ -7,21 +7,23 @@
 </head>
 <body>
     <div id="app">
-      Hola, soy {{ name }}, y {{ message }} 
+      Hola, soy {{ portfolio.name }}, y {{ portfolio.message }} 
     </div>
 
     <script>
-
+//Aloenz31!
       const PortafolioApp= {
 	data(){
 	  return{
-	  name: "Arturo Aguilar";
+portfolio:[
+	  name: "Arturo Aguilar",
 	  profession:[
 	    {name:"User Experience ",link:"url UX"},
 	    {name:"Diseño de producto", link:" Link Diseño de producto"},
 	    {name:"User Research", link: "Link User Research"},
-	    {name:"Frontend Developer", link: "Link Fron end"}];  
-	  message: "Bienvenido a mi portafolio";
+	    {name:"Frontend Developer", link: "Link Fron end"}],  
+	  message: "Bienvenido a mi portafolio"
+	    ];
 	  }
 	}
       }
