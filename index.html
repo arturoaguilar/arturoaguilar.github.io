@@ -8,16 +8,21 @@
 <body>
     <div id="app">
       Hola, soy {{ portfolio.name }}, y {{ portfolio.message }} 
-    
+      <ul> 
       <li v-for="profession in portfolio.profession">
     {{ profession.name }}
-  </li>
-
-
-      <li v-for="project in projects">
+     </li>
+      </ul>
+     
+Projectos
+      
+      <div v-for="project in projects">
     {{ project.name }}
-  </li>
-
+    <p v-for="bloque in project.infoBlocks">
+     -- {{ bloque.title }}
+    </p>
+      </div>
+      
   
     </div>
 
@@ -41,26 +46,40 @@
 	    [
 	      {name:"Sistema de entregas de departamepentos",
 	      client:"Viva ",
-	      problemText:"Se necesitaba un medio para incentivar",
-	      problemImg:"urlImage del problema",
-	      problemPrototypeText:"", 
-	      problemPrototypeImg:"url img prototipo",
-	      finalProductText:"",
-	      finalProductImg1:"1) urlProducto imagen 1",
-	      finalProductImg2:"2)urlProducto Imagen 2",
-	      finalProductImg3:"3 urlProduct Imagen 3"},
-              {name:"Sistema de entregas virtuales",
+	      infoBlocks:[{
+		title:"Problema",
+		desc:"Se vio una necesidad",
+		image:"url block 1 image",
+		order:1
+	      },{
+		title:"Problema",
+		desc:"Se vio una necesidad",
+		image:"url block 1 image",
+		order:1
+	      },{
+		title:"Problema",
+		desc:"Se vio una necesidad",
+		image:"url block 1 image",
+		order:1
+	      }],
+              	 {name:"Sistema de entregas online",
 	      client:"Viva ",
-	      problemText:"Se necesitaba un medio para incentivar",
-	      problemImg:"urlImage del problema",
-	      problemPrototypeText:"", 
-	      problemPrototypeImg:"url img prototipo",
-	      finalProductText:"",
-	      finalProductImg1:"1) urlProducto imagen 1",
-	      finalProductImg2:"2)urlProducto Imagen 2",
-	      finalProductImg3:"3 urlProduct Imagen 3"}
-
-	    ]
+	      infoBlocks:[{
+		title:"Problema",
+		desc:"Se vio una necesidad",
+		image:"url block 1 image",
+		order:1
+	      },{
+		title:"Problema",
+		desc:"Se vio una necesidad",
+		image:"url block 1 image",
+		order:1
+	      },{
+		title:"Problema",
+		desc:"Se vio una necesidad",
+		image:"url block 1 image",
+		order:1
+	      }]    ]
 	    
 	  }
 	}
