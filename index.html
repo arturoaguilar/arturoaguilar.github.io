@@ -12,6 +12,13 @@
       <li v-for="profession in portfolio.profession">
     {{ profession.name }}
   </li>
+
+
+      <li v-for="project in projects.name">
+    {{ profession.name }}
+  </li>
+
+  
     </div>
 
     <script>
@@ -30,8 +37,9 @@
 	      message: "Bienvenido a mi portafolio"
 	  
 	    },
-	    Proyectos:
-	    [{name:"Sistema de entregas de departamepentos",
+	    projects:
+	    [
+	      {name:"Sistema de entregas de departamepentos",
 	      client:"Viva ",
 	      problemText:"Se necesitaba un medio para incentivar",
 	      problemImg:"urlImage del problema",
@@ -40,7 +48,19 @@
 	      finalProductText:"",
 	      finalProductImg1:"1) urlProducto imagen 1",
 	      finalProductImg2:"2)urlProducto Imagen 2",
-	      finalProductImg3:"3 urlProduct Imagen 3"}]
+	      finalProductImg3:"3 urlProduct Imagen 3"},
+              {name:"Sistema de entregas virtuales",
+	      client:"Viva ",
+	      problemText:"Se necesitaba un medio para incentivar",
+	      problemImg:"urlImage del problema",
+	      problemPrototypeText:"", 
+	      problemPrototypeImg:"url img prototipo",
+	      finalProductText:"",
+	      finalProductImg1:"1) urlProducto imagen 1",
+	      finalProductImg2:"2)urlProducto Imagen 2",
+	      finalProductImg3:"3 urlProduct Imagen 3"}
+
+	    ]
 	    
 	  }
 	}
