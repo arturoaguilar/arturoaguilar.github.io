@@ -11,7 +11,7 @@ const Navigation = {
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collaipse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto mt-2 mt-lg-0 font-weight-bold">
             <li>
               <router-link class="nav-link" to="/">

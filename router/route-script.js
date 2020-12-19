@@ -3,7 +3,7 @@
 
 // 1. Define route components.
 // These can be imported from other files
-const Foo = { template: 'home'}
+//const Foo = { template: 'home'}
 const Bar = { template: '<div>bar</div>' }
 
 // 2. Define some routes
@@ -12,7 +12,7 @@ const Bar = { template: '<div>bar</div>' }
 // Vue.extend(), or just a component options object.
 // We'll talk about nested routes later.
 const routes = [
-  { path: '/foo', component: Foo },
+  { path: '/foo', component: Navigation },
   { path: '/bar', component: Bar }
 ]
 
