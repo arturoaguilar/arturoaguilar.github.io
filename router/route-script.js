@@ -3,7 +3,7 @@
 
 // 1. Define route components.
 // These can be imported from other files
-const Foo = { template: '#home' }
+const Foo = { template: '#/home' }
 const Bar = { template: '<div>bar</div>' }
 
 // 2. Define some routes
