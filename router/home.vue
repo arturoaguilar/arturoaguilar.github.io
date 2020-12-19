@@ -1,18 +1,16 @@
-// Home.vue
+<template>
+  <div class="checkbox-wrapper" @click="check">
+    <div :class="{ checkbox: true, checked: checked }"></div>
+    <div class="title">{{ title }}</div>
+  </div>
+</template>
+<script>
 export default {
-  computed: {
-    username() {
-      // We will see what `params` is shortly
-      return this.$route.params.username
-    },
+  data() {
+    return { checked: false, title: 'Check me' }
   },
   methods: {
-    goToDashboard() {
-      if (isAuthenticated) {
-        this.$router.push('/dashboard')
-      } else {
-        this.$router.push('/login')
-      }
-    },
-  },
-}
+    check() { this.checked = !this.checked; }
+  }
+};
+</script>
