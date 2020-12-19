@@ -3,7 +3,11 @@
 
 // 1. Define route components.
 // These can be imported from other files
+<<<<<<< HEAD
 const Foo = { template: home}
+=======
+const Foo = { template: /home.vue}
+>>>>>>> b1fd9c8075aff57780d13c661c678fc0b60b86f0
 const Bar = { template: '<div>bar</div>' }
 
 // 2. Define some routes
