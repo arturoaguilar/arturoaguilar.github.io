@@ -42,7 +42,7 @@ const Navigation = {
 	      }] }   ]
     }
   },
-  /*template: `
+  template: `
   <div>
      <div>{{mensaje }} --- {{ $route.params.name }}</div> 
    <div v-for="project in projects">
@@ -52,8 +52,7 @@ const Navigation = {
     </p>
       </div>
   </div>
-  `,*/
-  template: home.vue,
+  `
 };
 
 
