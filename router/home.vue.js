@@ -1,4 +1,4 @@
-const DetalleProyecto = {
+const Navigation = {
     data() {
     return {
      mensaje:"Taksumaqui sempucriaco",
@@ -42,7 +42,7 @@ const DetalleProyecto = {
 	      }] }   ]
     }
   },
- /* template: `
+  template: `
   <div>
      <div>{{mensaje }} --- {{ $route.params.name }}</div> 
    <div v-for="project in projects">
@@ -52,8 +52,7 @@ const DetalleProyecto = {
     </p>
       </div>
   </div>
-  `,*/
-  template: home
+  `,
 };
 
 
