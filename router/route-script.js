@@ -12,7 +12,7 @@ const Bar = { template: '<div>bar</div>' }
 // Vue.extend(), or just a component options object.
 // We'll talk about nested routes later.
 const routes = [
-  { path: '/foo/:name', component: Navigation },
+  { path: '/foo/:name', component: DetalleProyecto },
   { path: '/bar', component: Bar }
 ]
 
