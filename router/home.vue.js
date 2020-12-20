@@ -43,7 +43,7 @@ const Navigation = {
     }
   },
   template: `
-  <template>
+  <div>
      <div>{{mensaje }} --- {{ $route.params.name }}</div> 
    <div v-for="project in projects">
     {{ project.name }}
@@ -51,7 +51,7 @@ const Navigation = {
      -- {{ block.title }}
     </p>
       </div>
-  </template>
+  </div>
   `,
 };
 
