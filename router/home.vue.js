@@ -53,7 +53,7 @@ const DetalleProyecto = {
       </div>
   </div>
   `,*/
-  template: '../router/home.vue'
+  template: home
 };
 
 
