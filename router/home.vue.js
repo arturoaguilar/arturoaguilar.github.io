@@ -6,7 +6,7 @@ const Navigation = {
   },
   props: ["name"],
   template: `
-     <div>{{mensaje }} --- {{ name }}</div> 
+     <div>{{mensaje }} --- {{ $route.params.name }}</div> 
   `,
 };
 
