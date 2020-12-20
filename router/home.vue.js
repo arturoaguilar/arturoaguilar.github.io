@@ -6,7 +6,7 @@ const Navigation = {
   },
   props: ["name"],
   template: `
-     <div>{{mensaje }}</div> 
+     <div>{{mensaje }}  {{ name }}</div> 
   `,
 };
 
