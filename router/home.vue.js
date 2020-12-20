@@ -1,4 +1,4 @@
-const Navigation = {
+const DetalleProyecto = {
     data() {
     return {
      mensaje:"Taksumaqui sempucriaco",
@@ -42,7 +42,7 @@ const Navigation = {
 	      }] }   ]
     }
   },
-  template: `
+ /* template: `
   <div>
      <div>{{mensaje }} --- {{ $route.params.name }}</div> 
    <div v-for="project in projects">
@@ -52,7 +52,8 @@ const Navigation = {
     </p>
       </div>
   </div>
-  `,
+  `,*/
+  template: '../router/home.vue'
 };
 
 
