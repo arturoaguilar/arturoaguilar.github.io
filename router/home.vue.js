@@ -53,7 +53,7 @@ const Navigation = {
       </div>
   </div>
   `,*/
-  template: home,
+  template: home.vue,
 };
 
 
