@@ -4,6 +4,7 @@ const Navigation = {
      mensaje:"Taksumaqui sempucriaco"
     }
   },
+  props: ["name"],
   template: `
      <div>{{mensaje }}</div> 
   `,
