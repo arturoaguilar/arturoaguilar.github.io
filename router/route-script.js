@@ -13,7 +13,7 @@ const Bar = { template: '<div>bar</div>' }
 // We'll talk about nested routes later.
 const routes = [
   { path: '/proyecto/:name', component: Navigation },
-  { path:'/', component: Hero}
+  { path:'/', component: Hero},
   { path: '/bar', component: Bar }
 ]
 
