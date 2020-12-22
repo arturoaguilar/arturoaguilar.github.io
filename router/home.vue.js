@@ -55,13 +55,12 @@ const Hero = {
   },
   template: `
   <div>
-     <div>{{mensaje }} --- {{ $route.params.name }}</div> 
-   <div v-for="project in projects">
-    {{ project.name }}
-    <p v-for="block in project.infoBlocks">
-     -- {{ block.title }}
-    </p>
-      </div>
+          Hola, soy {{ portfolio.name }}, y {{ portfolio.message }} 
+      <ul> 
+      <li v-for="profession in portfolio.profession">
+    {{ profession.name }}
+     </li>
+      </ul>
   </div>
   `
 };
