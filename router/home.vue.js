@@ -2,7 +2,7 @@ const Hero = {
     data() {
     return {
      mensaje:"Taksumaqui sempucriaco",
-     portfolo:{
+     portfolio:{
 	    name: "Arturo Aguilar",
 	    profession:[
 	    {name:"User Experience ",link:"url UX",state:1,icono:"url imagen ícono A "},
