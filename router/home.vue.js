@@ -38,7 +38,12 @@ const Hero = {
 
 <div>
 <div class="projects__block" v-for="project in projects">
+
+    <router-link to="/project/123456">
+
 <img class="projects__block__img" v-bind:src="project.portImg" />
+    </router-link>
+
 </div>
 </div>
 
