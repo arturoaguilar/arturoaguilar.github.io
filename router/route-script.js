@@ -4,7 +4,6 @@
 // 1. Define route components.
 // These can be imported from other files
 //const Foo = { template: 'home'}
-const Bar = { template: '<div>bar</div>' }
 
 // 2. Define some routes
 // Each route should map to a component. The "component" can
@@ -13,8 +12,7 @@ const Bar = { template: '<div>bar</div>' }
 // We'll talk about nested routes later.
 const routes = [
   { path: '/project/:name', component:Projects  },
-  { path:'/', component: Hero},
-  { path: '/bar', component: Bar }
+  { path:'/', component: Hero}
 ]
 
 // 3. Create the router instance and pass the `routes` option
