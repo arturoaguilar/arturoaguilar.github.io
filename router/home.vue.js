@@ -37,7 +37,7 @@ const Hero = {
       </div>
 
 <div>
-<div class="projects__block" v-for="project in portfolio.projects">
+<div class="projects__block" v-for="project in projects">
 <img class="projects__block__img" v-bind:src="project.portImg" />
 </div>
 </div>
