@@ -15,15 +15,15 @@ const Hero = {
 	    }, 
      projects:
 	    [
-	      {name:"Sistema de entregas de departamepentos",
+	      {id:"001",name:"Sistema de entregas de departamepentos",
 		client:"Viva ",desc:"",functs:"",portImg:"img/dummyProPort.png"},
-              {name:"Sistema de entregas online",
+              {id:"002",name:"Sistema de entregas online",
 	      client:"Viva ",desc:"",functs:"",portImg:"img/dummyProPort.png"},
-	      {name:"Plataforma de gestión de entregas",
+	      {id:"003",name:"Plataforma de gestión de entregas",
 	      cliente:"Viva",desc:"",functs:"",portImg:"img/dummyProPort.png"}, 
-	      {name:"Pawadin",cliente:"Pawadin",desc:"",functs:"",portImg:"img/dummyProPort.png"},
-	      {name: "Escuela Pawadin", cliente: "Pawadin",desc:"",functs:"",portImg:"img/dummyProPort.png"},
-	      {name: "Libro Insomnes y Patriotas", cliente: "Arturo Aguilar",desc:"",functs:"",portImg:"img/dummyProPort.png"}
+	      {id:"004",name:"Pawadin",cliente:"Pawadin",desc:"",functs:"",portImg:"img/dummyProPort.png"},
+	      {id:"005",name: "Escuela Pawadin", cliente: "Pawadin",desc:"",functs:"",portImg:"img/dummyProPort.png"},
+	      {id:"006",name: "Libro Insomnes y Patriotas", cliente: "Arturo Aguilar",desc:"",functs:"",portImg:"img/dummyProPort.png"}
 	    ]
     }
   },
