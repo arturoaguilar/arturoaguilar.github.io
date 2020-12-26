@@ -11,8 +11,8 @@
 // Vue.extend(), or just a component options object.
 // We'll talk about nested routes later.
 const routes = [
-  { path: '/project/:name', component:Projects  },
-  { path:'/', component: Hero}
+  { path: '/project/:name',name:'project', component:Projects  },
+  { path:'/',name:'hero', component: Hero}
 ]
 
 // 3. Create the router instance and pass the `routes` option
