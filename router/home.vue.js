@@ -40,7 +40,7 @@ const Hero = {
 <div class="projects__block" v-for="project in projects">
 
 
-<router-link :to="{ name: 'project', params: { id: project.id }}">
+<router-link :to="{ path: 'project', params: { id: project.id }}">
 <img class="projects__block__img" v-bind:src="project.portImg" />
 </router-link>
 
