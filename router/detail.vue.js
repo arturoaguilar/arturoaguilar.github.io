@@ -1,6 +1,7 @@
 const Projects = {
     data() {
     return {
+     selection:[];
      mensaje:"Taksumaqui sempucriaco",
      projects:
 	    [
@@ -48,13 +49,31 @@ const Projects = {
        }
      },
   created() {
-     const selection = this.projects.find(element => element.id = this.$route.params.name);
+    this.selection = this.projects.find(element => element.id = this.$route.params.name);
     // `this` points to the vm instance
-    console.log('SE CREA LA APLICACION');
+    console.log('Selection con referencia this');
     console.log(selection);// => "count is: 1"
   },
   template: `
   <div>
+     <div>{{mensaje }} --- {{ $route.params.name }}</div> 
+	
+	      {{ selection.name }}
+	      <div @click="clickFunct" v-for="block in selection.infoBlocks">
+		    {{ block.title }}
+		    {{ block.desc}}
+		    <div v-for="imgBlock in block.images">
+	
+<img class="projects__detail__block__img" v-bind:src="imgBlock.imgUrl" />
+		    </div> 
+	      </div>
+    </div>
+  `
+};
+
+
+/*
+ <div>
      <div>{{mensaje }} --- {{ $route.params.name }}</div> 
 	  <div v-for="project in projects">
 	      {{ project.name }}
@@ -68,9 +87,5 @@ const Projects = {
 	      </div>
 	  </div>
     </div>
-  `
-};
-
-
-
+ */
 
