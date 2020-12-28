@@ -2,6 +2,11 @@ const Projects = {
     data() {
     return {
      mensaje:"Taksumaqui sempucriaco",
+     methods:{
+       clickTest:function(event){
+	  console.log('One of my on');
+       }
+     },
      projects:
 	    [
 	      {name:"Sistema de entregas de departamepentos",
@@ -47,7 +52,7 @@ const Projects = {
      <div>{{mensaje }} --- {{ $route.params.name }}</div> 
 	  <div v-for="project in projects">
 	      {{ project.name }}
-	      <div @click="clickTest()" v-for="block in project.infoBlocks">
+	      <div @click="clickTest" v-for="block in project.infoBlocks">
 		    {{ block.title }}
 		    {{ block.desc}}
 		    <div v-for="imgBlock in block.images">
@@ -60,11 +65,6 @@ const Projects = {
   `
 };
 
-
-
-function clickTest(){
-console.log('One of my on');
-}
 
 
 
