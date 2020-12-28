@@ -47,6 +47,11 @@ const Projects = {
 	  console.log('One of my on');
        }
      },
+  created() {
+    // `this` points to the vm instance
+    console.log('SE CREA LA APLICACION');
+    console.log(this.mensaje)// => "count is: 1"
+  },
   template: `
   <div>
      <div>{{mensaje }} --- {{ $route.params.name }}</div> 
