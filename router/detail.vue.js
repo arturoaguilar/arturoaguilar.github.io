@@ -7,19 +7,19 @@ const Projects = {
 	      {name:"Sistema de entregas de departamepentos",
 	      client:"Viva ",
 	      infoBlocks:[{
-		title:"Problema",
-		desc:"iSe vio una necesidad",
-		image:"url block 1 image",
+		title:"Escenario",
+		desc:"Durante varias veces al año, La constructora VIVA realiza eventos de entregas de departamentos a para ersonas de bajos recursos. Este evento se realiza con los voluntarios de la misma empresa, que se apuntan para ocupar lo distintos puestos que requiere la producción del evento como fotógrafo, recepción, animación, etc...",
+		images:[{imgId:"dIm001",imgUrl:"img/dummyProPort.png"},{imgId:"dIm002",imgUrl:"img/dummyProPort.png"},{imgId:"dIm003",imgUrl:"img/dummyProPort.png"}],
 		order:1
 	      },{
 		title:"Problema",
-		desc:"Se vio una necesidad",
-		image:"url block 1 image",
+		desc:"La invitación en la comunicación se hacen via mail, con un link que dirige a un formulario, donde el colaborador puede ingresar sus datos. La empresa está tratando de implementar una estrategia de premios, para dar una mayor motivación para participar.",
+		images:[{imgId:"dIm001",imgUrl:"img/dummyProPort.png"},{imgId:"dIm002",imgUrl:"img/dummyProPort.png"},{imgId:"dIm003",imgUrl:"img/dummyProPort.png"}],
 		order:1
 	      },{
-		title:"Problema",
-		desc:"Se vio una necesidad",
-		image:"url block 1 image",
+		title:"Solución",
+		desc:"Se entrevistó al equipo involucrado en la dirección del proyecto, como también a los colaboradores que serian los voluntarios",
+		images:[{imgId:"dIm001",imgUrl:"img/dummyProPort.png"},{imgId:"dIm002",imgUrl:"img/dummyProPort.png"},{imgId:"dIm003",imgUrl:"img/dummyProPort.png"}],
 		order:1
 	      }]},
               	 {name:"Sistema de entregas online",
@@ -45,13 +45,17 @@ const Projects = {
   template: `
   <div>
      <div>{{mensaje }} --- {{ $route.params.name }}</div> 
-   <div v-for="project in projects">
-    {{ project.name }}
-    <p v-for="block in project.infoBlocks">
-     -- {{ block.title }}
-    </p>
-      </div>
-  </div>
+	  <div v-for="project in projects">
+	      {{ project.name }}
+	      <div v-for="block in project.infoBlocks">
+		    {{ block.title }}
+		    {{ block.desc}}
+		    <div v-for="imgBlock in block.images">
+			{{imgBlock.imgUrl}}
+		    </div> 
+	      </div>
+	  </div>
+    </div>
   `
 };
 
