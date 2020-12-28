@@ -1,9 +1,4 @@
 const Projects = {
-     methods:{
-       clickTest(){
-	  console.log('One of my on');
-       }
-     },
     data() {
     return {
      mensaje:"Taksumaqui sempucriaco",
@@ -47,12 +42,17 @@ const Projects = {
 	      }] }   ]
     }
   },
+     methods:{
+       clickFunct(){
+	  console.log('One of my on');
+       }
+     },
   template: `
   <div>
      <div>{{mensaje }} --- {{ $route.params.name }}</div> 
 	  <div v-for="project in projects">
 	      {{ project.name }}
-	      <div @click="clickTest" v-for="block in project.infoBlocks">
+	      <div @click="clickFunct" v-for="block in project.infoBlocks">
 		    {{ block.title }}
 		    {{ block.desc}}
 		    <div v-for="imgBlock in block.images">
