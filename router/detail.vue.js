@@ -1,12 +1,12 @@
 const Projects = {
-    data() {
-    return {
-     mensaje:"Taksumaqui sempucriaco",
      methods:{
        clickTest(){
 	  console.log('One of my on');
        }
      },
+    data() {
+    return {
+     mensaje:"Taksumaqui sempucriaco",
      projects:
 	    [
 	      {name:"Sistema de entregas de departamepentos",
