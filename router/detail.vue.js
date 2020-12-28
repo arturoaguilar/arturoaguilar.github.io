@@ -1,7 +1,7 @@
 const Projects = {
     data() {
     return {
-     selection:[];
+     selection:[],
      mensaje:"Taksumaqui sempucriaco",
      projects:
 	    [
