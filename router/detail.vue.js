@@ -4,7 +4,7 @@ const Projects = {
      mensaje:"Taksumaqui sempucriaco",
      projects:
 	    [
-	      {name:"Sistema de entregas de departamepentos",
+	      {id:"001", name:"Sistema de entregas de departamepentos",
 	      client:"Viva ",
 	      infoBlocks:[{
 		title:"Escenario",
@@ -22,7 +22,7 @@ const Projects = {
 		images:[{imgId:"dIm001",imgUrl:"img/dummyProPort.png"},{imgId:"dIm002",imgUrl:"img/dummyProPort.png"},{imgId:"dIm003",imgUrl:"img/dummyProPort.png"}],
 		order:1
 	      }]},
-              	 {name:"Sistema de entregas online",
+              	 {id:"002", name:"Sistema de entregas online",
 	      client:"Viva ",
 	      infoBlocks:[{
 		title:"Problema",
@@ -48,9 +48,10 @@ const Projects = {
        }
      },
   created() {
+     const selection = projects.find(element => element.id = $route.params.name);
     // `this` points to the vm instance
     console.log('SE CREA LA APLICACION');
-    console.log(this.mensaje)// => "count is: 1"
+    console.log(selection);// => "count is: 1"
   },
   template: `
   <div>
