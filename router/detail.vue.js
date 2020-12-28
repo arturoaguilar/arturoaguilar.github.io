@@ -52,7 +52,7 @@ const Projects = {
     this.selection = this.projects.find(element => element.id = this.$route.params.name);
     // `this` points to the vm instance
     console.log('Selection con referencia this');
-    console.log(selection);// => "count is: 1"
+    console.log(this.selection);// => "count is: 1"
   },
   template: `
   <div>
