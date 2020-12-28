@@ -3,7 +3,7 @@ const Projects = {
     return {
      mensaje:"Taksumaqui sempucriaco",
      methods:{
-       clickTest:function(event){
+       clickTest(){
 	  console.log('One of my on');
        }
      },
