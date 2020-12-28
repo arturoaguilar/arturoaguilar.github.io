@@ -56,7 +56,7 @@ const Projects = {
   },
   template: `
   <div>
-     <div>{{mensaje }} --- {{ $route.params.name }}</div> 
+     <div>{{selection.name }} --{{selection.id}} -- {{ $route.params.name }}</div> 
 	
 	      {{ selection.name }}
 	      <div @click="clickFunct" v-for="block in selection.infoBlocks">
