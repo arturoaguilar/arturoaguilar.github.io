@@ -47,16 +47,24 @@ const Projects = {
      <div>{{mensaje }} --- {{ $route.params.name }}</div> 
 	  <div v-for="project in projects">
 	      {{ project.name }}
-	      <div v-for="block in project.infoBlocks">
+	      <div @click="clickTest()" v-for="block in project.infoBlocks">
 		    {{ block.title }}
 		    {{ block.desc}}
 		    <div v-for="imgBlock in block.images">
-			{{imgBlock.imgUrl}}
+	
+<img class="projects__detail__block__img" v-bind:src="imgBlock.imgUrl" />
 		    </div> 
 	      </div>
 	  </div>
     </div>
   `
 };
+
+
+
+function clickTest(){
+console.log('One of my on');
+}
+
 
 
