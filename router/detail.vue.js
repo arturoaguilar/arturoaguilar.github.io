@@ -48,7 +48,7 @@ const Projects = {
        }
      },
   created() {
-     const selection = this.projects.find(element => element.id = "001");
+     const selection = this.projects.find(element => element.id = this.$route.params.name);
     // `this` points to the vm instance
     console.log('SE CREA LA APLICACION');
     console.log(selection);// => "count is: 1"
