@@ -1,4 +1,14 @@
+
+
+.projects {
+
+}
+
 .projects__block__img {
   width:200px;
   cursor: pointer;
+}
+
+.projects__block__title {
+
 }
