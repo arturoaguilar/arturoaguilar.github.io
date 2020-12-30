@@ -28,6 +28,7 @@ const Hero = {
   },
   template: `
   <div>
+<a href="#" class="hvr-grow">Add to Basket</a>
           Hola, soy {{ portfolio.name }}, y {{ portfolio.message }} 
       <div> 
       <span v-for="profession in portfolio.profession">

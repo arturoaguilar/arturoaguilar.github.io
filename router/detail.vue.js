@@ -126,6 +126,7 @@ const Projects = {
   },
   template: `
   <div>
+<a href="#" class="hvr-grow">Add to Basket</a>
      <div>{{selection.name }} --{{selection.id}} -- {{ $route.params.name }}</div> 
 	
 	      {{ selection.name }}
