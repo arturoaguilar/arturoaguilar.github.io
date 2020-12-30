@@ -141,6 +141,24 @@ const Projects = {
 
 </div>
 	      </div>
+
+
+<a rel="gallery-1" href="img/dummyProPort.png" class="swipebox">
+	<img src="img/dummyProPort.png" alt="image">
+</a>
+<a rel="gallery-1" href="img/dummyProPort.png" class="swipebox">
+	<img src="img/dummyProPort.png" alt="image">
+</a>
+<!-- Gallery 2 -->
+<a rel="gallery-2" href="img/dummyProPort.png" class="swipebox">
+	<img src="img/dummyProPort.png" alt="image">
+</a>
+<a rel="gallery-2" href="img/dummyProPort.png" class="swipebox">
+	<img src="img/dummyProPort.png" alt="image">
+</a>
+
+
+
     </div>
   `
 };
