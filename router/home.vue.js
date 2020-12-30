@@ -37,9 +37,9 @@ const Hero = {
       </div>
 
 <div class="projects row">
-<div class="projects__block col-sm-12 col-md-4" v-for="project in projects">
+<div class="projects__block col-xs-12 col-md-4" v-for="project in projects">
 
-<router-link :to="'project/'+project.id">
+<router-link class="projects__block__link" :to="'project/'+project.id">
 <img class="projects__block__img hvr-grow" v-bind:src="project.portImg" />
 <span class="projects__block__title">{{ project.name}}</span>
 </router-link>

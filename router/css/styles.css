@@ -4,8 +4,12 @@
 
 }
 
+.projects {
+text-align: center;
+}
+
 .projects__block__img {
-  width:200px;
+  width:300px;
   cursor: pointer;
 }
 
@@ -15,5 +19,9 @@
 
 .projects__block__img{
  display:block;
+}
+
+.projects__block__link{
+display:block;
 }
 
