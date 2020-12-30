@@ -26,7 +26,7 @@ const Hero = {
 	    ]
     }
   },
-  template: require("home.vue"); };
+  template: require("home.vue") };
 
 /*
 
