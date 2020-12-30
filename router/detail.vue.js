@@ -134,10 +134,10 @@ const Projects = {
 		    {{ block.title }}
 		    {{ block.desc}}
 <div v-if="block.blockType==2">
-		    <div v-for="imgBlock in block.images">
+		    <a rel="gallery-1" href="img/dummyProPort.png" v-for="imgBlock in block.images" class="swipebox">
 	
 <img class="projects__detail__block__img" v-bind:src="imgBlock.imgUrl" />
-		    </div>
+		    </a>
 
 </div>
 	      </div>

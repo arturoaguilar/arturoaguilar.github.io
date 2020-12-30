@@ -26,7 +26,11 @@ const Hero = {
 	    ]
     }
   },
-  template: `
+  template:'home.vue' };
+
+/*
+
+`
   <div>
           Hola, soy {{ portfolio.name }}, y {{ portfolio.message }} 
       <div> 
@@ -48,6 +52,4 @@ const Hero = {
 
   </div>
   `
-};
-
-
+ */
