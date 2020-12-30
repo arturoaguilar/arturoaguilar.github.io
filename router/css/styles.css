@@ -10,5 +10,10 @@
 }
 
 .projects__block__title {
-
+ display:block;
 }
+
+.projects__block__img{
+ display:block;
+}
+

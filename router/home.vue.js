@@ -28,7 +28,7 @@ const Hero = {
   },
   template: `
   <div>
-<a href="#" class="hvr-grow">Add to Basket</a>
+    <router-link to="/">Inicio</router-link>
           Hola, soy {{ portfolio.name }}, y {{ portfolio.message }} 
       <div> 
       <span v-for="profession in portfolio.profession">
@@ -36,8 +36,8 @@ const Hero = {
      </span>
       </div>
 
-<div class="projects">
-<div class="projects__block" v-for="project in projects">
+<div class="projects row">
+<div class="projects__block col-sm-12 col-md-4" v-for="project in projects">
 
 <router-link :to="'project/'+project.id">
 <img class="projects__block__img hvr-grow" v-bind:src="project.portImg" />

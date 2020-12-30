@@ -3,6 +3,9 @@
 <head>
 <link rel="stylesheet" type="text/css" href="css/styles.css">
 <link rel="stylesheet" type="text/css" href="css/hover.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
+
 <script src="home.vue.js"></script>
 <script src="detail.vue.js"></script>
 <script src="https://unpkg.com/vue/dist/vue.js"></script>
@@ -10,15 +13,7 @@
 </head>
 <body>
 <div id="app">
-  <p>
-    <!-- use router-link component for navigation. -->
-    <!-- specify the link by passing the `to` prop. -->
-    <!-- <router-link> will be rendered as an `<a>` tag by default -->
-    <router-link to="/project/ifasdf">Go to Foo</router-link>
-    <router-link to="/bar">Go to Bar</router-link>
-    <router-link to="/">Home</router-link>
- 
-  </p>
+
     <!-- route outlet -->
   <!-- component matched by the route will render here -->
   <router-view></router-view>
