@@ -17,13 +17,12 @@ const Hero = {
 	    [
 	      {id:"001",name:"Sistema de entregas de departamepentos",
 		client:"Viva ",desc:"",functs:"",portImg:"img/dummyProPort.png"},
-              {id:"002",name:"Sistema de entregas online",
+              {id:"002",name:"Sistema de administración de entregas",
 	      client:"Viva ",desc:"",functs:"",portImg:"img/dummyProPort.png"},
-	      {id:"003",name:"Plataforma de gestión de entregas",
+	      {id:"003",name:"Sistema de entregas online",
 	      cliente:"Viva",desc:"",functs:"",portImg:"img/dummyProPort.png"}, 
 	      {id:"004",name:"Pawadin",cliente:"Pawadin",desc:"",functs:"",portImg:"img/dummyProPort.png"},
-	      {id:"005",name: "Escuela Pawadin", cliente: "Pawadin",desc:"",functs:"",portImg:"img/dummyProPort.png"},
-	      {id:"006",name: "Libro Insomnes y Patriotas", cliente: "Arturo Aguilar",desc:"",functs:"",portImg:"img/dummyProPort.png"}
+	      {id:"006",name: "Role master", cliente: "Arturo Aguilar",desc:"",functs:"",portImg:"img/dummyProPort.png"}
 	    ]
     }
   },
@@ -42,6 +41,7 @@ const Hero = {
 
 <router-link :to="'project/'+project.id">
 <img class="projects__block__img" v-bind:src="project.portImg" />
+<span>{{ project.name}}</span>
 </router-link>
 
 
