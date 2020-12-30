@@ -1,4 +1,5 @@
 const Hero = {
+  template: require('home-template.html'),
     data() {
     return {
      mensaje:"Taksumaqui sempucriaco",
@@ -25,12 +26,12 @@ const Hero = {
 	      {id:"006",name: "Role master", cliente: "Arturo Aguilar",desc:"",functs:"",portImg:"img/dummyProPort.png"}
 	    ]
     }
-  },
-  template: require("home.vue") };
+  
+};
 
 /*
-
-`
+},
+  template: `
   <div>
           Hola, soy {{ portfolio.name }}, y {{ portfolio.message }} 
       <div> 
