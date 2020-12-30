@@ -1,10 +1,9 @@
 const Hero = {
-  template: require('home-template.html'),
     data() {
     return {
      mensaje:"Taksumaqui sempucriaco",
      portfolio:{
-	    name: "Arturo Aguilar t",
+	    name: "Arturo Aguilar",
 	    profession:[
 	    {name:"User Experience ",link:"url UX",state:1,icono:"url imagen ícono A "},
 	    {name:"Diseño de producto", link:" Link Diseño de producto", state:1,icono:"url imagen B "},
@@ -26,11 +25,7 @@ const Hero = {
 	      {id:"006",name: "Role master", cliente: "Arturo Aguilar",desc:"",functs:"",portImg:"img/dummyProPort.png"}
 	    ]
     }
-  
-};
-
-/*
-},
+  },
   template: `
   <div>
           Hola, soy {{ portfolio.name }}, y {{ portfolio.message }} 
@@ -53,4 +48,8 @@ const Hero = {
 
   </div>
   `
+};
+
+/*
+
  */
