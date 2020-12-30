@@ -28,7 +28,6 @@ const Hero = {
   },
   template: `
   <div>
-    <router-link to="/">Inicio</router-link>
           Hola, soy {{ portfolio.name }}, y {{ portfolio.message }} 
       <div> 
       <span v-for="profession in portfolio.profession">
