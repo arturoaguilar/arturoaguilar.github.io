@@ -3,7 +3,7 @@ const Hero = {
     return {
      mensaje:"Taksumaqui sempucriaco",
      portfolio:{
-	    name: "Arturo Aguilar",
+	    name: "Arturo Aguilar t",
 	    profession:[
 	    {name:"User Experience ",link:"url UX",state:1,icono:"url imagen ícono A "},
 	    {name:"Diseño de producto", link:" Link Diseño de producto", state:1,icono:"url imagen B "},
@@ -26,7 +26,7 @@ const Hero = {
 	    ]
     }
   },
-  template:'home.vue' };
+  template: require("home.vue"); };
 
 /*
 
