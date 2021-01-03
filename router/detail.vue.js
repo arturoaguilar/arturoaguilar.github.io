@@ -133,29 +133,13 @@ const Projects = {
 	      <div @click="clickFunct" v-for="block in selection.infoBlocks">
 		    {{ block.title }}
 		    {{ block.desc}}
-<div v-if="block.blockType==2">
-		    <a rel="gallery-1" href="img/dummyProPort.png" v-for="imgBlock in block.images" class="swipebox">
-	
-<img class="projects__detail__block__img" v-bind:src="imgBlock.imgUrl" />
-		    </a>
+		    <div v-if="block.blockType==2">
+			 <a rel="gallery-1" href="img/dummyProPort.png" v-for="imgBlock in block.images" class="swipebox">
+			    <img class="projects__detail__block__img" v-bind:src="imgBlock.imgUrl" />
+			  </a>
 
-</div>
+		    </div>
 	      </div>
-
-
-<a rel="gallery-1" href="img/dummyProPort.png" class="swipebox">
-	<img src="img/dummyProPort.png" alt="image">
-</a>
-<a rel="gallery-1" href="img/dummyProPort.png" class="swipebox">
-	<img src="img/dummyProPort.png" alt="image">
-</a>
-<!-- Gallery 2 -->
-<a rel="gallery-2" href="img/dummyProPort.png" class="swipebox">
-	<img src="img/dummyProPort.png" alt="image">
-</a>
-<a rel="gallery-2" href="img/dummyProPort.png" class="swipebox">
-	<img src="img/dummyProPort.png" alt="image">
-</a>
 
 
 

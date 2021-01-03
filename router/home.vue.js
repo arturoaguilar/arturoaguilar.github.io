@@ -29,7 +29,7 @@ const Hero = {
   template: `
   <div>
           Hola, soy {{ portfolio.name }}, y {{ portfolio.message }} 
-      <div> 
+  <div> 
       <span v-for="profession in portfolio.profession">
     {{ profession.name }}
      </span>
