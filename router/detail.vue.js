@@ -127,7 +127,7 @@ const Projects = {
   template: `
   <div>
     <router-link to="/">Inicio</router-link>	
-	     <h2 class="project__title"> {{ selection.name }}<h2>
+	     <h2 class="project__title"> {{ selection.name }}</h2>
 	      <div @click="clickFunct" v-for="block in selection.infoBlocks">
 		    <h3 class="project__block__title">{{ block.title }} </h3>
 		   <p> {{ block.desc}} </p>
