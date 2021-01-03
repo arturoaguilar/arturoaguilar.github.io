@@ -1,8 +1,15 @@
 
-
-.projects {
-
+.project__title{
+opacity:0.8;
 }
+
+.project_block__title{
+opacity: 0.8;
+}
+
+.project__block__img{
+}
+
 
 .projects {
 text-align: center;

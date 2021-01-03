@@ -79,7 +79,7 @@ const Projects = {
 	      },{
 		title:"Problema",
 		blockType:1,
-		desc:"Si bien las personas tienen gran cariño para sus mascotas, no siempre disponen del tiempo para darle los cuidados que necesitan, ya sea por compromisos del día a día como el trabajo o compromisos eventuales como viajes.",
+		desc:"Si bien las personas tienen gran cariño para sus mascotas, no siempre disponen del tiempo parr darle los cuidados que necesitan, ya sea por compromisos del día a día como el trabajo o compromisos eventuales como viajes.",
 		images:[{imgId:"dIm001",imgUrl:"img/dummyProPort.png"},{imgId:"dIm002",imgUrl:"img/dummyProPort.png"},{imgId:"dIm003",imgUrl:"img/dummyProPort.png"}],
 		order:1
 	      },{
@@ -126,42 +126,22 @@ const Projects = {
   },
   template: `
   <div>
-    <router-link to="/">Inicio</router-link>
-     <div>{{selection.name }} --{{selection.id}} -- {{ $route.params.name }}</div> 
-	
-	      {{ selection.name }}
+    <router-link to="/">Inicio</router-link>	
+	     <h2 class="project__title"> {{ selection.name }}<h2>
 	      <div @click="clickFunct" v-for="block in selection.infoBlocks">
-		    {{ block.title }}
-		    {{ block.desc}}
+		    <h3 class="project__block__title">{{ block.title }} </h3>
+		   <p> {{ block.desc}} </p>
 		    <div v-if="block.blockType==2">
 			 <a rel="gallery-1" href="img/dummyProPort.png" v-for="imgBlock in block.images" class="swipebox">
-			    <img class="projects__detail__block__img" v-bind:src="imgBlock.imgUrl" />
+			    <img class="project__block__img" v-bind:src="imgBlock.imgUrl" />
 			  </a>
 
 		    </div>
 	      </div>
-
-
-
     </div>
   `
 };
 
 
-/*
- <div>
-     <div>{{mensaje }} --- {{ $route.params.name }}</div> 
-	  <div v-for="project in projects">
-	      {{ project.name }}
-	      <div @click="clickFunct" v-for="block in project.infoBlocks">
-		    {{ block.title }}
-		    {{ block.desc}}
-		    <div v-for="imgBlock in block.images">
-	
-<img class="projects__detail__block__img" v-bind:src="imgBlock.imgUrl" />
-		    </div> 
-	      </div>
-	  </div>
-    </div>
- */
+
 

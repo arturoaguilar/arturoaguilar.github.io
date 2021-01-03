@@ -10,7 +10,7 @@ const Hero = {
 	    {name:"User Research", link: "Link User Research",state:1,icono:"url imagen C"},
 	      {name:"Frontend Developer", link: "Link Fron end",state:1,icono:"url imagen D"},{name:"Escritor",link:"Link escritor",state:1,icono:"url imagen escritor"}
 	    ],  
-	      message: "Bienvenido a mi portafolio"
+	      message: "Me encanta el desarrollo de tecnologías, la innovación, la investigación de usuarios y escribir"
 	  
 	    }, 
      projects:
@@ -28,9 +28,9 @@ const Hero = {
   },
   template: `
   <div>
-          Hola, soy {{ portfolio.name }}, y {{ portfolio.message }} 
+          Hola, soy  {{ portfolio.name }}, y {{ portfolio.message }} 
   <div> 
-      <span v-for="profession in portfolio.profession">
+      <span class="profession__item" v-for="profession in portfolio.profession">
     {{ profession.name }}
      </span>
       </div>
