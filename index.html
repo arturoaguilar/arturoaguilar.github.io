@@ -1,88 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>CDN en Vue 3</title>
-    <script src="https://unpkg.com/vue@next"></script>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link rel="stylesheet" type="text/css" href="css/hover.css">
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
+<!-- Para el swipebox-->
+<link rel="stylesheet" href="css/swipebox.css">
+<!--<script src="js/jquery-2.0.3.js"></script>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="js/jquery.swipebox.js"></script>
+<!-- Fin Swipebox -->
+<script src="home.vue.js"></script>
+<script src="detail.vue.js"></script>
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
 </head>
 <body>
-    <div id="app">
-      Hola, soy {{ portfolio.name }}, y {{ portfolio.message }} 
-      <ul> 
-      <li v-for="profession in portfolio.profession">
-    {{ profession.name }}
-     </li>
-      </ul>
-     
-Projectos
-      
-      <div v-for="project in projects">
-    {{ project.name }}
-    <p v-for="block in project.infoBlocks">
-     -- {{ block.title }}
-    </p>
-      </div>
-      
-  
-    </div>
+<div id="app">
 
-    <script>
-//Aloenz31!
-      const PortafolioApp= {
-	data(){
-	  return{
-	    portfolio:{
-	    name: "Arturo Aguilar",
-	    profession:[
-	    {name:"User Experience ",link:"url UX",state:1,icono:"url imagen ícono A "},
-	    {name:"Diseño de producto", link:" Link Diseño de producto", state:1,icono:"url imagen B "},
-	    {name:"User Research", link: "Link User Research",state:1,icono:"url imagen C"},
-	      {name:"Frontend Developer", link: "Link Fron end",state:1,icono:"url imagen D"}
-	    ],  
-	      message: "Bienvenido a mi portafolio"
-	  
-	    },
-	    projects:
-	    [
-	      {name:"Sistema de entregas de departamepentos",
-	      client:"Viva ",
-	      infoBlocks:[{
-		title:"Problema",
-		desc:"iSe vio una necesidad",
-		image:"url block 1 image",
-		order:1
-	      },{
-		title:"Problema",
-		desc:"Se vio una necesidad",
-		image:"url block 1 image",
-		order:1
-	      },{
-		title:"Problema",
-		desc:"Se vio una necesidad",
-		image:"url block 1 image",
-		order:1
-	      }]},
-              	 {name:"Sistema de entregas online",
-	      client:"Viva ",
-	      infoBlocks:[{
-		title:"Problema",
-		desc:"Se vio una necesidad",
-		image:"url block 1 image",
-		order:1
-	      },{
-		title:"Problema",
-		desc:"Se vio una necesidad",
-		image:"url block 1 image",
-		order:1
-	      },{
-		title:"Problema",
-		desc:"Se vio una necesidad",
-		image:"url block 1 image",
-		order:1
-	      }] }   ]   }}}
+    <!-- route outlet -->
+  <!-- component matched by the route will render here -->
+  <router-view></router-view>
+</div>
 
-Vue.createApp(PortafolioApp).mount('#app')
-      //<p v-if="seen">Now you see me</p> 
-    </script>
+<script src="/router/route-script.js"></script>
+<script type="text/javascript">
+;( function( $ ) {
+
+	$( '.swipebox' ).swipebox();
+
+} )( jQuery );
+</script>
 </body>
 </html>
+
