@@ -27,6 +27,17 @@ const Hero = {
       {id:"011",name:"CSS",type:2,typeName:"Frontend Development",level:3},
       {id:"012",name:"Google Firestore",type:2,typeName:"Frontend Development",level:3}
     ],
+
+ tools:[
+      {id:"001",name:"Figma",type:1,typeName:"Product Design",level:3},
+      {id:"002",name:"Miro",type:1,typeName:"Product Design",level:3},
+      {id:"003",name:"Visual Studio Code",type:1,typeName:"Product Design",level:3},
+      {id:"004",name:"neo Vim",type:1,typeName:"Product Design",level:3},
+      {id:"005",name:"Google Drive",type:1,typeName:"Product Design",level:3},
+      {id:"006",name:"Keep",type:1,typeName:"Product Design",level:3},
+      {id:"007",name:"Photoshop",type:2,typeName:"Frontend Development",level:3},
+      {id:"008",name:"Premier Pro",type:2,typeName:"Frontend Development",level:3}
+    ],
      projects:
 	    [
 	      {id:"001",name:"Sistema de entregas de departamepentos",
@@ -63,6 +74,13 @@ const Hero = {
 <section class="abilities">
 <span class="ability__block col-xs-12 col-md-4" v-for="ability in abilities">
 {{ability.name }}
+</span>
+</section>
+
+
+<section class="tools">
+<span class="ability__block col-xs-12 col-md-4" v-for="tools in tools">
+{{tool.name }}
 </span>
 </section>
 
