@@ -84,6 +84,11 @@ const Hero = {
 </span>
 </section>
 
+
+<section class="contact">
+Contactame si deseas trabajar un proyecto conmigo 
+</section>
+
   </div>
   `
 };
