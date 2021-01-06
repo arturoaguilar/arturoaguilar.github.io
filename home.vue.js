@@ -79,7 +79,7 @@ const Hero = {
 
 
 <section class="tools">
-<span class="ability__block col-xs-12 col-md-4" v-for="tools in tools">
+<span class="ability__block col-xs-12 col-md-4" v-for="tool in tools">
 {{tool.name }}
 </span>
 </section>
