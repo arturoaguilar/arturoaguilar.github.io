@@ -1,4 +1,4 @@
-
+/*
 @font-face {
   font-family: 'AnonymousPro';
   src: url('fonts/fontAnonymousPro-Bold.ttf') format('Bold'),
@@ -6,6 +6,32 @@
        url('fonts/AnonymousPro-Italic.ttf') format('Italic'),
        url('fonts/AnonymousPro-Regular.ttf') format('Regular'),
 }
+*/
+
+
+@font-face {
+    font-family: "AnonymousPro";
+    src: url("fonts/AnonymousPro-Regular.ttf");
+}
+@font-face {
+    font-family: "AnonymousPro";
+    src: url("fonts/fontAnonymousPro-Bold.ttf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "AnonymousPro";
+    src: url("fonts/AnonymousPro-Italic.ttf");
+    font-style: italic;
+}
+@font-face {
+    font-family: "AnonymousPro";
+    src: url("fonts/AnonymousPro-BoldItalic.ttf");
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+
 
 body {
   font-family: 'AnonymousPro', sans-serif;
