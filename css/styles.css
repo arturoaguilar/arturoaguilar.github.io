@@ -1,4 +1,16 @@
 
+@font-face {
+  font-family: 'AnonymousPro';
+  src: url('AnonymousPro-Bold.ttf') format('Bold'),
+       url('AnonymousPro-BoldItalic.ttf') format('BoldItalic'),
+       url('AnonymousPro-Italic.ttf') format('Italic'),
+       url('AnonymousPro-Regular.ttf') format('Regular'),
+}
+
+body {
+  font-family: 'AnonymousPro', sans-serif;
+}
+
 .project__title{
 opacity:0.8;
 }
