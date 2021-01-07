@@ -1,10 +1,10 @@
 
 @font-face {
   font-family: 'AnonymousPro';
-  src: url('AnonymousPro-Bold.ttf') format('Bold'),
-       url('AnonymousPro-BoldItalic.ttf') format('BoldItalic'),
-       url('AnonymousPro-Italic.ttf') format('Italic'),
-       url('AnonymousPro-Regular.ttf') format('Regular'),
+  src: url('fonts/fontAnonymousPro-Bold.ttf') format('Bold'),
+       url('fonts/AnonymousPro-BoldItalic.ttf') format('BoldItalic'),
+       url('fonts/AnonymousPro-Italic.ttf') format('Italic'),
+       url('fonts/AnonymousPro-Regular.ttf') format('Regular'),
 }
 
 body {
