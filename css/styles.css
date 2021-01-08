@@ -86,6 +86,14 @@ display:block;
 .hero {
   width: 100vw;
   height: 100vh;
+   /* Flexbox stuff */
+  padding-left:7%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    
+    /* Text styles */
+    text-align: center;
 }
 
 .projects {
@@ -101,6 +109,7 @@ display:block;
 .tools {
   width: 100vw;
   height: 100vh;
+  
 }
 
 .contact {
@@ -109,4 +118,6 @@ display:block;
   width: 100vw;
   height: 100vh;
 }
+
+
 
