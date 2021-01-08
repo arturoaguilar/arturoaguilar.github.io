@@ -91,9 +91,11 @@ display:block;
     display: flex;
     justify-content: left;
     align-items: center;
-width:30%;    
  
    
+}
+.hero__inner{
+width:30%;    
 }
 
 .projects {
@@ -119,5 +121,7 @@ width:30%;
   height: 100vh;
 }
 
-
+.profession__item{
+ display:block;
+}
 
