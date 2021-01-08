@@ -53,13 +53,19 @@ const Hero = {
   },
   template: `
   <div>
- <section class="hero">
- Hola, soy  {{ portfolio.name }}, y {{ portfolio.message }} 
-  <div> 
+<section class="hero">
+<div class="hero__inner">
+Hola, soy <h3> {{ portfolio.name }}</h3>  
+
+<div> 
       <span class="profession__item" v-for="profession in portfolio.profession">
     {{ profession.name }}
      </span>
-      </div>
+  </div>
+
+<p>{{ portfolio.message }}</p> 
+</div>
+
 </section>
 
 <section class="projects row">
