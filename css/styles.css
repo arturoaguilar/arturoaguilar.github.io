@@ -91,9 +91,9 @@ display:block;
     display: flex;
     justify-content: left;
     align-items: center;
-    
-    /* Text styles */
-    text-align: center;
+width:30%;    
+ 
+   
 }
 
 .projects {
