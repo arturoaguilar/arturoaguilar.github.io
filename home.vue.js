@@ -78,9 +78,21 @@ Hola, soy <h3> {{ portfolio.name }}</h3>
 </section>
 
 <section class="abilities">
+
+<div class="row">
+<div class="col-md-6">
+
+</div>
+<div class="col-md-6">
 <span class="ability__block col-xs-12 col-md-4" v-for="ability in abilities">
 {{ability.name }}
 </span>
+</div>
+</div>
+
+
+
+
 </section>
 
 
