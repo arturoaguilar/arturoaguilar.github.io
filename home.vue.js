@@ -83,8 +83,8 @@ Hola, soy <h3> {{ portfolio.name }}</h3>
 </section>
 
 <section class="projects">
-<div class="section__title">
-Proyectos
+<div class="section__title--projects row ">
+<span class="col-xs-offset-8" >Proyectos </span>
 </div>
 <div class="row">
 <div class="projects__block col-xs-12 col-md-4" v-for="project in projects">
@@ -97,8 +97,8 @@ Proyectos
 </section>
 
 <section class="abilities">
-<div class="section__title">
-habilidades
+<div class="section__title--abilities row">
+<span  class="col-xs-offset-4" >habilidades </span>
 </div>
 <div class="row">
 <div class="col-md-6">
@@ -122,8 +122,8 @@ habilidades
 
 
 <section class="tools">
-<div class="section__title">
-habilidades
+<div class="section__title--tools row">
+<span class="col-xs-offset-8" > Herramientas </span>
 </div>
 <span class="ability__block col-xs-12 col-md-4" v-for="tool in tools">
 {{tool.name }}

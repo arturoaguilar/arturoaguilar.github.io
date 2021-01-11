@@ -146,3 +146,37 @@ display:block;
 }
 
 
+.section__title--projects{
+    border-radius: 10px;
+    color: white;
+    padding-bottom: 44px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: black;
+    padding-top: 10px;
+    opacity: 60%;
+    margin-bottom: 10px;
+}
+
+.section__title--abilities{
+    border-radius: 10px;
+    color: white;
+    padding-bottom: 44px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: black;
+    padding-top: 10px;
+    opacity: 60%;
+    margin-bottom: 10px;
+}
+.section__title--tools{
+    border-radius: 10px;
+    color: white;
+    padding-bottom: 44px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: black;
+    padding-top: 10px;
+    opacity: 60%;
+    margin-bottom: 10px;
+}    
