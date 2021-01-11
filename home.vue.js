@@ -51,6 +51,15 @@ const Hero = {
 	    ]
     }
   },
+  computed: {
+
+     abilitiesUx: function() {
+       return this.abilities.filter(function(a) {
+         return a.type==1
+     })
+   }
+   
+  },
   template: `
   <div>
 <section class="hero">
@@ -84,7 +93,7 @@ Hola, soy <h3> {{ portfolio.name }}</h3>
 
 </div>
 <div class="col-md-6">
-<span class="ability__block col-xs-12 col-md-4" v-for="ability in abilities">
+<span class="ability__block col-xs-12 col-md-4" v-for="ability in abilitiesUx">
 {{ability.name }}
 </span>
 </div>
