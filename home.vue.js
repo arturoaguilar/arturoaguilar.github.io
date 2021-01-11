@@ -82,18 +82,23 @@ Hola, soy <h3> {{ portfolio.name }}</h3>
 
 </section>
 
-<section class="projects row">
+<section class="projects">
+<div class="section__title">
+Proyectos
+</div>
+<div class="row">
 <div class="projects__block col-xs-12 col-md-4" v-for="project in projects">
 <router-link class="projects__block__link" :to="'project/'+project.id">
 <img class="projects__block__img hvr-grow" v-bind:src="project.portImg" />
 <span class="projects__block__title">{{ project.name}}</span>
 </router-link>
 </div>
+</div>
 </section>
 
 <section class="abilities">
 <div class="section__title">
-Proyectos
+habilidades
 </div>
 <div class="row">
 <div class="col-md-6">
@@ -117,12 +122,17 @@ Proyectos
 
 
 <section class="tools">
+<div class="section__title">
+habilidades
+</div>
 <span class="ability__block col-xs-12 col-md-4" v-for="tool in tools">
 {{tool.name }}
 </span>
 </section>
 
+<section class="media">
 
+</section>
 <section class="contact">
 Contactame si deseas trabajar un proyecto conmigo 
 </section>
