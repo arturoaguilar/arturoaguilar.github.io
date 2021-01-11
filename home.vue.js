@@ -60,7 +60,7 @@ const Hero = {
    },
      abilitiesDev: function() {
        return this.abilities.filter(function(a) {
-         return a.type==1
+         return a.type==2
      })
    }
    
