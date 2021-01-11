@@ -92,7 +92,9 @@ Hola, soy <h3> {{ portfolio.name }}</h3>
 </section>
 
 <section class="abilities">
-
+<div class="section__title">
+Proyectos
+</div>
 <div class="row">
 <div class="col-md-6">
 <h2>Frontend development</h2>
