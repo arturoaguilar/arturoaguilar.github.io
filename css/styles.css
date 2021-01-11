@@ -147,7 +147,6 @@ display:block;
 
 
 .section__title--projects{
-    border-radius: 10px;
     color: white;
     padding-bottom: 44px;
     padding-left: 100px;
@@ -159,7 +158,6 @@ display:block;
 }
 
 .section__title--abilities{
-    border-radius: 10px;
     color: white;
     padding-bottom: 44px;
     padding-left: 100px;
@@ -170,7 +168,6 @@ display:block;
     margin-bottom: 10px;
 }
 .section__title--tools{
-    border-radius: 10px;
     color: white;
     padding-bottom: 44px;
     padding-left: 100px;
