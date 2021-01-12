@@ -95,7 +95,7 @@ display:block;
 
 .hero {
   width: 100vw;
-  height: 90vh;
+  height: 95vh;
    /* Flexbox stuff */
   padding-left:7%;
     display: flex;
