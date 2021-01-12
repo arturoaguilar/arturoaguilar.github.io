@@ -111,7 +111,7 @@ Hola, soy <h3> {{ portfolio.name }}</h3>
 {{ability.name }}
 </span>
 </div>
-<div class="col-md-offset-5 col-md-3">
+<div class="col-md-offset-2 col-md-3">
 <h2>User Experience</h2>
 <span class="ability__block--ux col-xs-12 col-md-4" v-for="ability in abilitiesUx">
 {{ability.name }}
