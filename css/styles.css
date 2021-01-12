@@ -115,7 +115,12 @@ width:30%;
 
 .abilities {
   width: 100vw;
-  height: 100vh;
+  height: 60vh;
+}
+
+.abilities__inner{
+padding-top:50px;
+background-color:yellow;
 }
 
 .tools {
@@ -141,19 +146,23 @@ width:30%;
  display:block;
 }
 
-.ability__block{
+.ability__block--dev{
 display:block;
+
 }
 
+.ability__block--ux{
+display:block;
+}
 
 .section__title--projects{
     color: white;
     padding-bottom: 44px;
     padding-left: 100px;
     padding-right: 100px;
-    background-color: black;
+    background-color: #565656;
     padding-top: 10px;
-    opacity: 30%;
+    opacity: 100%;
     margin-bottom: 10px;
  font-size: 2rem;
 }
@@ -163,9 +172,9 @@ display:block;
     padding-bottom: 44px;
     padding-left: 100px;
     padding-right: 100px;
-    background-color: black;
+    background-color: #565656;
     padding-top: 10px;
-    opacity: 30%;
+    opacity: 100%;
     margin-bottom: 10px;
  font-size: 2rem;
   }
@@ -174,9 +183,9 @@ display:block;
     padding-bottom: 44px;
     padding-left: 100px;
     padding-right: 100px;
-    background-color: black;
+    background-color: #565656;
     padding-top: 10px;
-    opacity: 30%;
+    opacity: 100%;
     margin-bottom: 10px;
     font-size: 2rem;
 }

@@ -104,16 +104,16 @@ Hola, soy <h3> {{ portfolio.name }}</h3>
 <span  class="section__title--abilities " >habilidades </span>
 </div>
 </div>
-<div class="row">
-<div class=" col-md-offset-2 col-md-2">
+<div class="abilities__inner row">
+<div class=" col-md-offset-2 col-md-3">
 <h2>Frontend development</h2>
-<span class="ability__block col-xs-12 col-md-4" v-for="ability in abilitiesDev">
+<span class="ability__block--dev col-xs-12 col-md-4" v-for="ability in abilitiesDev">
 {{ability.name }}
 </span>
 </div>
-<div class="col-md-offset-6 col-md-2">
+<div class="col-md-offset-5 col-md-3">
 <h2>User Experience</h2>
-<span class="ability__block col-xs-12 col-md-4" v-for="ability in abilitiesUx">
+<span class="ability__block--ux col-xs-12 col-md-4" v-for="ability in abilitiesUx">
 {{ability.name }}
 </span>
 </div>
