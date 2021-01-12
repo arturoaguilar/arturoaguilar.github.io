@@ -153,8 +153,9 @@ display:block;
     padding-right: 100px;
     background-color: black;
     padding-top: 10px;
-    opacity: 60%;
+    opacity: 30%;
     margin-bottom: 10px;
+ font-size: 2rem;
 }
 
 .section__title--abilities{
@@ -164,9 +165,10 @@ display:block;
     padding-right: 100px;
     background-color: black;
     padding-top: 10px;
-    opacity: 60%;
+    opacity: 30%;
     margin-bottom: 10px;
-}
+ font-size: 2rem;
+  }
 .section__title--tools{
     color: white;
     padding-bottom: 44px;
@@ -174,6 +176,11 @@ display:block;
     padding-right: 100px;
     background-color: black;
     padding-top: 10px;
-    opacity: 60%;
+    opacity: 30%;
     margin-bottom: 10px;
-}    
+    font-size: 2rem;
+}
+
+.section__title__recip{
+margin-bottom:20px;
+}

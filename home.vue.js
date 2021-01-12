@@ -84,7 +84,7 @@ Hola, soy <h3> {{ portfolio.name }}</h3>
 
 <section class="projects">
 <div class="row ">
-<div class="col-xs-offset-8">
+<div class="section__title__recip col-xs-offset-8">
 <span class="section__title--projects " >Proyectos </span>
 </div>
 </div>
@@ -100,7 +100,7 @@ Hola, soy <h3> {{ portfolio.name }}</h3>
 
 <section class="abilities">
 <div class=" row">
-<div class="col-xs-offset-2">
+<div class="section__title__recip col-xs-offset-2">
 <span  class="section__title--abilities " >habilidades </span>
 </div>
 </div>
@@ -127,7 +127,7 @@ Hola, soy <h3> {{ portfolio.name }}</h3>
 
 <section class="tools">
 <div class="row">
-<div class="col-md-offset-8">
+<div class="section__title__recip col-md-offset-8">
 <span class="section__title--tools " > Herramientas </span>
 </div>
 </div>
