@@ -83,32 +83,34 @@ Hola, soy <h3> {{ portfolio.name }}</h3>
 </section>
 
 <section class="projects">
-<div>
 
 <div class="row">
 <div class="section__title__recip col-md-offset-6">
-<span class="section__title--projects hvr-grow  " >¿En qué proyectos trabajé? </span>
+<span class="section__title--projects  " >¿En qué proyectos trabajé? </span>
 </div>
 </div>
+
 <div class="row">
 <div class="projects__block col-xs-12 col-md-4" v-for="project in projects">
+
 <router-link class="projects__block__link" :to="'project/'+project.id">
 <img class="projects__block__img " v-bind:src="project.portImg" />
 <span class="projects__block__title">{{ project.name}}</span>
 </router-link>
+
 </div>
 </div>
 
-</div>
 </section>
 
 <section class="abilities">
-<div>
+
 <div class=" row">
 <div class="section__title__recip col-md-offset-2">
-<span  class="section__title--abilities hvr-grow " >¿Qué habilidades tengo?</span>
+<span  class="section__title--abilities" >¿Qué habilidades tengo?</span>
 </div>
 </div>
+
 <div class="abilities__inner row">
 <div class=" col-md-offset-2 col-md-3">
 <h2>Frontend development</h2>
@@ -116,6 +118,7 @@ Hola, soy <h3> {{ portfolio.name }}</h3>
 {{ability.name }}
 </span>
 </div>
+
 <div class="col-md-offset-2 col-md-3">
 <h2>User Experience</h2>
 <span class="ability__block--ux col-xs-12 col-md-4" v-for="ability in abilitiesUx">
@@ -123,7 +126,7 @@ Hola, soy <h3> {{ portfolio.name }}</h3>
 </span>
 </div>
 </div>
-</div>
+
 
 </section>
 
@@ -132,7 +135,7 @@ Hola, soy <h3> {{ portfolio.name }}</h3>
 <div>
 <div class="row">
 <div class="section__title__recip col-md-offset-6">
-<span class="section__title--tools hvr-grow " > ¿Qué herramientas utilizo? </span>
+<span class="section__title--tools " > ¿Qué herramientas utilizo? </span>
 </div>
 </div>
 <span class="ability__block col-xs-12 col-md-4" v-for="tool in tools">
