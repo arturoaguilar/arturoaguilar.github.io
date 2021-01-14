@@ -83,7 +83,9 @@ Hola, soy <h3> {{ portfolio.name }}</h3>
 </section>
 
 <section class="projects">
-<div class="row ">
+<div>
+
+<div class="row">
 <div class="section__title__recip col-md-offset-6">
 <span class="section__title--projects hvr-grow  " >¿En qué proyectos trabajé? </span>
 </div>
@@ -96,9 +98,12 @@ Hola, soy <h3> {{ portfolio.name }}</h3>
 </router-link>
 </div>
 </div>
+
+</div>
 </section>
 
 <section class="abilities">
+<div>
 <div class=" row">
 <div class="section__title__recip col-md-offset-2">
 <span  class="section__title--abilities hvr-grow " >¿Qué habilidades tengo?</span>
@@ -118,11 +123,13 @@ Hola, soy <h3> {{ portfolio.name }}</h3>
 </span>
 </div>
 </div>
+</div>
 
 </section>
 
 
 <section class="tools">
+<div>
 <div class="row">
 <div class="section__title__recip col-md-offset-6">
 <span class="section__title--tools hvr-grow " > ¿Qué herramientas utilizo? </span>
@@ -131,6 +138,7 @@ Hola, soy <h3> {{ portfolio.name }}</h3>
 <span class="ability__block col-xs-12 col-md-4" v-for="tool in tools">
 {{tool.name }}
 </span>
+</div>
 </section>
 
 <section class="media">
