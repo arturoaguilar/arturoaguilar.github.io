@@ -85,7 +85,7 @@ Hola, soy <h3> {{ portfolio.name }}</h3>
 <section class="projects">
 <div class="row ">
 <div class="section__title__recip col-md-offset-6">
-<span class="section__title--projects " >¿En qué proyectos trabajé? </span>
+<span class="section__title--projects hvr-grow  " >¿En qué proyectos trabajé? </span>
 </div>
 </div>
 <div class="row">
@@ -101,7 +101,7 @@ Hola, soy <h3> {{ portfolio.name }}</h3>
 <section class="abilities">
 <div class=" row">
 <div class="section__title__recip col-md-offset-2">
-<span  class="section__title--abilities " >¿Qué habilidades tengo?</span>
+<span  class="section__title--abilities hvr-grow " >¿Qué habilidades tengo?</span>
 </div>
 </div>
 <div class="abilities__inner row">
