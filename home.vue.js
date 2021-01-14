@@ -67,7 +67,7 @@ const Hero = {
   },
   template: `
   <div>
-<section class="hero">
+<section id="hero__sec" class="hero">
 <div class="hero__inner">
 Hola, soy <h3> {{ portfolio.name }}</h3>  
 
@@ -82,10 +82,10 @@ Hola, soy <h3> {{ portfolio.name }}</h3>
 
 </section>
 
-<section class="projects">
+<section id="projects__sec" class="projects">
 <div class="row ">
 <div class="section__title__recip col-md-offset-6">
-<span class="section__title--projects hvr-grow  " >¿En qué proyectos trabajé? </span>
+<a href="#projects__sec" class="section__title--projects hvr-grow  " >¿En qué proyectos trabajé? </a>
 </div>
 </div>
 <div class="row">
@@ -98,7 +98,7 @@ Hola, soy <h3> {{ portfolio.name }}</h3>
 </div>
 </section>
 
-<section class="abilities">
+<section id="abilities__sec" class="abilities">
 <div class=" row">
 <div class="section__title__recip col-md-offset-2">
 <span  class="section__title--abilities hvr-grow " >¿Qué habilidades tengo?</span>
@@ -122,10 +122,10 @@ Hola, soy <h3> {{ portfolio.name }}</h3>
 </section>
 
 
-<section class="tools">
+<section id="tools__sec" class="tools">
 <div class="row">
 <div class="section__title__recip col-md-offset-8">
-<span class="section__title--tools hvr-grow " > Herramientas </span>
+<span class="section__title--tools hvr-grow " > ¿Qué herramientas utilizo? </span>
 </div>
 </div>
 <span class="ability__block col-xs-12 col-md-4" v-for="tool in tools">
