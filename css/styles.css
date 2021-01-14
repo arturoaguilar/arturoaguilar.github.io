@@ -52,6 +52,11 @@ body {
   font-family: 'AnonymousPro', sans-serif;
 }
 
+.row {
+margin-left:0px;
+margin-right:0px;
+}
+
 .project__title{
 opacity:0.8;
 }
