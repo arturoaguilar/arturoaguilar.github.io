@@ -105,6 +105,7 @@ display:block;
    
 }
 .hero__inner{
+  font-size:3rem;
 width:30%;    
 }
 
@@ -153,6 +154,17 @@ display:block;
 
 .ability__block--ux{
 display:block;
+}
+
+
+.ability__block{
+display:block;
+}
+
+
+
+.tool__block{
+
 }
 
 .section__title--projects{
