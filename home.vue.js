@@ -124,7 +124,7 @@ Hola, soy <h3> {{ portfolio.name }}</h3>
 
 <section class="tools">
 <div class="row">
-<div class="section__title__recip col-md-offset-8">
+<div class="section__title__recip col-md-offset-6">
 <span class="section__title--tools hvr-grow " > ¿Qué herramientas utilizo? </span>
 </div>
 </div>
