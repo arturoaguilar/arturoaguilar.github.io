@@ -67,7 +67,7 @@ const Hero = {
   },
   template: `
   <div>
-<section id="hero__sec" class="hero">
+<section class="hero">
 <div class="hero__inner">
 Hola, soy <h3> {{ portfolio.name }}</h3>  
 
@@ -82,10 +82,10 @@ Hola, soy <h3> {{ portfolio.name }}</h3>
 
 </section>
 
-<section id="projects__sec" class="projects">
+<section class="projects">
 <div class="row ">
 <div class="section__title__recip col-md-offset-6">
-<a href="#projects__sec" class="section__title--projects hvr-grow  " >¿En qué proyectos trabajé? </a>
+<span class="section__title--projects hvr-grow  " >¿En qué proyectos trabajé? </span>
 </div>
 </div>
 <div class="row">
@@ -98,7 +98,7 @@ Hola, soy <h3> {{ portfolio.name }}</h3>
 </div>
 </section>
 
-<section id="abilities__sec" class="abilities">
+<section class="abilities">
 <div class=" row">
 <div class="section__title__recip col-md-offset-2">
 <span  class="section__title--abilities hvr-grow " >¿Qué habilidades tengo?</span>
@@ -122,7 +122,7 @@ Hola, soy <h3> {{ portfolio.name }}</h3>
 </section>
 
 
-<section id="tools__sec" class="tools">
+<section class="tools">
 <div class="row">
 <div class="section__title__recip col-md-offset-8">
 <span class="section__title--tools hvr-grow " > ¿Qué herramientas utilizo? </span>
