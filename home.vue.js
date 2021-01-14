@@ -91,7 +91,7 @@ Hola, soy <h3> {{ portfolio.name }}</h3>
 <div class="row">
 <div class="projects__block col-xs-12 col-md-4" v-for="project in projects">
 <router-link class="projects__block__link" :to="'project/'+project.id">
-<img class="projects__block__img hvr-grow" v-bind:src="project.portImg" />
+<img class="projects__block__img " v-bind:src="project.portImg" />
 <span class="projects__block__title">{{ project.name}}</span>
 </router-link>
 </div>
@@ -107,7 +107,7 @@ Hola, soy <h3> {{ portfolio.name }}</h3>
 <div class="abilities__inner row">
 <div class=" col-md-offset-2 col-md-3">
 <h2>Frontend development</h2>
-<span class="ability__block--dev col-xs-12 col-md-4" v-for="ability in abilitiesDev">
+<span class="ability__block--dev hvr-grow col-xs-12 col-md-4" v-for="ability in abilitiesDev">
 {{ability.name }}
 </span>
 </div>
@@ -125,7 +125,7 @@ Hola, soy <h3> {{ portfolio.name }}</h3>
 <section class="tools">
 <div class="row">
 <div class="section__title__recip col-md-offset-8">
-<span class="section__title--tools " > Herramientas </span>
+<span class="section__title--tools hvr-grow " > Herramientas </span>
 </div>
 </div>
 <span class="ability__block col-xs-12 col-md-4" v-for="tool in tools">
