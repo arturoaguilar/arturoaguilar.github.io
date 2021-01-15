@@ -121,7 +121,7 @@ Hola, soy <h3> {{ portfolio.name }}</h3>
 
 <div class="col-md-offset-2 col-md-3">
 <h2>User Experience</h2>
-<span class="ability__block--ux col-xs-12 col-md-4" v-for="ability in abilitiesUx">
+<span class="ability__block--ux hvr-grow col-xs-12 col-md-4" v-for="ability in abilitiesUx">
 {{ability.name }}
 </span>
 </div>
@@ -138,11 +138,15 @@ Hola, soy <h3> {{ portfolio.name }}</h3>
 <span class="section__title--tools " > ¿Qué herramientas utilizo? </span>
 </div>
 </div>
+
 <div class="tools__inner row">
-<span class="ability__block col-xs-12 col-md-4" v-for="tool in tools">
+<div class="col-md-offset-4 col-md-4">
+<span class="tool__block hvr-grow col-xs-12 col-md-4" v-for="tool in tools">
 {{tool.name }}
 </span>
 </div>
+</div>
+
 </section>
 
 <section class="media">

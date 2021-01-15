@@ -132,14 +132,21 @@ background-color:yellow;
 
 .abilities__inner{
 padding-top:50px;
+font-size:1.5rem;
 }
 
 .projects__inner{
 padding-top:50px;
 }
 
+.projects__block__link{
+color: #656565;
+text-decoration:none;
+}
+
 .tools__inner{
 padding-top:50px;
+font-size:1.5rem;
 }
 
 
@@ -180,10 +187,8 @@ display:block;
 display:block;
 }
 
-
-
 .tool__block{
-
+display:block;
 }
 
 .section__title--projects{
