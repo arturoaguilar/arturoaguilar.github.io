@@ -134,6 +134,15 @@ background-color:yellow;
 padding-top:50px;
 }
 
+.projects__inner{
+padding-top:50px;
+}
+
+.tools__inner{
+padding-top:50px;
+}
+
+
 .tools {
   width: 100vw;
   height: 100vh;

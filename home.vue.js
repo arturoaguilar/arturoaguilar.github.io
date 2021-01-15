@@ -90,7 +90,7 @@ Hola, soy <h3> {{ portfolio.name }}</h3>
 </div>
 </div>
 
-<div class="row">
+<div class="projects__inner row">
 <div class="projects__block col-xs-12 col-md-4" v-for="project in projects">
 
 <router-link class="projects__block__link" :to="'project/'+project.id">
@@ -132,12 +132,13 @@ Hola, soy <h3> {{ portfolio.name }}</h3>
 
 
 <section class="tools">
-<div>
+
 <div class="row">
 <div class="section__title__recip col-md-offset-6">
 <span class="section__title--tools " > ¿Qué herramientas utilizo? </span>
 </div>
 </div>
+<div class="tools__inner row">
 <span class="ability__block col-xs-12 col-md-4" v-for="tool in tools">
 {{tool.name }}
 </span>
