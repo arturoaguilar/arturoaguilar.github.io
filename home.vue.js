@@ -90,16 +90,25 @@ Hola, soy <h3> {{ portfolio.name }}</h3>
 </div>
 </div>
 
+
 <div class="projects__inner row">
+
+
 <div class="projects__block col-xs-12 col-md-4" v-for="project in projects">
 
+<div class="projects__detail__container">
 <router-link class="projects__block__link" :to="'project/'+project.id">
 <img class="projects__block__img " v-bind:src="project.portImg" />
 <span class="projects__block__title">{{ project.name}}</span>
 </router-link>
+</div>
 
 </div>
+
+
+
 </div>
+
 
 </section>
 
