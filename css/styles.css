@@ -49,7 +49,10 @@ font-size:1.6rem;
 body {
   font-family: 'AnonymousPro', sans-serif;
 }
-
+.row{
+margin-right: 0px;
+margin-left: 0px;
+}
 .project__title{
 opacity:0.8;
 }
@@ -73,6 +76,7 @@ opacity: 0.8;
 
 
 .projects {
+background-color: #262525;  
 text-align: center;
 }
 
