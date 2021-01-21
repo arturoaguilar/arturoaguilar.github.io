@@ -116,7 +116,7 @@ Hola, soy <h3> {{ portfolio.name }}</h3>
 
 <div class=" row">
 <div class="section__title__recip col-md-offset-2">
-<span  class="section__title--abilities" >¿Qué habilidades tengo?</span>
+<div  class="section__title--abilities" >¿Qué habilidades tengo?</div>
 </div>
 </div>
 
@@ -144,7 +144,7 @@ Hola, soy <h3> {{ portfolio.name }}</h3>
 
 <div class="row">
 <div class="section__title__recip col-md-offset-6">
-<span class="section__title--tools " > ¿Qué herramientas utilizo? </span>
+<div class="section__title--tools " > ¿Qué herramientas utilizo? </div>
 </div>
 </div>
 
