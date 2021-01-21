@@ -77,7 +77,6 @@ Hola, soy <h3> {{ portfolio.name }}</h3>
      </span>
   </div>
 
-<!--<p>{{ portfolio.message }}</p>--> 
 </div>
 
 </section>
