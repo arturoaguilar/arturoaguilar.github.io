@@ -84,13 +84,11 @@ text-align: center;
 text-align:center;
 }
 .projects__detail__container{
-  width:90%;
 
 }
 
 
 .projects__block__img {
-  width:300px;
   cursor: pointer;
 }
 
@@ -99,11 +97,16 @@ text-align:center;
 }
 
 .projects__block__img{
- display:block;
+    width: 90%;
+    display: block;
+    margin: auto;
 }
 
 .projects__block__link{
-display:block;
+  text-decoratation:none;
+  margin-top:20px;
+color:white;
+display:inline-block;
 border-bottom: solid 1px #262525;
 }
 
@@ -124,8 +127,12 @@ width:30%;
 
 .projects {
   width: 100vw;
-  height: 100vh;
 }
+
+.projects__inner {
+
+}
+
 
 .abilities {
 background-color:yellow;
@@ -210,3 +217,7 @@ display:block;
 .section__title__recip{
 margin-bottom:20px;
 }
+
+
+/*====CREAR EL ESTILO PARA LA GRILLA=====*/
+

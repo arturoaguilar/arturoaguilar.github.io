@@ -1,69 +1,87 @@
 const Hero = {
-    data() {
+  data() {
     return {
-     mensaje:"Taksumaqui sempucriaco",
-     portfolio:{
-	    name: "Arturo Aguilar",
-	    profession:[
-	    {name:"User Experience ",link:"url UX",state:1,icono:"url imagen ícono A "},
-	    {name:"Diseño de producto", link:" Link Diseño de producto", state:1,icono:"url imagen B "},
-	    {name:"User Research", link: "Link User Research",state:1,icono:"url imagen C"},
-	      {name:"Frontend Developer", link: "Link Fron end",state:1,icono:"url imagen D"},{name:"Escritor",link:"Link escritor",state:1,icono:"url imagen escritor"}
-	    ],  
-	      message: "Me encanta el desarrollo de tecnologías, la innovación, la investigación de usuarios y escribir"
-	  
-	    },
-    abilities:[
-      {id:"001",name:"User Research",type:1,typeName:"Product Design",level:3},
-      {id:"002",name:"Design Thinking",type:1,typeName:"Product Design",level:3},
-      {id:"003",name:"Lean Ux",type:1,typeName:"Product Design",level:3},
-      {id:"004",name:"Google Design Sprint",type:1,typeName:"Product Design",level:3},
-      {id:"005",name:"Scrum",type:1,typeName:"Product Design",level:3},
-      {id:"006",name:"Gamification",type:1,typeName:"Product Design",level:3},
-      {id:"007",name:"Html",type:2,typeName:"Frontend Development",level:3},
-      {id:"008",name:"Javascript",type:2,typeName:"Frontend Development",level:3},
-      {id:"009",name:"Angular 9/10",type:2,typeName:"Frontend Development",level:3},
-      {id:"010",name:"Vue3",type:2,typeName:"Frontend Development",level:3},
-      {id:"011",name:"CSS",type:2,typeName:"Frontend Development",level:3},
-      {id:"012",name:"Google Firestore",type:2,typeName:"Frontend Development",level:3}
-    ],
+      mensaje: "Taksumaqui sempucriaco",
+      portfolio: {
+        name: "Arturo Aguilar",
+        profession: [
+          { name: "User Experience ", link: "url UX", state: 1, icono: "url imagen ícono A " },
+          { name: "Diseño de producto", link: " Link Diseño de producto", state: 1, icono: "url imagen B " },
+          { name: "User Research", link: "Link User Research", state: 1, icono: "url imagen C" },
+          { name: "Frontend Developer", link: "Link Fron end", state: 1, icono: "url imagen D" }, { name: "Escritor", link: "Link escritor", state: 1, icono: "url imagen escritor" }
+        ],
+        message: "Me encanta el desarrollo de tecnologías, la innovación, la investigación de usuarios y escribir"
 
- tools:[
-      {id:"001",name:"Figma",type:1,typeName:"Product Design",level:3},
-      {id:"002",name:"Miro",type:1,typeName:"Product Design",level:3},
-      {id:"003",name:"Visual Studio Code",type:1,typeName:"Product Design",level:3},
-      {id:"004",name:"neo Vim",type:1,typeName:"Product Design",level:3},
-      {id:"005",name:"Google Drive",type:1,typeName:"Product Design",level:3},
-      {id:"006",name:"Keep",type:1,typeName:"Product Design",level:3},
-      {id:"007",name:"Photoshop",type:2,typeName:"Frontend Development",level:3},
-      {id:"008",name:"Premier Pro",type:2,typeName:"Frontend Development",level:3}
-    ],
-     projects:
-	    [
-	      {id:"001",name:"Sistema de entregas de departamepentos",
-		client:"Viva ",desc:"",functs:"",portImg:"img/dummyProPort.png"},
-              {id:"002",name:"Sistema de administración de entregas",
-	      client:"Viva ",desc:"",functs:"",portImg:"img/dummyProPort.png"},
-	      {id:"003",name:"Sistema de entregas online",
-	      cliente:"Viva",desc:"",functs:"",portImg:"img/dummyProPort.png"}, 
-	      {id:"004",name:"Pawadin",cliente:"Pawadin",desc:"",functs:"",portImg:"img/dummyProPort.png"},
-	      {id:"006",name: "Role master", cliente: "Arturo Aguilar",desc:"",functs:"",portImg:"img/dummyProPort.png"}
-	    ]
+      },
+      abilities: [
+        { id: "001", name: "User Research", type: 1, typeName: "Product Design", level: 3 },
+        { id: "002", name: "Design Thinking", type: 1, typeName: "Product Design", level: 3 },
+        { id: "003", name: "Lean Ux", type: 1, typeName: "Product Design", level: 3 },
+        { id: "004", name: "Google Design Sprint", type: 1, typeName: "Product Design", level: 3 },
+        { id: "005", name: "Scrum", type: 1, typeName: "Product Design", level: 3 },
+        { id: "006", name: "Gamification", type: 1, typeName: "Product Design", level: 3 },
+        { id: "007", name: "Html", type: 2, typeName: "Frontend Development", level: 3 },
+        { id: "008", name: "Javascript", type: 2, typeName: "Frontend Development", level: 3 },
+        { id: "009", name: "Angular 9/10", type: 2, typeName: "Frontend Development", level: 3 },
+        { id: "010", name: "Vue3", type: 2, typeName: "Frontend Development", level: 3 },
+        { id: "011", name: "CSS", type: 2, typeName: "Frontend Development", level: 3 },
+        { id: "012", name: "Google Firestore", type: 2, typeName: "Frontend Development", level: 3 }
+      ],
+
+      tools: [
+        { id: "001", name: "Figma", type: 1, typeName: "Product Design", level: 3 },
+        { id: "002", name: "Miro", type: 1, typeName: "Product Design", level: 3 },
+        { id: "003", name: "Visual Studio Code", type: 1, typeName: "Product Design", level: 3 },
+        { id: "004", name: "neo Vim", type: 1, typeName: "Product Design", level: 3 },
+        { id: "005", name: "Google Drive", type: 1, typeName: "Product Design", level: 3 },
+        { id: "006", name: "Keep", type: 1, typeName: "Product Design", level: 3 },
+        { id: "007", name: "Photoshop", type: 2, typeName: "Frontend Development", level: 3 },
+        { id: "008", name: "Premier Pro", type: 2, typeName: "Frontend Development", level: 3 }
+      ],
+      projects:
+        [
+          {
+            id: "001", order: 1, align: "v", name: "Sistema de entregas de departamepentos",
+            client: "Viva ", desc: "", functs: "", portImg: "img/dummyProPort.png"
+          },
+          {
+            id: "002", order: 2, align: "o", name: "Sistema de administración de entregas",
+            client: "Viva ", desc: "", functs: "", portImg: "img/proy00img.png"
+          },
+          {
+            id: "003", order: 3, align: "v", name: "Sistema de entregas online",
+            cliente: "Viva", desc: "", functs: "", portImg: "img/proy00img.png"
+          },
+          { id: "004", order: 4, align: "o", name: "Pawadin", cliente: "Pawadin", desc: "", functs: "", portImg: "img/dummyProPort.png" },
+          { id: "006", order: 5, align: "v", name: "Role master", cliente: "Arturo Aguilar", desc: "", functs: "", portImg: "img/proy00img.png" }
+        ]
     }
   },
   computed: {
 
-     abilitiesUx: function() {
-       return this.abilities.filter(function(a) {
-         return a.type==1
-     })
-   },
-     abilitiesDev: function() {
-       return this.abilities.filter(function(a) {
-         return a.type==2
-     })
-   }
-   
+    projectsRight: function () {
+      return this.projects.filter(function (a) {
+        return a.order % 2 == 0
+      })
+    },
+
+    projectsLeft: function () {
+      return this.projects.filter(function (a) {
+        return a.order % 2 > 0
+      })
+    },
+
+    abilitiesUx: function () {
+      return this.abilities.filter(function (a) {
+        return a.type == 1
+      })
+    },
+    abilitiesDev: function () {
+      return this.abilities.filter(function (a) {
+        return a.type == 2
+      })
+    }
+
   },
   template: `
   <div>
@@ -84,30 +102,43 @@ Hola, soy <h3> {{ portfolio.name }}</h3>
 <section class="projects">
 
 <div class="row">
-<div class="section__title__recip col-md-offset-6">
-<span class="section__title--projects  " >¿En qué proyectos trabajé? </span>
-</div>
-</div>
 
+<div class="section__title__recip col-md-offset-6">
+<span class="section__title--projects  " > Proyectos  ti</span>
+</div>
+</div>
 
 <div class="projects__inner row">
 
 
-<div class="projects__block col-xs-12 col-md-4" v-for="project in projects">
-
+<div class="col-xs-12 col-md-6" >
+<div class="projects__block" v-for="project in projectsLeft">
 <div class="projects__detail__container">
+
 <router-link class="projects__block__link" :to="'project/'+project.id">
 <img class="projects__block__img " v-bind:src="project.portImg" />
 <span class="projects__block__title">{{ project.name}}</span>
 </router-link>
+
+</div>
+</div>
+</div>
+
+
+<div class="col-xs-12 col-md-6" >
+<div class="projects__block" v-for="project in projectsRight">
+<div class="projects__detail__container">
+
+<router-link class="projects__block__link" :to="'project/'+project.id">
+<img class="projects__block__img " v-bind:src="project.portImg" />
+<span class="projects__block__title">{{ project.name}}</span>
+</router-link>
+
+</div>
+</div>
 </div>
 
 </div>
-
-
-
-</div>
-
 
 </section>
 
