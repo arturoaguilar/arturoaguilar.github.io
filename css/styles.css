@@ -127,17 +127,24 @@ width:30%;
 
 .projects {
   width: 100vw;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-image: linear-gradient(45deg, #654ea3, #eaafc8);
+	transform: skewY(-11deg);
 }
 
 .projects__inner {
-
+  max-width: 50em;
+	margin: 0 auto;
+	transform: skewY(11deg);
 }
 
 
 .abilities {
-background-color:yellow;
+  padding-top: 150px;
+
   width: 100vw;
-  height: 60vh;
+  height:100vh;
 }
 
 .abilities__inner{
@@ -145,8 +152,10 @@ padding-top:50px;
 }
 
 .tools {
+  background-color:yellow;
   width: 100vw;
   height: 100vh;
+  transform: skewY(11deg);
   
 }
 

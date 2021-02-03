@@ -104,7 +104,7 @@ Hola, soy <h3> {{ portfolio.name }}</h3>
 <div class="row">
 
 <div class="section__title__recip col-md-offset-6">
-<span class="section__title--projects  " > Proyectos  ti</span>
+<span class="section__title--projects  " > Proyectos</span>
 </div>
 </div>
 
