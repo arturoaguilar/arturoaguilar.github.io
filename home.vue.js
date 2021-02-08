@@ -83,7 +83,7 @@ const Hero = {
     }
 
   },
-  template: `
+  template: /* vue-html */ `
   <div>
 <section class="hero">
 <div class="hero__inner">
@@ -96,15 +96,14 @@ Hola, soy <h3> {{ portfolio.name }}</h3>
   </div>
 
 </div>
-
 </section>
 
 <section class="projects">
 
 <div class="row">
 
-<div class="section__title__recip col-md-offset-6">
-<span class="section__title--projects  " > Proyectos</span>
+<div class="section__title__recip col-md-12">
+<span class="section__title--projects" > Proyectos</span>
 </div>
 </div>
 
@@ -145,20 +144,20 @@ Hola, soy <h3> {{ portfolio.name }}</h3>
 <section class="abilities">
 
 <div class=" row">
-<div class="section__title__recip col-md-offset-2">
+<div class="section__title__recip col-md-12">
 <div  class="section__title--abilities" >¿Qué habilidades tengo?</div>
 </div>
 </div>
 
 <div class="abilities__inner row">
-<div class=" col-md-offset-2 col-md-3">
+<div class="abilities__block  col-md-offset-2 col-md-3 col-xs-12">
 <h2>Frontend development</h2>
 <span class="ability__block--dev hvr-grow col-xs-12 col-md-4" v-for="ability in abilitiesDev">
 {{ability.name }}
 </span>
 </div>
 
-<div class="col-md-offset-2 col-md-3">
+<div class="abilities__block col-md-offset-2 col-md-3 col-xs-12">
 <h2>User Experience</h2>
 <span class="ability__block--ux hvr-grow col-xs-12 col-md-4" v-for="ability in abilitiesUx">
 {{ability.name }}
@@ -173,8 +172,8 @@ Hola, soy <h3> {{ portfolio.name }}</h3>
 <section class="tools">
 
 <div class="row">
-<div class="section__title__recip col-md-offset-6">
-<div class="section__title--tools " > ¿Qué herramientas utilizo? </div>
+<div class="section__title__recip--centrado col-md-12">
+<div class="section__title--tools" > ¿Qué herramientas utilizo? </div>
 </div>
 </div>
 
@@ -188,11 +187,15 @@ Hola, soy <h3> {{ portfolio.name }}</h3>
 
 </section>
 
-<section class="media">
+<!--<section class="media">
 
-</section>
+</section>-->
 <section class="contact">
-Contactame si deseas trabajar un proyecto conmigo 
+
+<p>Si deseas que te ayude en algún proyecto, contáctame. </p>
+
+<a href = "mailto: arturo.aguilar.tobies@gmail.com">Contactar</a>
+
 </section>
 
   </div>

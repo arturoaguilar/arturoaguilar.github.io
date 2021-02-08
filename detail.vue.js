@@ -134,18 +134,19 @@ const Projects = {
 		console.log('Selection con referencia this');
 		console.log(this.selection);// => "count is: 1"
 	},
-	template: `
+	template:/* vue-html */ `
   <div>
-    <router-link to="/">Inicio</router-link>	
+    <router-link to="/"> Inicio</router-link>	
 	     <h2 class="project__title"> {{ selection.name }}</h2>
 	      <div @click="clickFunct" v-for="block in selection.infoBlocks">
 		    <h3 class="project__block__title">{{ block.title }} </h3>
 		   <p> {{ block.desc}} </p>
-		    <div v-if="block.blockType==2">
-			 <a rel="gallery-1" href="img/dummyProPort.png" v-for="imgBlock in block.images" class="swipebox">
+			<div class="row" v-if="block.blockType==2">
+			<div class="project__block__img__container col-md-6 col-xs-12" v-for="imgBlock in block.images"  >
+			 <a rel="gallery-1" href="img/dummyProPort.png" class="swipebox">
 			    <img class="project__block__img" v-bind:src="imgBlock.imgUrl" />
 			  </a>
-
+			</div>
 		    </div>
 	      </div>
     </div>
