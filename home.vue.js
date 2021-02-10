@@ -103,7 +103,7 @@ Hola, soy <h3> {{ portfolio.name }}</h3>
 <div class="row">
 
 <div class="section__title__recip col-md-12">
-<span class="section__title section__title--projects" > Proyectos</span>
+<span class="section__title section__title--projects" >Proyectos</span>
 </div>
 </div>
 
@@ -145,21 +145,23 @@ Hola, soy <h3> {{ portfolio.name }}</h3>
 
 <div class=" row">
 <div class="section__title__recip col-md-12">
-<div  class="section__title section__title--abilities" > Habilidades </div>
+<div  class="section__title section__title--abilities" >Habilidades </div>
 </div>
 </div>
 
 <div class="abilities__inner row">
-<div class="abilities__block  col-md-offset-2 col-md-3 col-xs-12">
-<h2>Frontend development</h2>
-<span class="ability__block--dev hvr-grow col-xs-12 col-md-4" v-for="ability in abilitiesDev">
+<div class="abilities__block col-md-6 col-xs-12">
+<div class="row">
+<h2 class="col-md-12">Frontend development</h2>
+<span class="ability__block--dev hvr-grow col-xs-12 col-md-12" v-for="ability in abilitiesDev">
 {{ability.name }}
 </span>
 </div>
+</div>
 
-<div class="abilities__block col-md-offset-2 col-md-3 col-xs-12">
+<div class="abilities__block col-md-6 col-xs-12">
 <h2>User Experience</h2>
-<span class="ability__block--ux hvr-grow col-xs-12 col-md-4" v-for="ability in abilitiesUx">
+<span class="ability__block--ux hvr-grow col-xs-12 col-md-12" v-for="ability in abilitiesUx">
 {{ability.name }}
 </span>
 </div>
@@ -173,7 +175,7 @@ Hola, soy <h3> {{ portfolio.name }}</h3>
 
 <div class="row">
 <div class="section__title__recip--centrado col-md-12">
-<div class="section__title section__title--tools" > Herramientas </div>
+<div class="section__title section__title--tools" >Herramientas </div>
 </div>
 </div>
 
