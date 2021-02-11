@@ -122,7 +122,12 @@ border-bottom: solid 1px #262525;
    
 }
 .hero__inner{
+font-size: 2rem;
 width:30%;    
+}
+.hero__desc__p{
+  font-size: 1.5rem;
+  font-style: italic;
 }
 
 .projects {
@@ -149,7 +154,7 @@ width:30%;
 
 .abilities__inner{
 max-width: 50em;
-margin: 0 auto;
+margin-left: 30%;
 transform: skewY(7deg);
 }
 
@@ -160,6 +165,9 @@ padding-top: 150px;
 padding-bottom: 300px;
 
   
+}
+.tool__block{
+  display: block;
 }
 
 .contact {
@@ -236,6 +244,34 @@ margin-bottom:20px;
 .project__block__img__container{
   text-align: center;
 }
+.contact__button__container{
+  padding-top: 30px;
+  width: 100%;
+  text-align: center;
+}
+.contact__text__container{
+  display: block;
+  text-align: center;
+}
+.contact__button__img{
+  max-width: 70px;
+display: inline-block;
+}
+
+
+.project__header{
+    width: 100vw;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: linear-gradient(45deg, #111111, #111111);
+    transform: skewY(-7deg);
+}
+
+.project__title{
+  margin-left: 10%;
+  color: #fff;
+  transform: skewY(7deg);
+}
 
 @media (max-width: 600px) {
   .abilities__block{
@@ -245,6 +281,14 @@ margin-bottom:20px;
 }
 
 @media (min-width: 600px) {
+  .abilities__inner{
+    max-width: 50em;
+    margin-left: 30%;
+    transform: skewY(7deg);
+    }
+  .tools__inner{
+      margin-left: 30%;
+    }
   .section__title{
     left: 0px;
     position: absolute;

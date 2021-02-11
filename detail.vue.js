@@ -137,9 +137,11 @@ const Projects = {
 	template:/* vue-html */ `
   <div>
     <router-link to="/"> Inicio</router-link>	
+<div class="project__header">
 	     <h2 class="project__title"> {{ selection.name }}</h2>
-	      <div @click="clickFunct" v-for="block in selection.infoBlocks">
-		    <h3 class="project__block__title">{{ block.title }} </h3>
+</div>	
+		 <div @click="clickFunct" v-for="block in selection.infoBlocks">
+		    <h3 class="project_block__title">{{ block.title }} </h3>
 		   <p> {{ block.desc}} </p>
 			<div class="row" v-if="block.blockType==2">
 			<div class="project__block__img__container col-md-6 col-xs-12" v-for="imgBlock in block.images"  >

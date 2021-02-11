@@ -5,12 +5,12 @@ const Hero = {
       portfolio: {
         name: "Arturo Aguilar",
         profession: [
-          { name: "User Experience ", link: "url UX", state: 1, icono: "url imagen ícono A " },
-          { name: "Diseño de producto", link: " Link Diseño de producto", state: 1, icono: "url imagen B " },
+          { name: "Diseño de experiencias del usuario (UX)", link: "url UX", state: 1, icono: "url imagen ícono A " },
           { name: "User Research", link: "Link User Research", state: 1, icono: "url imagen C" },
-          { name: "Frontend Developer", link: "Link Fron end", state: 1, icono: "url imagen D" }, { name: "Escritor", link: "Link escritor", state: 1, icono: "url imagen escritor" }
+          { name: "Desarrollo Frontend ", link: "Link Fron end", state: 1, icono: "url imagen D" }, 
+          { name: "Escritor", link: "Link escritor", state: 1, icono: "url imagen escritor" }, 
         ],
-        message: "Me encanta el desarrollo de tecnologías, la innovación, la investigación de usuarios y escribir"
+        message: "Me encanta la innovación, el desarrollo de software y la escritura. Los campos en los que trabajo son:"
 
       },
       abilities: [
@@ -88,7 +88,7 @@ const Hero = {
 <section class="hero">
 <div class="hero__inner">
 Hola, soy <h3> {{ portfolio.name }}</h3>  
-
+<p class="hero__desc__p">{{portfolio.message}}</p>
 <div> 
       <span class="profession__item" v-for="profession in portfolio.profession">
     {{ profession.name }}
@@ -180,8 +180,8 @@ Hola, soy <h3> {{ portfolio.name }}</h3>
 </div>
 
 <div class="tools__inner row">
-<div class="col-md-offset-4 col-md-4">
-<span class="tool__block hvr-grow col-xs-12 col-md-4" v-for="tool in tools">
+<div class="col-md-12">
+<span class="tool__block hvr-grow col-xs-12 col-md-12" v-for="tool in tools">
 {{tool.name }}
 </span>
 </div>
@@ -193,10 +193,17 @@ Hola, soy <h3> {{ portfolio.name }}</h3>
 
 </section>-->
 <section class="contact">
+<div class="contact__text__container">
+<p>Si deseas que trabajemos juntos en algún proyecto, contáctame. </p>
+</div>
 
-<p>Si deseas que te ayude en algún proyecto, contáctame. </p>
+<div class="contact__button__container">
+<a class="contact__button" href = "mailto: arturo.aguilar.tobies@gmail.com"><img class="contact__button__img" src="/img/mail_cont.png"></a>
+<a class="contact__button" href= "https://www.linkedin.com/in/arturoat"><img class="contact__button__img" src="/img/linkedin_cont.png"></a>
+<a class="contact__button" href= "https://www.instagram.com/arturoaguilart"><img class="contact__button__img" src="/img/instagram_cont.png"></a>
+<a class="contact__button" href= "https://www.facebook.com/arturo.aguilartobies"><img class="contact__button__img" src="/img/facebook_cont.png"></a>
+</div>
 
-<a href = "mailto: arturo.aguilar.tobies@gmail.com">Contactar</a>
 
 </section>
 
