@@ -116,7 +116,7 @@ const Hero = {
 
 
 <div class="col-xs-12 col-md-6" >
-<div class="projects__block" v-for="project in projectsLeft">
+<div data-aos="fade-up" data-aos-anchor-placement="center-center" class="projects__block" v-for="project in projectsLeft">
 <div class="projects__detail__container">
 
 <router-link class="projects__block__link" :to="'project/'+project.id">
@@ -130,7 +130,7 @@ const Hero = {
 
 
 <div class="col-xs-12 col-md-6" >
-<div class="projects__block" v-for="project in projectsRight">
+<div  data-aos="fade-up" data-aos-anchor-placement="center-center" class="projects__block" v-for="project in projectsRight">
 <div class="projects__detail__container">
 
 <router-link class="projects__block__link" :to="'project/'+project.id">

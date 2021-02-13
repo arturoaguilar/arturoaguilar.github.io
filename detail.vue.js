@@ -37,7 +37,7 @@ const Projects = {
 							title: "Escenario",
 							blockType: 1,
 							desc: "Después de que la primera versión, fuera utilizada en distintos eventos, y con el feedback de los usuarios se fue arreglando más detalles y agregando funciones. Después de cada evento de entregas (En promedio se entregaban cuarentaicinco departamentos), los encargados marcaban, en el lugar del evento, cartillas señalando los departamentos que eran entregados para que luego otro encargado regresara a la oficina e ingresara uno por uno, los departamentos entregados al sistema CRM. Este trabajo duraba en promedio dos días después del evento ",
-							images: [{ imgId: "dIm001", imgUrl: "img/dummyProPort.png" }, { imgId: "dIm002", imgUrl: "img/dummyProPort.png" }, { imgId: "dIm003", imgUrl: "img/dummyProPort.png" }],
+							images: [{ imgId: "dIm001", imgUrl: "img/proyAdmin01.png" }, { imgId: "dIm002", imgUrl: "img/proyAdmin02.png" }],
 							order: 1
 						}, {
 							title: "Problema",
@@ -49,7 +49,7 @@ const Projects = {
 							title: "Solución",
 							blockType: 2,
 							desc: "Se diseñó una interfaz que reflejara la acción a la que estaban acostumbrados, de marcar en una cuadrícula los departamentos que esta´n siendo entregados y se desarrollaron dos procesos ETL: El primero extraía de la base de datos del CRM de la empresa los departamentos seleccionados para ser entregados. Por motivos de seguridad y conexión desde el lugar del evento, no se actualizaba directamente sino que se guardaba en la base de datos de la aplicación, para luego exportar toda la data de las entregas con un solo clic",
-							images: [{ imgId: "dIm001", imgUrl: "img/dummyProPort.png" }, { imgId: "dIm002", imgUrl: "img/dummyProPort.png" }, { imgId: "dIm003", imgUrl: "img/dummyProPort.png" }],
+							images: [{ imgId: "dIm001", imgUrl: "img/proyAdmin01.png" }, { imgId: "dIm002", imgUrl: "img/proyAdmin02.png" }],
 							order: 1
 						}]
 					},
