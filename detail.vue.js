@@ -8,6 +8,7 @@ const Projects = {
 					{
 						id: "001", name: "Sistema de entregas de departamepentos",
 						client: "Viva ",
+						habilidades: [{ id: 1, name: "User Experience" }, { id: 2, name: "Desarrollo frontend" }, { id: 3, name: "User Research" }, { id: 4, name: "gamification" }],
 						infoBlocks: [{
 							title: "Escenario",
 							blockType: 1,
@@ -31,6 +32,7 @@ const Projects = {
 					{
 						id: "002", name: "Sistema de administración entregas",
 						client: "Viva ",
+						habilidades: [{ id: 1, name: "User Experience" }, { id: 2, name: "Desarrollo frontend" }, { id: 3, name: "User Research" }, { id: 4, name: "gamification" }],
 						infoBlocks: [{
 							title: "Escenario",
 							blockType: 1,
@@ -54,6 +56,7 @@ const Projects = {
 					{
 						id: "003", name: "Sistema de entregas online",
 						client: "Viva ",
+						habilidades: [{ id: 1, name: "User Experience" }, { id: 2, name: "Desarrollo frontend" }, { id: 3, name: "User Research" }, { id: 4, name: "gamification" }],
 						infoBlocks: [{
 							title: "Contexto",
 							blockType: 1,
@@ -77,6 +80,7 @@ const Projects = {
 					{
 						id: "004", name: "Pawadin",
 						client: "Pawadin",
+						habilidades: [{ id: 1, name: "User Experience" }, { id: 2, name: "Desarrollo frontend" }, { id: 3, name: "User Research" }, { id: 4, name: "gamification" }],
 						infoBlocks: [{
 							title: "Contexto",
 							blockType: 1,
@@ -100,6 +104,7 @@ const Projects = {
 					{
 						id: "006", name: "Role Master",
 						client: "Role Master",
+						habilidades: [{ id: 1, name: "User Experience" }, { id: 2, name: "Desarrollo frontend" }, { id: 3, name: "User Research" }, { id: 4, name: "gamification" }],
 						infoBlocks: [{
 							title: "Contexto",
 							blockType: 1,
@@ -135,22 +140,48 @@ const Projects = {
 		console.log(this.selection);// => "count is: 1"
 	},
 	template:/* vue-html */ `
-  <div>
-    <router-link to="/"> Inicio</router-link>	
-<div class="project__header">
+  <div class="project__body">
+<section class="project__menu">
+    <router-link to="/"> <img class="project__menu__home__img" src="img/btn_home.png" > <span class="project__menu__home__btn">Inicio</span></router-link>	
+</section>
+<section class="project__header">
+
+<div class="project__header__inner">
 	     <h2 class="project__title"> {{ selection.name }}</h2>
+		 <div class="project_abilities">
+		 <span style="display:block" v-for=" (habilidad, index) in selection.habilidades">
+		<!--<span v-if="index > 0"> / </span> -->
+		{{ habilidad.name}}
+		 </span>
+		 </div>
 </div>	
-		 <div @click="clickFunct" v-for="block in selection.infoBlocks">
-		    <h3 class="project_block__title">{{ block.title }} </h3>
-		   <p> {{ block.desc}} </p>
-			<div class="row" v-if="block.blockType==2">
-			<div class="project__block__img__container col-md-6 col-xs-12" v-for="imgBlock in block.images"  >
-			 <a rel="gallery-1" href="img/dummyProPort.png" class="swipebox">
-			    <img class="project__block__img" v-bind:src="imgBlock.imgUrl" />
-			  </a>
-			</div>
-		    </div>
-	      </div>
+
+</section>
+
+<section class="project__text__body">
+
+<div class="project__text__body__inner">
+<div @click="clickFunct" v-for="block in selection.infoBlocks">
+<div class="row project__block">
+<div class="col-md-12">
+<h3 class="project_block__title">{{ block.title }} </h3>
+<p> {{ block.desc}} </p>
+</div>
+</div>
+<div class="row project__block__images" v-if="block.blockType==2">
+<div class="project__block__img__container col-md-6 col-xs-12" v-for="imgBlock in block.images"  >
+ <a rel="gallery-1" href="img/dummyProPort.png" class="swipebox">
+	<img class="project__block__img" v-bind:src="imgBlock.imgUrl" />
+  </a>
+</div>
+</div>
+
+</div>
+</div>
+
+</section>
+
+
     </div>
   `
 };

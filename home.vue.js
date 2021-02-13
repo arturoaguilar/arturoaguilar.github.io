@@ -10,7 +10,7 @@ const Hero = {
           { name: "Desarrollo Frontend ", link: "Link Fron end", state: 1, icono: "url imagen D" }, 
           { name: "Escritor", link: "Link escritor", state: 1, icono: "url imagen escritor" }, 
         ],
-        message: "Me encanta la innovación, el desarrollo de software y la escritura. Los campos en los que trabajo son:"
+        message: "Me encanta la innovación, el desarrollo de software y contar historias. Los campos en los que trabajo son:"
 
       },
       abilities: [
@@ -42,18 +42,23 @@ const Hero = {
         [
           {
             id: "001", order: 1, align: "v", name: "Sistema de entregas de departamepentos",
-            client: "Viva ", desc: "", functs: "", portImg: "img/dummyProPort.png"
+            client: "Viva ", desc: "", functs: "", portImg: "img/dummyProPort.png", 
+            habilidades:[{ id:1,name:"User Experience" },{ id:2,name:"Desarrollo frontend" },{ id:3,name:"User Research" },{ id:4,name:"gamification" }]
           },
           {
             id: "002", order: 2, align: "o", name: "Sistema de administración de entregas",
-            client: "Viva ", desc: "", functs: "", portImg: "img/proy00img.png"
+            client: "Viva ", desc: "", functs: "", portImg: "img/proy00img.png", 
+            habilidades:[{ id:1,name:"User Experience" },{ id:2,name:"Desarrollo frontend" },{ id:3,name:"User Research" },{ id:4,name:"gamification" }]
           },
           {
             id: "003", order: 3, align: "v", name: "Sistema de entregas online",
-            cliente: "Viva", desc: "", functs: "", portImg: "img/proy00img.png"
+            cliente: "Viva", desc: "", functs: "", portImg: "img/proy00img.png", 
+            habilidades:[{ id:1,name:"User Experience" },{ id:2,name:"Desarrollo frontend" },{ id:3,name:"User Research" },{ id:4,name:"gamification" }]
           },
-          { id: "004", order: 4, align: "o", name: "Pawadin", cliente: "Pawadin", desc: "", functs: "", portImg: "img/dummyProPort.png" },
-          { id: "006", order: 5, align: "v", name: "Role master", cliente: "Arturo Aguilar", desc: "", functs: "", portImg: "img/proy00img.png" }
+          { id: "004", order: 4, align: "o", name: "Pawadin", cliente: "Pawadin", desc: "", functs: "", portImg: "img/dummyProPort.png", 
+          habilidades:[{ id:1,name:"User Experience" },{ id:2,name:"Desarrollo frontend" },{ id:3,name:"User Research" },{ id:4,name:"gamification" }] },
+          { id: "006", order: 5, align: "v", name: "Role master", cliente: "Arturo Aguilar", desc: "", functs: "", portImg: "img/proy00img.png", 
+          habilidades:[{ id:1,name:"User Experience" },{ id:2,name:"Desarrollo frontend" },{ id:3,name:"User Research" },{ id:4,name:"gamification" }] }
         ]
     }
   },
@@ -87,7 +92,7 @@ const Hero = {
   <div>
 <section class="hero">
 <div class="hero__inner">
-Hola, soy <h3> {{ portfolio.name }}</h3>  
+<span class="hero__desc__p">Hola, soy </span><h3> {{ portfolio.name }}.</h3>  
 <p class="hero__desc__p">{{portfolio.message}}</p>
 <div> 
       <span class="profession__item" v-for="profession in portfolio.profession">
@@ -192,20 +197,6 @@ Hola, soy <h3> {{ portfolio.name }}</h3>
 <!--<section class="media">
 
 </section>-->
-<section class="contact">
-<div class="contact__text__container">
-<p>Si deseas que trabajemos juntos en algún proyecto, contáctame. </p>
-</div>
-
-<div class="contact__button__container">
-<a class="contact__button" href = "mailto: arturo.aguilar.tobies@gmail.com"><img class="contact__button__img" src="/img/mail_cont.png"></a>
-<a class="contact__button" href= "https://www.linkedin.com/in/arturoat"><img class="contact__button__img" src="/img/linkedin_cont.png"></a>
-<a class="contact__button" href= "https://www.instagram.com/arturoaguilart"><img class="contact__button__img" src="/img/instagram_cont.png"></a>
-<a class="contact__button" href= "https://www.facebook.com/arturo.aguilartobies"><img class="contact__button__img" src="/img/facebook_cont.png"></a>
-</div>
-
-
-</section>
 
   </div>
   `
