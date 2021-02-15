@@ -55,15 +55,19 @@ const Hero = {
             cliente: "Viva", desc: "", functs: "", portImg: "img/thumbnailProyEntreOnline.png", 
             habilidades:[{ id:1,name:"User Experience" },{ id:2,name:"Desarrollo frontend" },{ id:3,name:"User Research" },{ id:4,name:"gamification" }]
           },
-          { id: "004", order: 4, align: "o", name: "Pawadin", cliente: "Pawadin", desc: "", functs: "", portImg: "img/thumbnailpawadin.png", 
-          habilidades:[{ id:1,name:"User Experience" },{ id:2,name:"Desarrollo frontend" },{ id:3,name:"User Research" },{ id:4,name:"gamification" }] },
-          { id: "006", order: 5, align: "v", name: "Role master", cliente: "Arturo Aguilar", desc: "", functs: "", portImg: "img/thumbnailRolemProy.png", 
-          habilidades:[{ id:1,name:"User Experience" },{ id:2,name:"Desarrollo frontend" },{ id:3,name:"User Research" },{ id:4,name:"gamification" }] }
+          {
+          id: "004", order: 4, align: "o", name: "Pawadin", cliente: "Pawadin", desc: "", functs: "", portImg: "img/thumbnailpawadin.png", 
+          habilidades:[{ id:1,name:"User Experience" },{ id:2,name:"Desarrollo frontend" },{ id:3,name:"User Research" },{ id:4,name:"gamification" }] 
+          },
+          { 
+          id: "006", order: 5, align: "v", name: "Role master", cliente: "Arturo Aguilar", desc: "", functs: "", portImg: "img/thumbnailRolemProy.png", 
+          habilidades:[{ id:1,name:"User Experience" },{ id:2,name:"Desarrollo frontend" },{ id:3,name:"User Research" },{ id:4,name:"gamification" }] 
+          }
         ]
     }
   },
   created() {
-    console.log('6 Component has been created!');
+    console.log('10 Component has been created!');
   },
   destroyed(){
     console.log('se destruyó Home');

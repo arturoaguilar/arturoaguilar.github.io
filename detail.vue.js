@@ -85,7 +85,7 @@ const Projects = {
 							title: "Contexto",
 							blockType: 1,
 							desc: "Cada vez son más las familias que eligen tener perritos en casa. De hecho hasta se creó el término perrijos, haciendo referencia a las parejas que prefieren tener un perrito a un hijo. Dada esta importancia la inversión en el cuidado de estas mascotas crece cada vez más",
-							images: [{ imgId: "dIm001", imgUrl: "img/proyPawadin01.png" }, { imgId: "dIm002", imgUrl: "img/proyPawadin02.png" }],
+							images: [],
 							order: 1
 						}, {
 							title: "Problema",
@@ -97,7 +97,7 @@ const Projects = {
 							title: "Solución",
 							blockType: 2,
 							desc: "Se realizó una plataforma digital de economía colaborativa que permitía por un lado a los dueños de perritos encontrar a un cuidador o un paseador cuyo domicilio fue berificado por nuestro equipo, que puedan brindar sus servicio cuando lo necesiten. Por otro lado Los cuidadores y paseadores obtenían nuevas oportunidades para incrementar sus ingresos.",
-							images: [{ imgId: "dIm001", imgUrl: "img/dummyProPort.png" }, { imgId: "dIm002", imgUrl: "img/dummyProPort.png" }, { imgId: "dIm003", imgUrl: "img/dummyProPort.png" }],
+							images: [{ imgId: "dIm001", imgUrl: "img/proyPawadin01.png" }, { imgId: "dIm002", imgUrl: "img/proyPawadin02.png" }, {imgId: "dIm003", imgUrl: "img/proyPawadin03.png" }, {imgId: "dIm004", imgUrl: "img/proyPawadin04.png" }, {imgId: "dIm005", imgUrl: "img/proyPawadin05.png" }, {imgId: "dIm006", imgUrl: "img/proyPawadin06.png" }],
 							order: 1
 						}]
 					},
@@ -121,7 +121,7 @@ const Projects = {
 							title: "Solución",
 							blockType: 2,
 							desc: "Se realizó una plataforma que permite configurar el sistema de dados, tablero, imágenes y personajes a cualquier conjunto de reglas de rol que el maestro del juego necesite, incluso si creo su propio juego de rol. Todo de una manera más sensilla y practica. Primero se entrevistó a jugadores experimentados y otros principiantes, con los que se comenzó las primeras sesiones jugando a través de plataformas de reuniones virtuales, aún con las hojas de personaje y los dados físicos o virtuales simples. Poco a poco se comenzó a añadir avances de la plataforma a los juegos ahasta reemplazar totalmente cualquier elemento exterono, guardando sus partidas y teniendo un registro histórico de todos sus movimientos. La creación de los personajes se convirtió en un proceso más intuitivo que la misma herramiento ayudaba a seguir y simplificaba la creación de aventuras para el maestrodel juego; por lo que todo el juego se volvía más ágil.",
-							images: [{ imgId: "dIm001", imgUrl: "img/dummyProPort.png" }, { imgId: "dIm002", imgUrl: "img/dummyProPort.png" }, { imgId: "dIm003", imgUrl: "img/dummyProPort.png" }],
+							images: [{ imgId: "dIm001", imgUrl: "img/rolemproy01.png" }, { imgId: "dIm002", imgUrl: "img/rolemproy02.png" }],
 							order: 1
 						}]
 					}
