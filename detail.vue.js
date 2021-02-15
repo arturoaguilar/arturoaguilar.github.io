@@ -140,8 +140,8 @@ const Projects = {
 		console.log(this.selection);// => "count is: 1"
 	},
 	destroyed(){
-		console.log('se destruyó Detail');
-		AOS.refresh();
+		console.log('10 se destruyó Detail ');
+
 	},
 	template:/* vue-html */ `
   <div class="project__body">

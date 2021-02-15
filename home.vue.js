@@ -67,7 +67,7 @@ const Hero = {
   },
   destroyed(){
     console.log('se destruyó Home');
-		AOS.refresh();
+	
 	},
   computed: {
 
