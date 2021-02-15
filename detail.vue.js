@@ -61,7 +61,7 @@ const Projects = {
 							title: "Contexto",
 							blockType: 1,
 							desc: "Al llegar la época de cuarentena.",
-							images: [{ imgId: "dIm001", imgUrl: "img/dummyProPort.png" }, { imgId: "dIm002", imgUrl: "img/dummyProPort.png" }, { imgId: "dIm003", imgUrl: "img/dummyProPort.png" }],
+							images: [{ imgId: "dIm001", imgUrl: "img/proyEntreOnline01.png" }, { imgId: "dIm002", imgUrl: "img/proyEntreOnline02.png" }],
 							order: 1
 						}, {
 							title: "Problema",
@@ -139,6 +139,10 @@ const Projects = {
 		console.log('Selection con referencia this');
 		console.log(this.selection);// => "count is: 1"
 	},
+	destroyed(){
+		console.log('se destruyó Detail');
+		AOS.refresh();
+	},
 	template:/* vue-html */ `
   <div class="project__body">
 <section class="project__menu">
@@ -170,7 +174,7 @@ const Projects = {
 </div>
 <div class="row project__block__images" v-if="block.blockType==2">
 <div class="project__block__img__container col-md-6 col-xs-12" v-for="imgBlock in block.images"  >
- <a rel="gallery-1" href="img/dummyProPort.png" class="swipebox">
+ <a rel="gallery-1" :href="imgBlock.imgUrl" class="swipebox">
 	<img class="project__block__img" v-bind:src="imgBlock.imgUrl" />
   </a>
 </div>

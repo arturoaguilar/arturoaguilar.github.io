@@ -47,21 +47,28 @@ const Hero = {
           },
           {
             id: "002", order: 2, align: "o", name: "Sistema de administración de entregas",
-            client: "Viva ", desc: "", functs: "", portImg: "img/proy00img.png", 
+            client: "Viva ", desc: "", functs: "", portImg: "img/thumbnailAdminProy.png", 
             habilidades:[{ id:1,name:"User Experience" },{ id:2,name:"Desarrollo frontend" },{ id:3,name:"User Research" },{ id:4,name:"gamification" }]
           },
           {
             id: "003", order: 3, align: "v", name: "Sistema de entregas online",
-            cliente: "Viva", desc: "", functs: "", portImg: "img/proy00img.png", 
+            cliente: "Viva", desc: "", functs: "", portImg: "img/thumbnailProyEntreOnline.png", 
             habilidades:[{ id:1,name:"User Experience" },{ id:2,name:"Desarrollo frontend" },{ id:3,name:"User Research" },{ id:4,name:"gamification" }]
           },
-          { id: "004", order: 4, align: "o", name: "Pawadin", cliente: "Pawadin", desc: "", functs: "", portImg: "img/dummyProPort.png", 
+          { id: "004", order: 4, align: "o", name: "Pawadin", cliente: "Pawadin", desc: "", functs: "", portImg: "img/thumbnailpawadin.png", 
           habilidades:[{ id:1,name:"User Experience" },{ id:2,name:"Desarrollo frontend" },{ id:3,name:"User Research" },{ id:4,name:"gamification" }] },
-          { id: "006", order: 5, align: "v", name: "Role master", cliente: "Arturo Aguilar", desc: "", functs: "", portImg: "img/proy00img.png", 
+          { id: "006", order: 5, align: "v", name: "Role master", cliente: "Arturo Aguilar", desc: "", functs: "", portImg: "img/thumbnailRolemProy.png", 
           habilidades:[{ id:1,name:"User Experience" },{ id:2,name:"Desarrollo frontend" },{ id:3,name:"User Research" },{ id:4,name:"gamification" }] }
         ]
     }
   },
+  created() {
+    console.log('6 Component has been created!');
+  },
+  destroyed(){
+    console.log('se destruyó Home');
+		AOS.refresh();
+	},
   computed: {
 
     projectsRight: function () {
