@@ -85,7 +85,7 @@ const Projects = {
 							title: "Contexto",
 							blockType: 1,
 							desc: "Cada vez son más las familias que eligen tener perritos en casa. De hecho hasta se creó el término perrijos, haciendo referencia a las parejas que prefieren tener un perrito a un hijo. Dada esta importancia la inversión en el cuidado de estas mascotas crece cada vez más",
-							images: [{ imgId: "dIm001", imgUrl: "img/dummyProPort.png" }, { imgId: "dIm002", imgUrl: "img/dummyProPort.png" }, { imgId: "dIm003", imgUrl: "img/dummyProPort.png" }],
+							images: [{ imgId: "dIm001", imgUrl: "img/proyPawadin01.png" }, { imgId: "dIm002", imgUrl: "img/proyPawadin02.png" }],
 							order: 1
 						}, {
 							title: "Problema",
