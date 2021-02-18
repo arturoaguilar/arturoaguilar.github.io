@@ -1,16 +1,15 @@
-const Hero = {
+const escHero = {
   data() {
     return {
       mensaje: "Taksumaqui sempucriaco",
       portfolio: {
         name: "Arturo Aguilar",
         profession: [
-          { name: "Diseño de experiencias del usuario (UX)", link: "url UX", state: 1, icono: "url imagen ícono A " },
-          { name: "User Research", link: "Link User Research", state: 1, icono: "url imagen C" },
-          { name: "Desarrollo Frontend ", link: "Link Fron end", state: 1, icono: "url imagen D" }, 
-          { name: "Escritor", link: "Link escritor", state: 1, icono: "url imagen escritor" }, 
+          { name: "Escritura de libros", link: "url UX", state: 1, icono: "url imagen ícono A " },
+          { name: "Guiones", link: "Link User Research", state: 1, icono: "url imagen C" },
+          { name: "Reseñas", link: "Link Fron end", state: 1, icono: "url imagen D" }
         ],
-        message: "Me encanta la innovación, el desarrollo de software y contar historias. Los campos en los que trabajo son:"
+        message: "Una de mis grandes pasiones es contar historias, y el medio por el que mejor lo hago es la escritura. Tengo publicado un libro, escribo reseñas sobre libros en Goodreads como en instagram y este año comencé un podcast de terror con un poco de comedia."
 
       },
       abilities: [
@@ -101,8 +100,7 @@ const Hero = {
   },
   template: /* vue-html */ `
   <div>
-<section class="menu">
-<div>
+  <div>
 <router-link class="menu__item" :to="'/'">
 <span>Ux/Frontend</span>
 </router-link>
@@ -110,9 +108,8 @@ const Hero = {
 <span>Escritura</span>
 </router-link>
 </div>
-</section>
-<section class="hero">
-<div class="hero__inner">
+<section class="hero--esc">
+<div class="hero--esc__inner">
 <span class="hero__desc__p">Hola, soy </span><h3> {{ portfolio.name }}.</h3>  
 <p class="hero__desc__p">{{portfolio.message}}</p>
 <div> 

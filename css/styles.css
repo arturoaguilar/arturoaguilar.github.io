@@ -121,6 +121,8 @@ border-bottom: solid 1px #262525;
  
    
 }
+
+
 .hero__inner{
 font-size: 2rem;
 width:30%;    
@@ -327,7 +329,26 @@ display: inline-block;
   padding-top: 10px;
 }
 
+
+/* estilos para el portafolio de escritor*/
+.hero--esc{
+  width: 100vw;
+  height: 95vh;
+   /* Flexbox stuff */
+  padding-right:7%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.hero--esc__inner{
+  font-size: 2rem;
+  width:30%;    
+}
+
+/* fin de estilos para portafolio de escritor */
+
 @media (max-width: 600px) {
+
   .hero__inner{
     width: 100%;
   }

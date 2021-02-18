@@ -1,4 +1,4 @@
-const Projects = {
+const escProjects = {
 	data() {
 		return {
 			selection: [],
@@ -25,7 +25,7 @@ const Projects = {
 							title: "Solución",
 							blockType: 2,
 							desc: "Se entrevistó al equipo involucrado en la dirección del proyecto, como también a los colaboradores que serian los voluntarios",
-							images: [{ imgId: "dIm001", imgUrl: "img/dummyProPort.png" }, { imgId: "dIm002", imgUrl: "img/proyEntreJuntos01.png" }, { imgId: "dIm003", imgUrl: "img/proyEntreJuntos02.png" }, { imgId: "dIm003", imgUrl: "img/proyEntreJuntos03.png" }, { imgId: "dIm003", imgUrl: "img/proyEntreJuntos04.png" }],
+							images: [{ imgId: "dIm001", imgUrl: "img/dummyProPort.png" }, { imgId: "dIm002", imgUrl: "img/dummyProPort.png" }, { imgId: "dIm003", imgUrl: "img/dummyProPort.png" }],
 							order: 1
 						}]
 					},
@@ -72,8 +72,8 @@ const Projects = {
 						}, {
 							title: "Solución",
 							blockType: 2,
-							desc: "Se desarrolló una interfaz cuyo link era enviado a cada cliente con sus datos de acceso directamente desde el CRM, y al ingresar, accedían a la información correspondiente a su departamento, como planos y contratos, para descargárlos y automáticamente se actualizaba el campo de entergas de de documentos correspondiente a los registros de esos departamentos.",
-							images: [{ imgId: "dIm001", imgUrl: "img/dummyProPort.png" }, { imgId: "dIm002", imgUrl: "img/dummyProPort.png" }, { imgId: "dIm003", imgUrl: "img/dummyProPort.png" }],
+							desc: "Se desarrolló una interfaz cuyo link era enviado a cada cliente con sus datos de acceso directamente desde el CRM, y al ingresar accedían a la información correspondiente a su departamento, como planos y contratos, para descargárlos y automáticamente se actualizaba el campo de entergas de de documentos correspondiente a los registros de esos departamentos.",
+							images: [{ imgId: "dIm001", imgUrl: "img/proyEntreOnline01.png" }, { imgId: "dIm002", imgUrl: "img/proyEntreOnline02.png" }],
 							order: 1
 						}]
 					},
