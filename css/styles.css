@@ -103,11 +103,17 @@ text-align:center;
 }
 
 .projects__block__link{
-text-decoratation:none;
+text-decoration:none;
 margin-top:20px;
 color:white;
 display:inline-block;
 border-bottom: solid 1px #262525;
+}
+
+.projects__block__desc{
+  padding-left: 15px;
+text-align: left;
+padding-top: 10px;
 }
 
 .hero {
@@ -139,6 +145,7 @@ width:30%;
   background-image: linear-gradient(45deg, #111111, #111111);
 	transform: skewY(-7deg);
 }
+
 
 .projects__inner {
   max-width: 50em;
@@ -326,7 +333,7 @@ display: inline-block;
   padding-top: 20px;
 }
 .project__block__images{
-  padding-top: 10px;
+  padding-top: 40px;
 }
 
 
@@ -345,9 +352,43 @@ display: inline-block;
   width:30%;    
 }
 
+.projects--esc {
+  width: 100vw;
+  padding-top: 150px;
+  padding-bottom: 300px;
+  background-image: linear-gradient(45deg, #111111, #111111);
+	transform: skewY(7deg);
+}
+.projects--esc__inner{
+  max-width: 50em;
+	margin: 0 auto;
+	transform: skewY(-7deg);
+}
+
+.abilities--esc {
+  padding-top: 150px;
+  padding-bottom: 300px;
+  background-color: #FFDC00;
+  width: 100vw;
+  transform: skewY(7deg);
+}
+
 /* fin de estilos para portafolio de escritor */
 
 @media (max-width: 600px) {
+  .tools__inner{
+    text-align: center;
+  }
+  .abilities__inner{
+    margin-left: 0px;
+  }
+  .section__title__recip{
+width: 100%;
+    }
+    
+    .section__title__recip--centrado{
+width: 100%;
+    }
 
   .hero__inner{
     width: 100%;
@@ -359,12 +400,32 @@ display: inline-block;
 }
 
 @media (min-width: 600px) {
+  .menu--main{
+
+  }
+  
+  .menu--main__item{
+    text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+
+
+  }
+    
+  .menu--main__item--active{
+font-weight: bold;
+  }
 
   .abilities__inner{
     max-width: 50em;
     margin-left: 30%;
     transform: skewY(7deg);
     }
+  .abilities--esc__inner{
+    max-width: 50em;
+    margin-left: 30%;
+    transform: skewY(-7deg);
+  }
   .tools__inner{
       margin-left: 30%;
     }
@@ -374,7 +435,11 @@ display: inline-block;
     font-size: 4rem;
     transform: rotate(-90deg);
     }
-
+    .section--esc__title__recip{
+      text-align: center;
+      transform: skewY(-7deg);
+      margin-bottom:20px;
+      }
     .section__title--projects{
       margin-top: 300px;
     }

@@ -101,12 +101,12 @@ const Hero = {
   },
   template: /* vue-html */ `
   <div>
-<section class="menu">
+<section class="menu--main">
 <div>
-<router-link class="menu__item" :to="'/'">
+<router-link class="menu--main__item menu--main__item--active" :to="'/'">
 <span>Ux/Frontend</span>
 </router-link>
-<router-link class="menu__item" :to="'/eschome'">
+<router-link class="menu--main__item" :to="'/eschome'">
 <span>Escritura</span>
 </router-link>
 </div>
@@ -176,13 +176,12 @@ const Hero = {
 </div>
 
 <div class="abilities__inner row">
+
 <div class="abilities__block col-md-6 col-xs-12">
-<div class="row">
 <h2 class="col-md-12">Frontend development</h2>
 <span class="ability__block--dev hvr-grow col-xs-12 col-md-12" v-for="ability in abilitiesDev">
 {{ability.name }}
 </span>
-</div>
 </div>
 
 <div class="abilities__block col-md-6 col-xs-12">
@@ -191,6 +190,7 @@ const Hero = {
 {{ability.name }}
 </span>
 </div>
+
 </div>
 
 
@@ -206,7 +206,7 @@ const Hero = {
 </div>
 
 <div class="tools__inner row">
-<div class="col-md-12">
+<div class="col-xs-12 col-md-12">
 <span class="tool__block hvr-grow col-xs-12 col-md-12" v-for="tool in tools">
 {{tool.name }}
 </span>

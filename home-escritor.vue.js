@@ -13,54 +13,33 @@ const escHero = {
 
       },
       abilities: [
-        { id: "001", name: "User Research", type: 1, typeName: "Product Design", level: 3 },
-        { id: "002", name: "Design Thinking", type: 1, typeName: "Product Design", level: 3 },
-        { id: "003", name: "Lean Ux", type: 1, typeName: "Product Design", level: 3 },
-        { id: "004", name: "Google Design Sprint", type: 1, typeName: "Product Design", level: 3 },
-        { id: "005", name: "Scrum", type: 1, typeName: "Product Design", level: 3 },
-        { id: "006", name: "Gamification", type: 1, typeName: "Product Design", level: 3 },
-        { id: "007", name: "Html", type: 2, typeName: "Frontend Development", level: 3 },
-        { id: "008", name: "Javascript", type: 2, typeName: "Frontend Development", level: 3 },
-        { id: "009", name: "Angular 9/10", type: 2, typeName: "Frontend Development", level: 3 },
-        { id: "010", name: "Vue3", type: 2, typeName: "Frontend Development", level: 3 },
-        { id: "011", name: "CSS", type: 2, typeName: "Frontend Development", level: 3 },
-        { id: "012", name: "Google Firestore", type: 2, typeName: "Frontend Development", level: 3 }
+        { id: "001", name: "Me encantan los generos de terror, negro, comedia y misterio.", type: 1, typeName: "Escritura", level: 3 },
+        { id: "007", name: "Mi primer libro(insomnes y patriotas) es del genero negro, aquel que muestra una ciudad decadente controlada por el crimen, y sátira, criticando la falsa idea de normalidad que puede llegar a tener la sociedad de hoy. Mi siguiente libro que está en proceso pertenecerá al género del terror.", type: 1, typeName: "Escritura", level: 3 }
+       /* { id: "008", name: "Me gusta la generación de contenidos y la lectura. Por lo que ", type: 2, typeName: "UX & CopyWriting", level: 3 },*/
       ],
 
       tools: [
-        { id: "001", name: "Figma", type: 1, typeName: "Product Design", level: 3 },
-        { id: "002", name: "Miro", type: 1, typeName: "Product Design", level: 3 },
-        { id: "003", name: "Visual Studio Code", type: 1, typeName: "Product Design", level: 3 },
-        { id: "004", name: "neo Vim", type: 1, typeName: "Product Design", level: 3 },
-        { id: "005", name: "Google Drive", type: 1, typeName: "Product Design", level: 3 },
-        { id: "006", name: "Keep", type: 1, typeName: "Product Design", level: 3 },
-        { id: "007", name: "Photoshop", type: 2, typeName: "Frontend Development", level: 3 },
-        { id: "008", name: "Premier Pro", type: 2, typeName: "Frontend Development", level: 3 }
+        { id: "001", name: "Redacción Creativa", type: 1, typeName: "Product Design", level: 3 },
+        { id: "002", name: "Ux writing", type: 1, typeName: "Product Design", level: 3 },
+        { id: "003", name: "Redacción de ficción", type: 1, typeName: "Product Design", level: 3 },
+        { id: "004", name: "Redacción de artículos", type: 1, typeName: "Product Design", level: 3 }
       ],
       projects:
         [
           {
-            id: "001", order: 1, align: "v", name: "Sistema de entregas de departamepentos",
-            client: "Viva ", desc: "", functs: "", portImg: "img/dummyProPort.png", 
-            habilidades:[{ id:1,name:"User Experience" },{ id:2,name:"Desarrollo frontend" },{ id:3,name:"User Research" },{ id:4,name:"gamification" }]
+            id: "001", order: 1, align: "v", name: "Reseñas: Carcocha Cósmica",
+            client: "Proyecto Personal ", desc: "Es una cuenta en Instagram, en la que comparto reseñas de novelas, cuentos y comics; que me gustan y me marcaron de alguna manera.", functs: "", portImg: "img/thumbnailCarcochaCosmica.png", 
+            habilidades:[{ id:1,name:"Copywriting" },{ id:2,name:"Ux Writing" },{ id:3,name:"Escritura ficción" },{ id:4,name:"Escritura de guión" }]
           },
           {
-            id: "002", order: 2, align: "o", name: "Sistema de administración de entregas",
-            client: "Viva ", desc: "", functs: "", portImg: "img/thumbnailAdminProy.png", 
-            habilidades:[{ id:1,name:"User Experience" },{ id:2,name:"Desarrollo frontend" },{ id:3,name:"User Research" },{ id:4,name:"gamification" }]
+            id: "002", order: 2, align: "o", name: "Libro: Insomnes y patriotas",
+            client: "Proyecto Personal ", desc: "Este es mi primer libro y consiste en una antología de doce historias que suceden en la misma ciudad, que comparten personajes y lugares; mostrando sus distintos rostros mientras el lector avanza con su lectura. Pertenece al genero negro, aquel que muestra una ciudad decadente controlada por el crimen, y sátira, criticando la falsa idea de normalidad que puede llegar a tener la sociedad de hoy. Mi siguiente libro que está en proceso pertenecerá al género del terror.", functs: "", portImg: "img/thumbnailInsomnesYpatriotas.png", 
+            habilidades:[{ id:3,name:"Escritura ficción" },{ id:4,name:"Escritura de guión" }]
           },
           {
-            id: "003", order: 3, align: "v", name: "Sistema de entregas online",
-            cliente: "Viva", desc: "", functs: "", portImg: "img/thumbnailProyEntreOnline.png", 
-            habilidades:[{ id:1,name:"User Experience" },{ id:2,name:"Desarrollo frontend" },{ id:3,name:"User Research" },{ id:4,name:"gamification" }]
-          },
-          {
-          id: "004", order: 4, align: "o", name: "Pawadin", cliente: "Pawadin", desc: "", functs: "", portImg: "img/thumbnailpawadin.png", 
-          habilidades:[{ id:1,name:"User Experience" },{ id:2,name:"Desarrollo frontend" },{ id:3,name:"User Research" },{ id:4,name:"gamification" }] 
-          },
-          { 
-          id: "006", order: 5, align: "v", name: "Role master", cliente: "Arturo Aguilar", desc: "", functs: "", portImg: "img/thumbnailRolemProy.png", 
-          habilidades:[{ id:1,name:"User Experience" },{ id:2,name:"Desarrollo frontend" },{ id:3,name:"User Research" },{ id:4,name:"gamification" }] 
+            id: "003", order: 3, align: "v", name: "Podcast: Estación Averno",
+            cliente: "Proyecto Personal ", desc: "Este podcast narra desde la perspectiva de un locutor y la información que le llega de los ciudadanos, los extraños eventos que ocurren en la ficticia ciudad de Laguna Roja. Pertenece al género de terror con un poco de comedia.", functs: "", portImg: "img/thumbnailEstacionAverno.png", 
+            habilidades:[{ id:1,name:"Copywriting" },{ id:3,name:"Escritura ficción" },{ id:4,name:"Escritura de guión podcast" }]
           }
         ]
     }
@@ -101,10 +80,10 @@ const escHero = {
   template: /* vue-html */ `
   <div>
   <div>
-<router-link class="menu__item" :to="'/'">
+<router-link class="menu--main__item" :to="'/'">
 <span>Ux/Frontend</span>
 </router-link>
-<router-link class="menu__item" :to="'/eschome'">
+<router-link class="menu--main__item menu--main__item--active" :to="'/eschome'">
 <span>Escritura</span>
 </router-link>
 </div>
@@ -121,16 +100,16 @@ const escHero = {
 </div>
 </section>
 
-<section class="projects">
+<section class="projects--esc">
 
 <div class="row">
 
-<div class="section__title__recip col-md-12">
+<div class="section--esc__title__recip col-md-12">
 <span class="section__title section__title--projects" >Proyectos</span>
 </div>
 </div>
 
-<div class="projects__inner row">
+<div class="projects--esc__inner row">
 
 
 <div class="col-xs-12 col-md-6" >
@@ -140,6 +119,7 @@ const escHero = {
 <router-link class="projects__block__link" :to="'project/'+project.id">
 <img class="projects__block__img " v-bind:src="project.portImg" />
 <span class="projects__block__title">{{ project.name}}</span>
+<p class="projects__block__desc">{{ project.desc}}</p>
 </router-link>
 
 </div>
@@ -154,6 +134,8 @@ const escHero = {
 <router-link class="projects__block__link" :to="'project/'+project.id">
 <img class="projects__block__img " v-bind:src="project.portImg" />
 <span class="projects__block__title">{{ project.name}}</span>
+<p class="projects__block__desc">{{ project.desc}}</p>
+
 </router-link>
 
 </div>
@@ -164,15 +146,17 @@ const escHero = {
 
 </section>
 
-<section class="abilities">
+<section class="abilities--esc">
 
 <div class=" row">
-<div class="section__title__recip col-md-12">
-<div  class="section__title section__title--abilities" >Habilidades </div>
+<div class="section--esc__title__recip col-md-12">
+<div  class="section__title section__title--abilities" >Sobre mí </div>
 </div>
 </div>
 
-<div class="abilities__inner row">
+<div class="abilities--esc__inner row">
+
+<!--
 <div class="abilities__block col-md-6 col-xs-12">
 <div class="row">
 <h2 class="col-md-12">Frontend development</h2>
@@ -181,9 +165,10 @@ const escHero = {
 </span>
 </div>
 </div>
+-->
 
-<div class="abilities__block col-md-6 col-xs-12">
-<h2>User Experience</h2>
+<div class="abilities__block col-md-12 col-xs-12">
+<h2>Escritura</h2>
 <span class="ability__block--ux hvr-grow col-xs-12 col-md-12" v-for="ability in abilitiesUx">
 {{ability.name }}
 </span>
@@ -198,7 +183,7 @@ const escHero = {
 
 <div class="row">
 <div class="section__title__recip--centrado col-md-12">
-<div class="section__title section__title--tools" >Herramientas </div>
+<div class="section__title section__title--tools" >Áreas de trabajo </div>
 </div>
 </div>
 

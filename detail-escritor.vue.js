@@ -6,7 +6,7 @@ const escProjects = {
 			projects:
 				[
 					{
-						id: "001", name: "Sistema de entregas de departamepentos",
+						id: "001", name: "Reseñas: Carcocha Cósmica",
 						client: "Viva ",
 						habilidades: [{ id: 1, name: "User Experience" }, { id: 2, name: "Desarrollo frontend" }, { id: 3, name: "User Research" }, { id: 4, name: "gamification" }],
 						infoBlocks: [{
@@ -30,7 +30,7 @@ const escProjects = {
 						}]
 					},
 					{
-						id: "002", name: "Sistema de administración entregas",
+						id: "002", name: "Libro: Insomnes y patriotas",
 						client: "Viva ",
 						habilidades: [{ id: 1, name: "User Experience" }, { id: 2, name: "Desarrollo frontend" }, { id: 3, name: "User Research" }, { id: 4, name: "gamification" }],
 						infoBlocks: [{
@@ -54,7 +54,7 @@ const escProjects = {
 						}]
 					},
 					{
-						id: "003", name: "Sistema de entregas online",
+						id: "003", name: "Podcast: Estación Averno",
 						client: "Viva ",
 						habilidades: [{ id: 1, name: "User Experience" }, { id: 2, name: "Desarrollo frontend" }, { id: 3, name: "User Research" }, { id: 4, name: "gamification" }],
 						infoBlocks: [{
@@ -74,54 +74,6 @@ const escProjects = {
 							blockType: 2,
 							desc: "Se desarrolló una interfaz cuyo link era enviado a cada cliente con sus datos de acceso directamente desde el CRM, y al ingresar accedían a la información correspondiente a su departamento, como planos y contratos, para descargárlos y automáticamente se actualizaba el campo de entergas de de documentos correspondiente a los registros de esos departamentos.",
 							images: [{ imgId: "dIm001", imgUrl: "img/proyEntreOnline01.png" }, { imgId: "dIm002", imgUrl: "img/proyEntreOnline02.png" }],
-							order: 1
-						}]
-					},
-					{
-						id: "004", name: "Pawadin",
-						client: "Pawadin",
-						habilidades: [{ id: 1, name: "User Experience" }, { id: 2, name: "Desarrollo frontend" }, { id: 3, name: "User Research" }, { id: 4, name: "gamification" }],
-						infoBlocks: [{
-							title: "Contexto",
-							blockType: 1,
-							desc: "Cada vez son más las familias que eligen tener perritos en casa. De hecho hasta se creó el término perrijos, haciendo referencia a las parejas que prefieren tener un perrito a un hijo. Dada esta importancia la inversión en el cuidado de estas mascotas crece cada vez más",
-							images: [],
-							order: 1
-						}, {
-							title: "Problema",
-							blockType: 1,
-							desc: "Si bien las personas tienen gran cariño para sus mascotas, no siempre disponen del tiempo parr darle los cuidados que necesitan, ya sea por compromisos del día a día como el trabajo o compromisos eventuales como viajes.",
-							images: [{ imgId: "dIm001", imgUrl: "img/dummyProPort.png" }, { imgId: "dIm002", imgUrl: "img/dummyProPort.png" }, { imgId: "dIm003", imgUrl: "img/dummyProPort.png" }],
-							order: 1
-						}, {
-							title: "Solución",
-							blockType: 2,
-							desc: "Se realizó una plataforma digital de economía colaborativa que permitía por un lado a los dueños de perritos encontrar a un cuidador o un paseador cuyo domicilio fue berificado por nuestro equipo, que puedan brindar sus servicio cuando lo necesiten. Por otro lado Los cuidadores y paseadores obtenían nuevas oportunidades para incrementar sus ingresos.",
-							images: [{ imgId: "dIm001", imgUrl: "img/proyPawadin01.png" }, { imgId: "dIm002", imgUrl: "img/proyPawadin02.png" }, {imgId: "dIm003", imgUrl: "img/proyPawadin03.png" }, {imgId: "dIm004", imgUrl: "img/proyPawadin04.png" }, {imgId: "dIm005", imgUrl: "img/proyPawadin05.png" }, {imgId: "dIm006", imgUrl: "img/proyPawadin06.png" }],
-							order: 1
-						}]
-					},
-					{
-						id: "006", name: "Role Master",
-						client: "Role Master",
-						habilidades: [{ id: 1, name: "User Experience" }, { id: 2, name: "Desarrollo frontend" }, { id: 3, name: "User Research" }, { id: 4, name: "gamification" }],
-						infoBlocks: [{
-							title: "Contexto",
-							blockType: 1,
-							desc: "Los juegos de Rol como Dungeon Master, Monster of the week y FATE, son jugados por miles de personas en distintas partes del mundo. En estos juegos un grupo de personas se reunen en una mesa, en los que uno de ellos es el maestro del juego, le cuenta al grupo de jugadores, que previamente crearon sus personajes, la aventura en la que se embarcarán y estos comienzan a contar las acciones tirando dados, sumándole los bonificadores que ellos configuraron al crear sus personajes y moviendo las fichas que los representan en un tablero. ",
-							images: [{ imgId: "dIm001", imgUrl: "img/dummyProPort.png" }, { imgId: "dIm002", imgUrl: "img/dummyProPort.png" }, { imgId: "dIm003", imgUrl: "img/dummyProPort.png" }],
-							order: 1
-						}, {
-							title: "Problema",
-							blockType: 1,
-							desc: "Después de la situación de la pandemia, las personas que acostumbran jugar rol, dejaron de poder reunirse, y les quedaan dos opciones: jugar con sus hojas con desde sus casa con alguna herramienta de videoreuniones, o utilizar alguna herramienta digital para jugar rol. El problema es que algunas solo te brindan la posibilidad de dados virtuales y otras muy avanzadas brindaban muchas herramientas para crear largas campañas pero no necesariamente son amigables y hasta resultan confusas para usuarios que piensan jugar aventuras cortas.",
-							images: [{ imgId: "dIm001", imgUrl: "img/dummyProPort.png" }, { imgId: "dIm002", imgUrl: "img/dummyProPort.png" }, { imgId: "dIm003", imgUrl: "img/dummyProPort.png" }],
-							order: 1
-						}, {
-							title: "Solución",
-							blockType: 2,
-							desc: "Se realizó una plataforma que permite configurar el sistema de dados, tablero, imágenes y personajes a cualquier conjunto de reglas de rol que el maestro del juego necesite, incluso si creo su propio juego de rol. Todo de una manera más sensilla y practica. Primero se entrevistó a jugadores experimentados y otros principiantes, con los que se comenzó las primeras sesiones jugando a través de plataformas de reuniones virtuales, aún con las hojas de personaje y los dados físicos o virtuales simples. Poco a poco se comenzó a añadir avances de la plataforma a los juegos ahasta reemplazar totalmente cualquier elemento exterono, guardando sus partidas y teniendo un registro histórico de todos sus movimientos. La creación de los personajes se convirtió en un proceso más intuitivo que la misma herramiento ayudaba a seguir y simplificaba la creación de aventuras para el maestrodel juego; por lo que todo el juego se volvía más ágil.",
-							images: [{ imgId: "dIm001", imgUrl: "img/rolemproy01.png" }, { imgId: "dIm002", imgUrl: "img/rolemproy02.png" }],
 							order: 1
 						}]
 					}

@@ -73,7 +73,7 @@ const Projects = {
 							title: "Solución",
 							blockType: 2,
 							desc: "Se desarrolló una interfaz cuyo link era enviado a cada cliente con sus datos de acceso directamente desde el CRM, y al ingresar, accedían a la información correspondiente a su departamento, como planos y contratos, para descargárlos y automáticamente se actualizaba el campo de entergas de de documentos correspondiente a los registros de esos departamentos.",
-							images: [{ imgId: "dIm001", imgUrl: "img/dummyProPort.png" }, { imgId: "dIm002", imgUrl: "img/dummyProPort.png" }, { imgId: "dIm003", imgUrl: "img/dummyProPort.png" }],
+							images: [{ imgId: "dIm001", imgUrl: "img/proyEntreOnline01.png" }, { imgId: "dIm002", imgUrl: "img/proyEntreOnline02.png" }],
 							order: 1
 						}]
 					},
@@ -172,6 +172,7 @@ const Projects = {
 <p> {{ block.desc}} </p>
 </div>
 </div>
+
 <div class="row project__block__images" v-if="block.blockType==2">
 <div class="project__block__img__container col-md-6 col-xs-12" v-for="imgBlock in block.images"  >
  <a rel="gallery-1" :href="imgBlock.imgUrl" class="swipebox">
