@@ -7,6 +7,13 @@
        url('fonts/AnonymousPro-Regular.ttf') format('Regular'),
 }
 */
+:root{
+  --soft-black-color:#444545;
+  --red-color:#E26D5C;
+  --soft-gray:#E8E9EB;
+  --font:1.8rem;
+}
+
 
 html{
 font-size:62.5%;
@@ -14,6 +21,7 @@ font-size:62.5%;
 
 body{
 font-size:1.6rem;
+color: var(--soft-black-color);
 }
 
 *{
@@ -118,7 +126,7 @@ padding-top: 10px;
 
 .hero {
   width: 100vw;
-  height: 95vh;
+  height: 80vh;
    /* Flexbox stuff */
   padding-left:7%;
   display: flex;
@@ -142,7 +150,8 @@ width:30%;
   width: 100vw;
   padding-top: 150px;
   padding-bottom: 300px;
-  background-image: linear-gradient(45deg, #111111, #111111);
+ /* background-image: linear-gradient(45deg, #111111, #111111);*/
+ background-color: #444545;
 	transform: skewY(-7deg);
 }
 
@@ -180,7 +189,7 @@ padding-bottom: 300px;
 }
 
 .contact {
-  background-color:black;
+  background-color: var(--red-color);
   color:white;
   width: 100vw;
   padding-top: 200px;
@@ -242,6 +251,11 @@ text-align: center;
 transform: skewY(7deg);
 margin-bottom:20px;
 }
+.section--esc__title__recip{
+  text-align: center;
+transform: skewY(-7deg);
+margin-bottom:20px;
+}
 
 .section__title__recip--centrado{
   text-align: center;
@@ -273,7 +287,7 @@ display: inline-block;
 .project__header{
   padding-top: 30px;
     /*background-image: linear-gradient(45deg, #FFDC00, #fff);*/
-    background-image: linear-gradient(180deg, #fff 40%, #FFDC00);
+    background-image: linear-gradient(180deg, #fff 40%, var(--soft-gray) 60%);
   
 }
 
@@ -320,7 +334,7 @@ display: inline-block;
 .project__text__body{
   padding-top: 100px;
   padding-bottom: 100px;
-  background-color: #FFDC00;
+  background-color: var(--soft-gray);
 
 }
 
@@ -335,12 +349,15 @@ display: inline-block;
 .project__block__images{
   padding-top: 40px;
 }
-
+.menu--main a{
+  color: var(--red-color);
+  
+}
 
 /* estilos para el portafolio de escritor*/
 .hero--esc{
   width: 100vw;
-  height: 95vh;
+  height: 80vh;
    /* Flexbox stuff */
   padding-right:7%;
   display: flex;
@@ -376,6 +393,15 @@ display: inline-block;
 /* fin de estilos para portafolio de escritor */
 
 @media (max-width: 600px) {
+  .hero--esc{
+     /* Flexbox stuff */
+    padding-left:7%;
+  }
+
+  .hero--esc__inner{
+
+    width:100%;    
+  }
   .tools__inner{
     text-align: center;
   }
@@ -388,6 +414,9 @@ width: 100%;
     
     .section__title__recip--centrado{
 width: 100%;
+    }
+    .section--esc__title__recip{
+      width: 100%;
     }
 
   .hero__inner{

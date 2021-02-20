@@ -13,8 +13,8 @@ const escHero = {
 
       },
       abilities: [
-        { id: "001", name: "Me encantan los generos de terror, negro, comedia y misterio.", type: 1, typeName: "Escritura", level: 3 },
-        { id: "007", name: "Mi primer libro(insomnes y patriotas) es del genero negro, aquel que muestra una ciudad decadente controlada por el crimen, y sátira, criticando la falsa idea de normalidad que puede llegar a tener la sociedad de hoy. Mi siguiente libro que está en proceso pertenecerá al género del terror.", type: 1, typeName: "Escritura", level: 3 }
+        { id: "001", name: "Los libros han estado en gran parte de mi vida, desde leer El gato negro y otros cuentos de horror en el colegio, hasta terminar la nausea de Sartre, hace poco; por lo que como digo al inicio de esta página, aprecio mucho las buenas historias, tanto en consumirlas como en (sobre todo) crearlas.", type: 1, typeName: "Escritura", level: 3 },
+        { id: "007", name: "Por eso, a pesar de habermo formado en el mundo digital y de investigación; llevo a la par mi carrera como escritor, tanto en el mundo de los libros como en la creación de contenidos exclusivamente digitales.", type: 1, typeName: "Escritura", level: 3 }
        /* { id: "008", name: "Me gusta la generación de contenidos y la lectura. Por lo que ", type: 2, typeName: "UX & CopyWriting", level: 3 },*/
       ],
 
@@ -79,7 +79,9 @@ const escHero = {
   },
   template: /* vue-html */ `
   <div>
-  <div>
+
+<section class="menu--main">
+<div>
 <router-link class="menu--main__item" :to="'/'">
 <span>Ux/Frontend</span>
 </router-link>
@@ -87,14 +89,16 @@ const escHero = {
 <span>Escritura</span>
 </router-link>
 </div>
+</section>
+
 <section class="hero--esc">
 <div class="hero--esc__inner">
 <span class="hero__desc__p">Hola, soy </span><h3> {{ portfolio.name }}.</h3>  
 <p class="hero__desc__p">{{portfolio.message}}</p>
 <div> 
-      <span class="profession__item" v-for="profession in portfolio.profession">
+      <!--<span class="profession__item" v-for="profession in portfolio.profession">
     {{ profession.name }}
-     </span>
+     </span>-->
   </div>
 
 </div>
@@ -168,7 +172,7 @@ const escHero = {
 -->
 
 <div class="abilities__block col-md-12 col-xs-12">
-<h2>Escritura</h2>
+<!--<h2>Escritura</h2>-->
 <span class="ability__block--ux hvr-grow col-xs-12 col-md-12" v-for="ability in abilitiesUx">
 {{ability.name }}
 </span>
