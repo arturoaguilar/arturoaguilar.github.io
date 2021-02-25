@@ -38,30 +38,54 @@ const Hero = {
         { id: "007", name: "Photoshop", type: 2, typeName: "Frontend Development", level: 3 },
         { id: "008", name: "Premier Pro", type: 2, typeName: "Frontend Development", level: 3 }
       ],
+      education: [
+        {id:"001",name:"Master en Neuromarketing e Investigación de mercados",school:"Universidad de Barcelona"},
+        {id:"002",name:"Diplomado en Publicidad Digital",school:"Toulouse Lautrec "},
+        {id:"003",name:"Diplomano en Gestión de Recursos Humanos",school:"Zegel IPAE"},
+        {id:"004",name:"Professional Scrum Master",school:"PSM I Scrum.org"},
+        {id:"005",name:"Javascript",school:"Platzi"},
+        {id:"006",name:"Product Designer por Aerolab",school:"Platzi"},
+        {id:"007",name:"Marketing Digital",school:"Universidad de Lima"},
+        {id:"008",name:"Marketing Digital",school:"Instituto Peruano de Marketing"},
+        {id:"009",name:"Creación de Temas y Plugins en WordPress",school:"Platzi"},
+        {id:"010",name:"Power BI for Users",school:"DMC Perú"},
+        {id:"011",name:"Creación de Tiendas en Línea con WooCommerce",school:"Platzi"},
+        {id:"012",name:"User Experience",school:"Area 51"},
+        {id:"005",name:"Design Sprint",school:"Platzi"},
+        {id:"005",name:"Design Thinking con Minds Garage",school:"Platzi"},
+        {id:"005",name:"HTML y CSS",school:"Platzi"},
+        {id:"005",name:"Ionic",school:"Area 51"},
+        {id:"005",name:"Gamificación",school:"Platzi"},
+        {id:"005",name:"Gestión de Procesos de UX",school:"Platzi"},
+        {id:"005",name:"Dirección de cuentas",school:"La Calle: Escuela Creativa"},
+        {id:"005",name:"Planning Publicitario",school:"La Calle: Escuela Creativa"},
+        {id:"005",name:"Metodologías Ágiles",school:"Platzi"},
+        
+      ], 
       projects:
         [
           {
-            id: "001", order: 1, align: "v", name: "Sistema de entregas de departamepentos",
+            id: "001", order: 1, align: "v", name: "Sistema de entregas de departamentos",
             client: "Viva ", desc: "", functs: "", portImg: "img/dummyProPort.png", 
             habilidades:[{ id:1,name:"User Experience" },{ id:2,name:"Desarrollo frontend" },{ id:3,name:"User Research" },{ id:4,name:"gamification" }]
           },
           {
             id: "002", order: 2, align: "o", name: "Sistema de administración de entregas",
             client: "Viva ", desc: "", functs: "", portImg: "img/thumbnailAdminProy.png", 
-            habilidades:[{ id:1,name:"User Experience" },{ id:2,name:"Desarrollo frontend" },{ id:3,name:"User Research" },{ id:4,name:"gamification" }]
+            habilidades:[{ id:1,name:"User Experience" },{ id:2,name:"Desarrollo frontend" }]
           },
           {
             id: "003", order: 3, align: "v", name: "Sistema de entregas online",
             cliente: "Viva", desc: "", functs: "", portImg: "img/thumbnailProyEntreOnline.png", 
-            habilidades:[{ id:1,name:"User Experience" },{ id:2,name:"Desarrollo frontend" },{ id:3,name:"User Research" },{ id:4,name:"gamification" }]
+            habilidades:[{ id:1,name:"User Experience" },{ id:2,name:"Desarrollo frontend" }]
           },
           {
           id: "004", order: 4, align: "o", name: "Pawadin", cliente: "Pawadin", desc: "", functs: "", portImg: "img/thumbnailpawadin.png", 
-          habilidades:[{ id:1,name:"User Experience" },{ id:2,name:"Desarrollo frontend" },{ id:3,name:"User Research" },{ id:4,name:"gamification" }] 
+          habilidades:[{ id:1,name:"User Experience" },{ id:2,name:"Desarrollo frontend" },{ id:3,name:"User Research" },{ id:4,name:"Lean Startup"},{id:5,name:"Design Thinking"}] 
           },
           { 
           id: "006", order: 5, align: "v", name: "Role master", cliente: "Arturo Aguilar", desc: "", functs: "", portImg: "img/thumbnailRolemProy.png", 
-          habilidades:[{ id:1,name:"User Experience" },{ id:2,name:"Desarrollo frontend" },{ id:3,name:"User Research" },{ id:4,name:"gamification" }] 
+          habilidades:[{ id:1,name:"User Experience" },{ id:2,name:"Desarrollo frontend" },{ id:3,name:"User Research" },{ id:4,name:"gamification" },{id:5,name:"Desarrollo Backend"}] 
           }
         ]
     }
@@ -112,7 +136,7 @@ const Hero = {
 </div>
 </section>
 <section class="hero">
-<div class="hero__inner">
+<div data-aos="fade-down" data-aos-duration="1500" class="hero__inner">
 <span class="hero__desc__p">Hola, soy </span><h3> {{ portfolio.name }}.</h3>  
 <p class="hero__desc__p">{{portfolio.message}}</p>
 <div> 
@@ -124,7 +148,7 @@ const Hero = {
 </div>
 </section>
 
-<section class="projects">
+<section class="projects" >
 
 <div class="row">
 
@@ -137,26 +161,35 @@ const Hero = {
 
 
 <div class="col-xs-12 col-md-6" >
-<div data-aos="fade-up" data-aos-anchor-placement="center-center" class="projects__block" v-for="project in projectsLeft">
-<div class="projects__detail__container">
+<div data-aos="fade-up"  data-aos-duration="1000"  class="projects__block" v-for="project in projectsLeft">
 
 <router-link class="projects__block__link" :to="'project/'+project.id">
 <img class="projects__block__img " v-bind:src="project.portImg" />
+<div class="projects__detail__container">
 <span class="projects__block__title">{{ project.name}}</span>
+<span class="projects__block__habilidad" v-for="(habilidad,index) in project.habilidades">
+<span v-if="index > 0">/</span>
+{{ habilidad.name}}
+</span>
+</div>
 </router-link>
 
-</div>
+
 </div>
 </div>
 
 
 <div class="col-xs-12 col-md-6" >
-<div  data-aos="fade-up" data-aos-anchor-placement="center-center" class="projects__block" v-for="project in projectsRight">
+<div  data-aos="fade-up"  data-aos-duration="1000"  class="projects__block" v-for="project in projectsRight">
 <div class="projects__detail__container">
 
 <router-link class="projects__block__link" :to="'project/'+project.id">
 <img class="projects__block__img " v-bind:src="project.portImg" />
 <span class="projects__block__title">{{ project.name}}</span>
+<span class="projects__block__habilidad" v-for="(habilidad,index) in project.habilidades">
+<span v-if="index > 0">/</span>
+{{ habilidad.name}}
+</span>
 </router-link>
 
 </div>
@@ -175,16 +208,16 @@ const Hero = {
 </div>
 </div>
 
-<div class="abilities__inner row">
+<div  class="abilities__inner row">
 
-<div class="abilities__block col-md-6 col-xs-12">
+<div data-aos="fade-up"  data-aos-duration="1000" class="abilities__block col-md-6 col-xs-12">
 <h2 class="col-md-12">Frontend development</h2>
-<span class="ability__block--dev hvr-grow col-xs-12 col-md-12" v-for="ability in abilitiesDev">
+<span  class="ability__block--dev hvr-grow col-xs-12 col-md-12" v-for="ability in abilitiesDev">
 {{ability.name }}
 </span>
 </div>
 
-<div class="abilities__block col-md-6 col-xs-12">
+<div data-aos="fade-up" data-aos-duration="1000"  class="abilities__block col-md-6 col-xs-12">
 <h2>User Experience</h2>
 <span class="ability__block--ux hvr-grow col-xs-12 col-md-12" v-for="ability in abilitiesUx">
 {{ability.name }}
@@ -198,7 +231,7 @@ const Hero = {
 
 
 <section class="tools">
-
+<!--
 <div class="row">
 <div class="section__title__recip--centrado col-md-12">
 <div class="section__title section__title--tools" >Herramientas </div>
@@ -212,13 +245,38 @@ const Hero = {
 </span>
 </div>
 </div>
+--->
+<div class="row">
+<div class="section__title__recip--centrado col-md-12">
+<div class="section__title section__title--tools" >Educación </div>
+</div>
+</div>
 
+<div class="tools__inner row">
+<div class="col-xs-12 col-md-12" data-aos="fade-up" data-aos-duration="1000">
+<span class="tool__block hvr-grow col-xs-12 col-md-12" v-for="(course,index) in education">
+ {{course.name }} 
+<span class="tool__block__school">({{course.school}})</span>
+</span>
+</div>
+</div>
 </section>
 
-<!--<section class="media">
-
-</section>-->
-
+<section class="contact">
+      <div data-aos="fade-up"  data-aos-duration="1000"  class="contact__text__container">
+      <p>Si deseas que trabajemos juntos en algún proyecto, contáctame. </p>
+      </div>
+      
+      <div data-aos="fade-up"  data-aos-duration="1000"  class="contact__button__container">
+      <a class="contact__button" href = "mailto: arturo.aguilar.tobies@gmail.com"><img class="contact__button__img" src="/img/mail_cont.png"></a>
+      <a class="contact__button" href= "https://www.linkedin.com/in/arturoat"><img class="contact__button__img" src="/img/linkedin_cont.png"></a>
+      <a class="contact__button" href= "https://www.instagram.com/arturoaguilart"><img class="contact__button__img" src="/img/instagram_cont.png"></a>
+      <a class="contact__button" href= "https://www.facebook.com/arturo.aguilartobies"><img class="contact__button__img" src="/img/facebook_cont.png"></a>
+      </div>
+      
+      
+      </section>
+      
   </div>
   `
 };

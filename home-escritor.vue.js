@@ -27,18 +27,18 @@ const escHero = {
       projects:
         [
           {
-            id: "001", order: 1, align: "v", name: "Reseñas: Carcocha Cósmica",
-            client: "Proyecto Personal ", desc: "Es una cuenta en Instagram, en la que comparto reseñas de novelas, cuentos y comics; que me gustan y me marcaron de alguna manera.", functs: "", portImg: "img/thumbnailCarcochaCosmica.png", 
+            id: "001", order: 1, align: "v", name: "Carcocha Cósmica",
+            client: "Proyecto Personal ", desc: "Reseñas de libros de distintos géneros dentro de la comunidad de lectores en Instagram.", functs: "", portImg: "img/thumbnailCarcochaCosmica.png", 
             habilidades:[{ id:1,name:"Copywriting" },{ id:2,name:"Ux Writing" },{ id:3,name:"Escritura ficción" },{ id:4,name:"Escritura de guión" }]
           },
           {
-            id: "002", order: 2, align: "o", name: "Libro: Insomnes y patriotas",
-            client: "Proyecto Personal ", desc: "Este es mi primer libro y consiste en una antología de doce historias que suceden en la misma ciudad, que comparten personajes y lugares; mostrando sus distintos rostros mientras el lector avanza con su lectura. Pertenece al genero negro, aquel que muestra una ciudad decadente controlada por el crimen, y sátira, criticando la falsa idea de normalidad que puede llegar a tener la sociedad de hoy. Mi siguiente libro que está en proceso pertenecerá al género del terror.", functs: "", portImg: "img/thumbnailInsomnesYpatriotas.png", 
+            id: "002", order: 2, align: "o", name: "Insomnes y patriotas",
+            client: "Proyecto Personal ", desc: "Antología de doce historias(de géneros negro y thriller)  que se entrelazan para dar forma a una oscura ciudad que puede llevar a sus habitantes a la locura.", functs: "", portImg: "img/thumbnailInsomnesYpatriotas.png", 
             habilidades:[{ id:3,name:"Escritura ficción" },{ id:4,name:"Escritura de guión" }]
           },
           {
-            id: "003", order: 3, align: "v", name: "Podcast: Estación Averno",
-            cliente: "Proyecto Personal ", desc: "Este podcast narra desde la perspectiva de un locutor y la información que le llega de los ciudadanos, los extraños eventos que ocurren en la ficticia ciudad de Laguna Roja. Pertenece al género de terror con un poco de comedia.", functs: "", portImg: "img/thumbnailEstacionAverno.png", 
+            id: "003", order: 3, align: "v", name: "Estación Averno",
+            cliente: "Proyecto Personal ", desc: "Podcast que cubre los extraños sucesos que ocurren en la ficticia ciudad de Laguna Roja.", functs: "", portImg: "img/thumbnailEstacionAverno.png", 
             habilidades:[{ id:1,name:"Copywriting" },{ id:3,name:"Escritura ficción" },{ id:4,name:"Escritura de guión podcast" }]
           }
         ]
@@ -92,7 +92,7 @@ const escHero = {
 </section>
 
 <section class="hero--esc">
-<div class="hero--esc__inner">
+<div data-aos="fade-down" data-aos-duration="1500" class="hero--esc__inner">
 <span class="hero__desc__p">Hola, soy </span><h3> {{ portfolio.name }}.</h3>  
 <p class="hero__desc__p">{{portfolio.message}}</p>
 <div> 
@@ -117,10 +117,10 @@ const escHero = {
 
 
 <div class="col-xs-12 col-md-6" >
-<div data-aos="fade-up" data-aos-anchor-placement="center-center" class="projects__block" v-for="project in projectsLeft">
+<div data-aos="fade-up"  data-aos-duration="1000" class="projects__block" v-for="project in projectsLeft">
 <div class="projects__detail__container">
 
-<router-link class="projects__block__link" :to="'project/'+project.id">
+<router-link class="projects__block__link" :to="'escproject/'+project.id">
 <img class="projects__block__img " v-bind:src="project.portImg" />
 <span class="projects__block__title">{{ project.name}}</span>
 <p class="projects__block__desc">{{ project.desc}}</p>
@@ -132,10 +132,10 @@ const escHero = {
 
 
 <div class="col-xs-12 col-md-6" >
-<div  data-aos="fade-up" data-aos-anchor-placement="center-center" class="projects__block" v-for="project in projectsRight">
+<div  data-aos="fade-up"  data-aos-duration="1000"  class="projects__block" v-for="project in projectsRight">
 <div class="projects__detail__container">
 
-<router-link class="projects__block__link" :to="'project/'+project.id">
+<router-link class="projects__block__link" :to="'escproject/'+project.id">
 <img class="projects__block__img " v-bind:src="project.portImg" />
 <span class="projects__block__title">{{ project.name}}</span>
 <p class="projects__block__desc">{{ project.desc}}</p>
@@ -154,7 +154,7 @@ const escHero = {
 
 <div class=" row">
 <div class="section--esc__title__recip col-md-12">
-<div  class="section__title section__title--abilities" >Sobre mí </div>
+<div  class="section__title section--esc__title--abilities" >Sobre mí </div>
 </div>
 </div>
 
@@ -171,9 +171,9 @@ const escHero = {
 </div>
 -->
 
-<div class="abilities__block col-md-12 col-xs-12">
+<div data-aos="fade-up"  data-aos-duration="1000"  class="abilities__block col-md-12 col-xs-12">
 <!--<h2>Escritura</h2>-->
-<span class="ability__block--ux hvr-grow col-xs-12 col-md-12" v-for="ability in abilitiesUx">
+<span class="ability__block--ux col-xs-12 col-md-12" v-for="ability in abilitiesUx">
 {{ability.name }}
 </span>
 </div>
@@ -187,11 +187,11 @@ const escHero = {
 
 <div class="row">
 <div class="section__title__recip--centrado col-md-12">
-<div class="section__title section__title--tools" >Áreas de trabajo </div>
+<div class="section__title section--esc__title--tools" > Disciplinas </div>
 </div>
 </div>
 
-<div class="tools__inner row">
+<div data-aos="fade-up"  data-aos-duration="1000"  class="tools__inner row">
 <div class="col-md-12">
 <span class="tool__block hvr-grow col-xs-12 col-md-12" v-for="tool in tools">
 {{tool.name }}
@@ -201,9 +201,20 @@ const escHero = {
 
 </section>
 
-<!--<section class="media">
-
-</section>-->
+<section class="contact">
+      <div data-aos="fade-up"  data-aos-duration="1000"  class="contact__text__container">
+      <p>Si deseas que trabajemos juntos en algún proyecto, contáctame. </p>
+      </div>
+      
+      <div data-aos="fade-up" data-aos-duration="1000"  class="contact__button__container">
+      <a class="contact__button" href = "mailto: arturo.aguilar.tobies@gmail.com"><img class="contact__button__img" src="/img/mail_cont.png"></a>
+      <a class="contact__button" href= "https://www.linkedin.com/in/arturoat"><img class="contact__button__img" src="/img/linkedin_cont.png"></a>
+      <a class="contact__button" href= "https://www.instagram.com/arturoaguilart"><img class="contact__button__img" src="/img/instagram_cont.png"></a>
+      <a class="contact__button" href= "https://www.facebook.com/arturo.aguilartobies"><img class="contact__button__img" src="/img/facebook_cont.png"></a>
+      </div>
+      
+      
+      </section>
 
   </div>
   `

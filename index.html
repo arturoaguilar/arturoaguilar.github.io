@@ -23,12 +23,15 @@
   <link href="https://unpkg.com/aos@2.3.3/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.3/dist/aos.js"></script>
 <!--fin animaciones AOS-->
-  <script src="home.vue.js"></script>
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+
+<script src="home.vue.js"></script>
+  <script src="footer.vue.js"></script>
   <script src="detail.vue.js"></script>
   <script src="home-escritor.vue.js"></script>
-  <script src="detail-escritor.vue.js"></script>
-  <script src="https://unpkg.com/vue/dist/vue.js"></script>
-  <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+  <script src="detail-esc.vue.js"></script>
+ 
 
 
 
@@ -37,25 +40,25 @@
 
 <body>
   <div id="app">
-
+    <nav role="navigation">
+      <div id="menuToggle">
+        <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+      <ul id="menu">
+        <li>
+          <a href="#">Ux/Frontend</a>
+        </li>
+        <li>
+          <a href="#">Escritura</a>
+        </li>
+      </ul>
+     </div>
+    </nav>
     <!-- route outlet -->
     <!-- component matched by the route will render here -->
     <router-view></router-view>
-    <section class="contact">
-      <div class="contact__text__container">
-      <p>Si deseas que trabajemos juntos en algún proyecto, contáctame. </p>
-      </div>
-      
-      <div class="contact__button__container">
-      <a class="contact__button" href = "mailto: arturo.aguilar.tobies@gmail.com"><img class="contact__button__img" src="/img/mail_cont.png"></a>
-      <a class="contact__button" href= "https://www.linkedin.com/in/arturoat"><img class="contact__button__img" src="/img/linkedin_cont.png"></a>
-      <a class="contact__button" href= "https://www.instagram.com/arturoaguilart"><img class="contact__button__img" src="/img/instagram_cont.png"></a>
-      <a class="contact__button" href= "https://www.facebook.com/arturo.aguilartobies"><img class="contact__button__img" src="/img/facebook_cont.png"></a>
-      </div>
-      
-      
-      </section>
-      
   </div>
 
   <script src="route-script.js"></script>
@@ -69,6 +72,7 @@
   <script>
    AOS.init();
   </script>
+  
 </body>
 
 </html>
