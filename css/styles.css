@@ -435,6 +435,22 @@ display: inline-block;
     text-decoration: none;
     padding: 5px;
 }
+
+.otherProjects{
+  padding-left: 16px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.otherProjects__link{
+  color: var(--red-color);
+  margin-right: 24px;
+  text-decoration: none;
+}
+
+.otherProjects__link--inText{
+    text-decoration: none;
+    color:var(--red-color);
+    }
 /*=======Inicio menú responsive ===*/
 
 
@@ -499,6 +515,9 @@ nav {
   transform: rotate(45deg) translate(-3px, -1px);
   background: #36383F;
 }
+
+
+
 #menuToggle input:checked ~ span:nth-last-child(3)
 {
   opacity: 0;
@@ -538,13 +557,26 @@ nav {
   transform: none;
 }
 
+#menuToggle a:active ~ ul
+{
+  transform: none;
+}
+
 .menu--mobile--main__item {
     text-decoration: none;
     color: var(--red-color);
 }
 
 /*=====Fin menú responsive ======*/
+
 @media (max-width: 600px) {
+
+.otherProjects__link{
+margin-top: 16px;
+margin-bottom: 16px;
+display: block;
+  }
+
   .menu--main{
 display: none;
   }

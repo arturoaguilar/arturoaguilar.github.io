@@ -65,7 +65,7 @@ const Hero = {
       projects:
         [
           {
-            id: "001", order: 1, align: "v", name: "Sistema de entregas de departamentos",
+            id: "001", order: 1, align: "v", name: "Entregando Juntos",
             client: "Viva ", desc: "", functs: "", portImg: "img/dummyProPort.png", 
             habilidades:[{ id:1,name:"User Experience" },{ id:2,name:"Desarrollo frontend" },{ id:3,name:"User Research" },{ id:4,name:"gamification" }]
           },
@@ -84,7 +84,7 @@ const Hero = {
           habilidades:[{ id:1,name:"User Experience" },{ id:2,name:"Desarrollo frontend" },{ id:3,name:"User Research" },{ id:4,name:"Lean Startup"},{id:5,name:"Design Thinking"}] 
           },
           { 
-          id: "006", order: 5, align: "v", name: "Role master", cliente: "Arturo Aguilar", desc: "", functs: "", portImg: "img/thumbnailRolemProy.png", 
+          id: "005", order: 5, align: "v", name: "Role master", cliente: "Arturo Aguilar", desc: "", functs: "", portImg: "img/thumbnailRolemProy.png", 
           habilidades:[{ id:1,name:"User Experience" },{ id:2,name:"Desarrollo frontend" },{ id:3,name:"User Research" },{ id:4,name:"gamification" },{id:5,name:"Desarrollo Backend"}] 
           }
         ]
