@@ -439,7 +439,7 @@ display: inline-block;
 
 
 nav {
-  background-color: var(--soft-black-color);
+  background-color: white;
   height: 65px;
 }
 
@@ -474,7 +474,7 @@ nav {
   height: 2px;
   margin-bottom: 5px;
   position: relative;
-  background: #ffffff;
+  background: var(--red-color);
   border-radius: 3px;
   z-index: 1;
   transform-origin: 5px 0px;
@@ -512,9 +512,10 @@ nav {
 
 #menu
 {
+  list-style-type: none;
   position: absolute;
   width: 180px;
-  height: 400px;
+  height: 100vh;
   box-shadow: 0 0 10px #85888C;
   margin: -50px 0 0 -50px;
   padding: 50px;
@@ -537,8 +538,16 @@ nav {
   transform: none;
 }
 
+.menu--mobile--main__item {
+    text-decoration: none;
+    color: var(--red-color);
+}
+
 /*=====Fin menú responsive ======*/
 @media (max-width: 600px) {
+  .menu--main{
+display: none;
+  }
   .abilities--esc__inner{
     transform: skewY(-7deg);
   }
@@ -578,21 +587,19 @@ width: 100%;
 }
 
 @media (min-width: 600px) {
-  .menu--main{
 
-  }
 
   nav {
  display: none;
   }
 
   .menu--main__item{
-    text-decoration: none;
+  text-decoration: none;
   padding: 20px;
   display: inline-block;
-
-
   }
+
+
     
   .menu--main__item--active{
 font-weight: bold;
