@@ -25,7 +25,10 @@ const Hero = {
         { id: "009", name: "Angular 9/10", type: 2, typeName: "Frontend Development", level: 3 },
         { id: "010", name: "Vue3", type: 2, typeName: "Frontend Development", level: 3 },
         { id: "011", name: "CSS", type: 2, typeName: "Frontend Development", level: 3 },
-        { id: "012", name: "Google Firestore", type: 2, typeName: "Frontend Development", level: 3 }
+        { id: "012", name: "Google Firestore", type: 2, typeName: "Frontend Development", level: 3 },
+        { id: "012", name: "Git/Github", type: 2, typeName: "Frontend Development", level: 3 },
+        { id: "012", name: "Flexbox Grid", type: 2, typeName: "Frontend Development", level: 3 },
+        { id: "012", name: "Bootstrap", type: 2, typeName: "Frontend Development", level: 3 },
       ],
 
       tools: [
@@ -42,6 +45,7 @@ const Hero = {
         {id:"001",name:"Master en Neuromarketing e Investigación de mercados",school:"Universidad de Barcelona"},
         {id:"002",name:"Diplomado en Publicidad Digital",school:"Toulouse Lautrec "},
         {id:"003",name:"Diplomano en Gestión de Recursos Humanos",school:"Zegel IPAE"},
+        {id:"0011",name:"Ingeniería de Sistemas",school:"Universidad de Lima"},
         {id:"004",name:"Professional Scrum Master",school:"PSM I Scrum.org"},
         {id:"005",name:"Javascript",school:"Platzi"},
         {id:"006",name:"Product Designer por Aerolab",school:"Platzi"},
@@ -218,7 +222,7 @@ const Hero = {
 </div>
 
 <div data-aos="fade-up" data-aos-duration="1000"  class="abilities__block col-md-6 col-xs-12">
-<h2>User Experience</h2>
+<h2>User Experience y gestión de proyectos</h2>
 <span class="ability__block--ux hvr-grow col-xs-12 col-md-12" v-for="ability in abilitiesUx">
 {{ability.name }}
 </span>
