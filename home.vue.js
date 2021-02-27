@@ -152,6 +152,10 @@ const Hero = {
   </div>
 
 </div>
+
+<div>
+<img src="img/astronaut.gif">
+</div>
 </section>
 
 <section class="projects" >
