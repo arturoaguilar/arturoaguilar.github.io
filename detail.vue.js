@@ -8,10 +8,11 @@ const Projects = {
 				[
 					{
 						id: "001", name: "Entregando Juntos",
+						special:"Este proyecto permitió no solo desarrollar un producto digital, sino que permitió al cliente conocer el enfoque ágil e implimentarlo en la gestión de otros",
 						client: "Viva ",
 						otherProjectText:"Otros Proyectos que puedes ver",
 						otherProjectLink: [{projectId:"002", name: "Sistema de administración entregas"},{projectId:"003", name: "Sistema de entregas online"}],
-						/*links:[{id:1,name:"Ver página",link:"http://vivagymapps.com/entregandojuntos/"}],*/
+						links:[{id:1,name:"Ver página",link:"http://vivagymapps.com/entregandojuntos/"}],
 						habilidades:[{ id:1,name:"User Experience" },{ id:2,name:"Desarrollo frontend" },{ id:3,name:"User Research" },{ id:4,name:"gamification" }],
 						infoBlocks: [{
 							title: "Escenario",
@@ -36,7 +37,7 @@ const Projects = {
 					{
 						id: "002", name: "Sistema de administración entregas",
 						client: "Viva ",
-						/*links:[{}],*/
+						links:[{id:1,name:"Ver página",link:"http://vivagymapps.com/entregandojuntos/"}],
 						otherProjectText:"Otros Proyectos que puedes ver",
 						otherProjectLink: [{projectId:"001", name: "Entregando Juntos"},{projectId:"003", name: "Sistema de entregas online"}],
 						habilidades:[{ id:1,name:"User Experience" },{ id:2,name:"Desarrollo frontend" }],
@@ -63,7 +64,7 @@ const Projects = {
 					{
 						id: "003", name: "Sistema de entregas online",
 						client: "Viva ",
-						/*links:[{}],*/
+						links:[{id:1,name:"Ver página",link:"http://vivagymapps.com/entregandojuntos/"}],
 						otherProjectText:"Otros Proyectos que puedes ver",
 						otherProjectLink: [{projectId:"002", name: "Sistema de administración entregas"},{projectId:"005", name: "Pawadin"}],
 						habilidades:[{ id:1,name:"User Experience" },{ id:2,name:"Desarrollo frontend" }],
@@ -89,6 +90,7 @@ const Projects = {
 					},
 					{
 						id: "004", name: "Pawadin",
+						special:"Con este proyecto pude ganar un premio a nivel nacional del programa Startup Perú, en la categoría de Ideas innovadoras",
 						client: "Pawadin",
 						otherProjectText:"Otros Proyectos que puedes ver",
 						otherProjectLink: [{projectId:"003", name: "Sistema de entregas online"},{projectId:"005", name: "Role Master"}],
@@ -243,6 +245,10 @@ const Projects = {
 <section class="project__text__body">
 
   <div class="project__text__body__inner">
+  <div class="project__text__body__special"v-if="selection.special">
+  <span class="fa fa-star checked"></span> 
+  {{ selection.special}}
+  </div>
   <div @click="clickFunct" v-for="block in selection.infoBlocks">
   
   <div class="row project__block">

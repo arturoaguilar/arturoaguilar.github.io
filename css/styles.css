@@ -13,6 +13,7 @@
   --soft-gray:#E8E9EB;
   --font:1.8rem;
   --small-sapace:16px;
+  --yellow:#FFDC00;
 }
 
 
@@ -176,7 +177,7 @@ width:30%;
 .abilities {
   padding-top: 150px;
   padding-bottom: 300px;
-  background-color: #FFDC00;
+  background-color: var(--yellow);
   width: 100vw;
   transform: skewY(-7deg);
 }
@@ -412,7 +413,7 @@ display: inline-block;
 .abilities--esc {
   padding-top: 150px;
   padding-bottom: 300px;
-  background-color: #FFDC00;
+  background-color: var(--yellow);
   width: 100vw;
   transform: skewY(7deg);
 }
@@ -451,6 +452,13 @@ display: inline-block;
     text-decoration: none;
     color:var(--red-color);
     }
+
+.project__text__body__special{
+  color: var(--soft-black-color);
+  background-color: var(--yellow);
+  padding: 16px;
+  border-radius: 8px;
+}
 /*=======Inicio menú responsive ===*/
 
 
