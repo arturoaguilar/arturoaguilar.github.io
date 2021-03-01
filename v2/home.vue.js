@@ -143,7 +143,7 @@ const Hero = {
 </section>
 <section class="hero">
 <div class="row">
-<div class="col-md-12">
+<div class="col-md-8">
 <div data-aos="fade-down" data-aos-duration="1500" class="hero__inner">
 <span class="hero__desc__p">Hola, soy </span><h3> {{ portfolio.name }}.</h3>  
 <p class="hero__desc__p">{{portfolio.message}}</p>
@@ -153,6 +153,9 @@ const Hero = {
      </span>
   </div>
 </div>
+</div>
+<div class="col-md-4">
+<img style="max-width:300px;" src="../img/astronaut001.gif">
 </div>
 
 </div>
@@ -174,7 +177,7 @@ const Hero = {
 <div data-aos="fade-up"  data-aos-duration="1000"  class="projects__block" v-for="project in projectsLeft">
 
 <router-link class="projects__block__link" :to="'project/'+project.id">
-<img class="projects__block__img " v-bind:src="project.portImg" />
+<img class="projects__block__img " v-bind:src="'../'+project.portImg" />
 <div class="projects__detail__container">
 <span class="projects__block__title">{{ project.name}}</span>
 <span class="projects__block__habilidad" v-for="(habilidad,index) in project.habilidades">
@@ -194,7 +197,7 @@ const Hero = {
 <div class="projects__detail__container">
 
 <router-link class="projects__block__link" :to="'project/'+project.id">
-<img class="projects__block__img " v-bind:src="project.portImg" />
+<img class="projects__block__img " v-bind:src="'../'+project.portImg" />
 <span class="projects__block__title">{{ project.name}}</span>
 <span class="projects__block__habilidad" v-for="(habilidad,index) in project.habilidades">
 <span v-if="index > 0">/</span>
@@ -278,10 +281,10 @@ const Hero = {
       </div>
       
       <div data-aos="fade-up"  data-aos-duration="1000"  class="contact__button__container">
-      <a class="contact__button" href = "mailto: arturo.aguilar.tobies@gmail.com"><img class="contact__button__img" src="/img/mail_cont.png"></a>
-      <a class="contact__button" href= "https://www.linkedin.com/in/arturoat"><img class="contact__button__img" src="/img/linkedin_cont.png"></a>
-      <a class="contact__button" href= "https://www.instagram.com/arturoaguilart"><img class="contact__button__img" src="/img/instagram_cont.png"></a>
-      <a class="contact__button" href= "https://www.facebook.com/arturo.aguilartobies"><img class="contact__button__img" src="/img/facebook_cont.png"></a>
+      <a class="contact__button" href = "mailto: arturo.aguilar.tobies@gmail.com"><img class="contact__button__img" src="../img/mail_cont.png"></a>
+      <a class="contact__button" href= "https://www.linkedin.com/in/arturoat"><img class="contact__button__img" src="../img/linkedin_cont.png"></a>
+      <a class="contact__button" href= "https://www.instagram.com/arturoaguilart"><img class="contact__button__img" src="../img/instagram_cont.png"></a>
+      <a class="contact__button" href= "https://www.facebook.com/arturo.aguilartobies"><img class="contact__button__img" src="../img/facebook_cont.png"></a>
       </div>
       
       
