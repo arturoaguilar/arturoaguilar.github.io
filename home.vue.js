@@ -142,6 +142,8 @@ const Hero = {
 </div>
 </section>
 <section class="hero">
+<div class="row">
+<div class="col-md-8">
 <div data-aos="fade-down" data-aos-duration="1500" class="hero__inner">
 <span class="hero__desc__p">Hola, soy </span><h3> {{ portfolio.name }}.</h3>  
 <p class="hero__desc__p">{{portfolio.message}}</p>
@@ -150,11 +152,12 @@ const Hero = {
     {{ profession.name }}
      </span>
   </div>
-
+</div>
+</div>
+<div class="col-md-4">
+<img style="max-width:300px;" src="img/astronaut001.gif">
 </div>
 
-<div>
-<img src="img/astronaut.gif">
 </div>
 </section>
 
