@@ -162,8 +162,11 @@ const Hero = {
 
 <div class="row">
 
-<div class="section__title__recip col-md-12">
+<div class="section__title__recip col-md-9">
 <span class="section__title section__title--projects" >Proyectos</span>
+</div>
+<div class="col-md-3">
+<img src="img/space001__ship.png">
 </div>
 </div>
 
