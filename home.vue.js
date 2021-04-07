@@ -143,7 +143,8 @@ const Hero = {
 </section>
 <section class="hero">
 <div class="row">
-<div class="col-md-12">
+
+<div class="col-md-9">
 <div data-aos="fade-down" data-aos-duration="1500" class="hero__inner">
 <span class="hero__desc__p">Hola, soy </span><h3> {{ portfolio.name }}.</h3>  
 <p class="hero__desc__p">{{portfolio.message}}</p>
@@ -155,6 +156,9 @@ const Hero = {
 </div>
 </div>
 
+<div class="col-md-3">
+<img src="img/space001__ship.png">
+</div>
 </div>
 </section>
 
@@ -162,11 +166,8 @@ const Hero = {
 
 <div class="row">
 
-<div class="section__title__recip col-md-9">
+<div class="section__title__recip col-md-12">
 <span class="section__title section__title--projects" >Proyectos</span>
-</div>
-<div class="col-md-3">
-<img src="img/space001__ship.png">
 </div>
 </div>
 
