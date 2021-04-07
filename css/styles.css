@@ -158,7 +158,10 @@ padding-top: 10px;
 }
 .hero__main-image{
  height: 100px;
- animation: rotation;
+ animation-name: rotation;
+ -webkit-animation-name: rotation;
+ -moz-animation-name: rotation;
+ -o-animation-name: rotation;
 }
 @keyframes rotation {
   from {
