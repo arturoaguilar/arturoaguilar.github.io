@@ -161,12 +161,26 @@ padding-top: 10px;
  animation: rotation 8s infinite linear;
 }
 
+.hero__main-paragraph{
+  height: 100px;
+  animation: desplazamiento 8s infinite linear;
+}
+
+
 @keyframes rotation {
   0% { transform: translateY(0);}
   25% { transform: rotate(-20deg);}
   50% { transform: translateY(-10px);}
   75% { transform: rotate(20deg); }
   100% {  transform: rotate(0deg);}
+}
+
+@keyframes desplazamiento {
+  0% { transform: translateY(0);}
+
+  50% { transform: translateY(10px);}
+
+  100% { transform: translateY(0);}
 }
 
 .hero__inner{
