@@ -95,6 +95,10 @@ text-align: center;
 background-image: url("../img/space001__space.png");
 background-repeat: repeat;
 }
+.contact__character__container{
+  margin-bottom: 50px;
+}
+
 .contact__character{
   display: inline-block;
 }
