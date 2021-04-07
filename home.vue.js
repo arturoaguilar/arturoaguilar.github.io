@@ -157,7 +157,7 @@ const Hero = {
 </div>
 
 <div class="col-md-3">
-<img src="img/space001__ship.png">
+<img src="img/space001_space_ship_space.png">
 </div>
 </div>
 </section>
