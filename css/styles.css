@@ -162,10 +162,13 @@ padding-top: 10px;
 }
 
 .hero__main-paragraph{
-  height: 100px;
+
   animation: desplazamiento 8s infinite linear;
 }
 
+.hero__main-image-container{
+  text-align: center;
+}
 
 @keyframes rotation {
   0% { transform: translateY(0);}
