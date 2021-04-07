@@ -163,7 +163,7 @@ padding-top: 10px;
 
 @keyframes rotation {
   0% {  transform: rotate(0deg);}
-  50% { transform: rotate(-180deg);}
+  25% { transform: rotate(-180deg);}
   50% { transform: rotate(359deg); }
   100% {  transform: rotate(0deg); }
 }
