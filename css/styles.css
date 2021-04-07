@@ -158,6 +158,13 @@ padding-top: 10px;
 }
 .hero__main-image{
  height: 100px;
+ 
+}
+.hero__main-image {
+  -webkit-transition:  skewY(-7deg) ease-out 1s;
+  -moz-transition: skewY(7deg) ease-out 1s;
+  -o-transition: skewY(-7deg) 500ms ease-out 1s;
+  transition: skewY(7deg) 500ms ease-out 1s;
 }
 
 .hero__inner{

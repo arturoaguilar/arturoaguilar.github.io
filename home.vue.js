@@ -157,8 +157,8 @@ const Hero = {
 </div>
 
 <div class="col-md-3">
-<!--<img class="hero__main-image" src="img/space001_space_ship_space.png">
-<p>Baja para explorar</p>-->
+<img class="hero__main-image" src="img/space001__ship.png">
+<p>Baja para explorar</p>
 </div>
 
 </div>
