@@ -162,13 +162,11 @@ padding-top: 10px;
 }
 
 @keyframes rotation {
-  0% {  transform: rotate(0deg);
-    transform: translateY(0);}
+  0% { transform: translateY(0);}
   25% { transform: rotate(-20deg);}
-  50% { transform: rotate(0deg); }
+  50% { transform: translateY(-10px);}
   75% { transform: rotate(20deg); }
-  100% {  transform: rotate(0deg);
-    transform: translateY(-10px); }
+  100% {  transform: rotate(0deg);}
 }
 
 .hero__inner{
