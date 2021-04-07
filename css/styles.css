@@ -33,6 +33,10 @@ color: var(--soft-black-color);
 }
 
 @font-face {
+  font-family: "SpaceGrotesk";
+  src: url("fonts/spaceg/SpaceGrotesk-VariableFont_wght");
+}
+@font-face {
     font-family: "AnonymousPro";
     src: url("fonts/AnonymousPro-Regular.ttf");
 }
@@ -47,8 +51,9 @@ color: var(--soft-black-color);
     font-style: italic;
 }
 @font-face {
-    font-family: "AnonymousPro";
-    src: url("fonts/AnonymousPro-BoldItalic.ttf");
+   /* font-family: "AnonymousPro";*/
+font-family: "SpaceGrotesk";
+   src: url("fonts/AnonymousPro-BoldItalic.ttf");
     font-weight: bold;
     font-style: italic;
 }
