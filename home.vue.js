@@ -274,7 +274,7 @@ const Hero = {
 
 <section class="contact">
       <div data-aos="fade-up"  data-aos-duration="1000"  class="contact__text__container">
-      <img class="contact__character" src="img/space001__man.png">
+      <img class="contact__character" src="img/space001_man.png">
       <img class="contact__character" src="img/space001__monster.png">
       <p>Si deseas que trabajemos juntos en algún proyecto, contáctame. </p>
       </div>

@@ -105,7 +105,9 @@ padding: var(--small-sapace);
 .projects__detail__container{
 
 }
-
+.contact__character{
+  height: 100px;
+}
 
 .projects__block__img {
   cursor: pointer;
