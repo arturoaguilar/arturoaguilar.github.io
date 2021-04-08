@@ -157,6 +157,7 @@ const Hero = {
 </div>
 
 <div class="col-md-3  col-xs-12 first-xs hero__main-image-container">
+<img class="hero__main-image-back" src="img/space003.png">
 <img class="hero__main-image" src="img/space001__ship.png">
 <p class="hero__main-paragraph">Baja para explorar</p>
 </div>

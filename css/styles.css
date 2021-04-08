@@ -165,6 +165,12 @@ padding-top: 10px;
  animation: rotation 8s infinite linear;
 }
 
+.hero__main-image-back {
+  width: 100%;
+  position: relative;
+  top:60px;
+}
+
 .hero__main-paragraph{
 
   animation: desplazamiento 8s infinite linear;
