@@ -160,13 +160,12 @@ body {
   /* Flexbox stuff */
   padding-left: 7%;
   display: flex;
-  justify-content: left;
-  align-items: center;
+  padding-block-start: 15%;
 }
 
 .hero__main-image {
   position: relative;
-  top: -50px;
+  top: -70px;
   height: 70px;
   animation: rotation 8s infinite linear;
 }
@@ -174,7 +173,6 @@ body {
 .hero__main-image-back {
   width: 100%;
   position: relative;
-  top: 60px;
 }
 
 .hero__main-paragraph {
@@ -217,7 +215,7 @@ body {
 
 .hero__inner {
   font-size: 2rem;
-  width: 50%;
+  width: 80%;
 }
 
 .hero__desc__p {

@@ -6,9 +6,9 @@ const Hero = {
         name: "Arturo Aguilar",
         profession: [
           { name: "Diseño de experiencias del usuario (UX)", link: "url UX", state: 1, icono: "url imagen ícono A " },
-         /* { name: "User Research", link: "Link User Research", state: 1, icono: "url imagen C" },*/
-          { name: "Desarrollo Frontend ", link: "Link Fron end", state: 1, icono: "url imagen D" }, 
-          { name: "Escritor", link: "Link escritor", state: 1, icono: "url imagen escritor" }, 
+          /* { name: "User Research", link: "Link User Research", state: 1, icono: "url imagen C" },*/
+          { name: "Desarrollo Frontend ", link: "Link Fron end", state: 1, icono: "url imagen D" },
+          { name: "Escritor", link: "Link escritor", state: 1, icono: "url imagen escritor" },
         ],
         message: "Me encanta la innovación, el desarrollo de software y contar historias. Los campos en los que trabajo son:"
 
@@ -44,54 +44,54 @@ const Hero = {
         { id: "008", name: "Premier Pro", type: 2, typeName: "Frontend Development", level: 3 }
       ],
       education: [
-        {id:"001",name:"Master en Neuromarketing e Investigación de mercados",school:"Universidad de Barcelona"},
-        {id:"002",name:"Diplomado en Publicidad Digital",school:"Toulouse Lautrec "},
-        {id:"003",name:"Diplomano en Gestión de Recursos Humanos",school:"Zegel IPAE"},
-        {id:"0011",name:"Ingeniería de Sistemas",school:"Universidad de Lima"},
-        {id:"004",name:"Professional Scrum Master",school:"PSM I Scrum.org"},
-        {id:"005",name:"Javascript",school:"Platzi"},
-        {id:"006",name:"Product Designer por Aerolab",school:"Platzi"},
-        {id:"007",name:"Marketing Digital",school:"Universidad de Lima"},
-        {id:"008",name:"Marketing Digital",school:"Instituto Peruano de Marketing"},
-        {id:"009",name:"Creación de Temas y Plugins en WordPress",school:"Platzi"},
-        {id:"010",name:"Power BI for Users",school:"DMC Perú"},
-        {id:"011",name:"Creación de Tiendas en Línea con WooCommerce",school:"Platzi"},
-        {id:"012",name:"User Experience",school:"Area 51"},
-        {id:"005",name:"Design Sprint",school:"Platzi"},
-        {id:"005",name:"Design Thinking con Minds Garage",school:"Platzi"},
-        {id:"005",name:"HTML y CSS",school:"Platzi"},
-        {id:"005",name:"Ionic",school:"Area 51"},
-        {id:"005",name:"Gamificación",school:"Platzi"},
-        {id:"005",name:"Gestión de Procesos de UX",school:"Platzi"},
-        {id:"005",name:"Dirección de cuentas",school:"La Calle: Escuela Creativa"},
-        {id:"005",name:"Planning Publicitario",school:"La Calle: Escuela Creativa"},
-        {id:"005",name:"Metodologías Ágiles",school:"Platzi"},
-        
-      ], 
+        { id: "001", name: "Master en Neuromarketing e Investigación de mercados", school: "Universidad de Barcelona" },
+        { id: "002", name: "Diplomado en Publicidad Digital", school: "Toulouse Lautrec " },
+        { id: "003", name: "Diplomano en Gestión de Recursos Humanos", school: "Zegel IPAE" },
+        { id: "0011", name: "Ingeniería de Sistemas", school: "Universidad de Lima" },
+        { id: "004", name: "Professional Scrum Master", school: "PSM I Scrum.org" },
+        { id: "005", name: "Javascript", school: "Platzi" },
+        { id: "006", name: "Product Designer por Aerolab", school: "Platzi" },
+        { id: "007", name: "Marketing Digital", school: "Universidad de Lima" },
+        { id: "008", name: "Marketing Digital", school: "Instituto Peruano de Marketing" },
+        { id: "009", name: "Creación de Temas y Plugins en WordPress", school: "Platzi" },
+        { id: "010", name: "Power BI for Users", school: "DMC Perú" },
+        { id: "011", name: "Creación de Tiendas en Línea con WooCommerce", school: "Platzi" },
+        { id: "012", name: "User Experience", school: "Area 51" },
+        { id: "005", name: "Design Sprint", school: "Platzi" },
+        { id: "005", name: "Design Thinking con Minds Garage", school: "Platzi" },
+        { id: "005", name: "HTML y CSS", school: "Platzi" },
+        { id: "005", name: "Ionic", school: "Area 51" },
+        { id: "005", name: "Gamificación", school: "Platzi" },
+        { id: "005", name: "Gestión de Procesos de UX", school: "Platzi" },
+        { id: "005", name: "Dirección de cuentas", school: "La Calle: Escuela Creativa" },
+        { id: "005", name: "Planning Publicitario", school: "La Calle: Escuela Creativa" },
+        { id: "005", name: "Metodologías Ágiles", school: "Platzi" },
+
+      ],
       projects:
         [
           {
             id: "001", order: 1, align: "v", name: "Entregando Juntos",
-            client: "Viva ", desc: "", functs: "", portImg: "img/dummyProPort.png", 
-            habilidades:[{ id:1,name:"User Experience" },{ id:2,name:"Desarrollo frontend" },{ id:3,name:"User Research" },{ id:4,name:"gamification" }]
+            client: "Viva ", desc: "", functs: "", portImg: "img/dummyProPort.png",
+            habilidades: [{ id: 1, name: "User Experience" }, { id: 2, name: "Desarrollo frontend" }, { id: 3, name: "User Research" }, { id: 4, name: "gamification" }]
           },
           {
             id: "002", order: 2, align: "o", name: "Sistema de administración de entregas",
-            client: "Viva ", desc: "", functs: "", portImg: "img/thumbnailAdminProy.png", 
-            habilidades:[{ id:1,name:"User Experience" },{ id:2,name:"Desarrollo frontend" }]
+            client: "Viva ", desc: "", functs: "", portImg: "img/thumbnailAdminProy.png",
+            habilidades: [{ id: 1, name: "User Experience" }, { id: 2, name: "Desarrollo frontend" }]
           },
           {
             id: "003", order: 3, align: "v", name: "Sistema de entregas online",
-            cliente: "Viva", desc: "", functs: "", portImg: "img/thumbnailProyEntreOnline.png", 
-            habilidades:[{ id:1,name:"User Experience" },{ id:2,name:"Desarrollo frontend" }]
+            cliente: "Viva", desc: "", functs: "", portImg: "img/thumbnailProyEntreOnline.png",
+            habilidades: [{ id: 1, name: "User Experience" }, { id: 2, name: "Desarrollo frontend" }]
           },
           {
-          id: "004", order: 4, align: "o", name: "Pawadin", cliente: "Pawadin", desc: "", functs: "", portImg: "img/thumbnailpawadin.png", 
-          habilidades:[{ id:1,name:"User Experience" },{ id:2,name:"Desarrollo frontend" },{ id:3,name:"User Research" },{ id:4,name:"Lean Startup"},{id:5,name:"Design Thinking"}] 
+            id: "004", order: 4, align: "o", name: "Pawadin", cliente: "Pawadin", desc: "", functs: "", portImg: "img/thumbnailpawadin.png",
+            habilidades: [{ id: 1, name: "User Experience" }, { id: 2, name: "Desarrollo frontend" }, { id: 3, name: "User Research" }, { id: 4, name: "Lean Startup" }, { id: 5, name: "Design Thinking" }]
           },
-          { 
-          id: "005", order: 5, align: "v", name: "Role master", cliente: "Arturo Aguilar", desc: "", functs: "", portImg: "img/thumbnailRolemProy.png", 
-          habilidades:[{ id:1,name:"User Experience" },{ id:2,name:"Desarrollo frontend" },{ id:3,name:"User Research" },{ id:4,name:"gamification" },{id:5,name:"Desarrollo Backend"}] 
+          {
+            id: "005", order: 5, align: "v", name: "Role master", cliente: "Arturo Aguilar", desc: "", functs: "", portImg: "img/thumbnailRolemProy.png",
+            habilidades: [{ id: 1, name: "User Experience" }, { id: 2, name: "Desarrollo frontend" }, { id: 3, name: "User Research" }, { id: 4, name: "gamification" }, { id: 5, name: "Desarrollo Backend" }]
           }
         ]
     }
@@ -99,10 +99,10 @@ const Hero = {
   created() {
     console.log('10 Component has been created!');
   },
-  destroyed(){
+  destroyed() {
     console.log('se destruyó Home');
-	
-	},
+
+  },
   computed: {
 
     projectsRight: function () {
@@ -144,7 +144,7 @@ const Hero = {
 <section class="hero">
 <div class="row">
 
-<div class="col-md-9 col-xs-12 ">
+<div class="col-md-7 col-xs-12 ">
 <div data-aos="fade-down" data-aos-duration="1500" class="hero__inner">
 <span class="hero__desc__p">Hola, soy </span><h3> {{ portfolio.name }}.</h3>  
 <p class="hero__desc__p">{{portfolio.message}}</p>
