@@ -6,7 +6,7 @@ const Hero = {
         name: "Arturo Aguilar",
         profession: [
           { name: "Diseño de experiencias del usuario (UX)", link: "url UX", state: 1, icono: "url imagen ícono A " },
-          { name: "User Research", link: "Link User Research", state: 1, icono: "url imagen C" },
+         /* { name: "User Research", link: "Link User Research", state: 1, icono: "url imagen C" },*/
           { name: "Desarrollo Frontend ", link: "Link Fron end", state: 1, icono: "url imagen D" }, 
           { name: "Escritor", link: "Link escritor", state: 1, icono: "url imagen escritor" }, 
         ],
@@ -144,7 +144,7 @@ const Hero = {
 <section class="hero">
 <div class="row">
 
-<div class="col-md-9">
+<div class="col-md-9 col-xs-12 ">
 <div data-aos="fade-down" data-aos-duration="1500" class="hero__inner">
 <span class="hero__desc__p">Hola, soy </span><h3> {{ portfolio.name }}.</h3>  
 <p class="hero__desc__p">{{portfolio.message}}</p>
@@ -156,7 +156,7 @@ const Hero = {
 </div>
 </div>
 
-<div class="col-md-3 hero__main-image-container">
+<div class="col-md-3  col-xs-12 first-xs hero__main-image-container">
 <img class="hero__main-image" src="img/space001__ship.png">
 <p class="hero__main-paragraph">Baja para explorar</p>
 </div>
