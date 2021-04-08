@@ -635,6 +635,11 @@ nav {
 /*=====Fin menú responsive ======*/
 
 @media (max-width: 600px) {
+
+  .hero__desc__p {
+    padding-inline: 30px;
+    margin-block-end: 60px;
+  }
   .otherProjects__link {
     margin-top: 16px;
     margin-bottom: 16px;
