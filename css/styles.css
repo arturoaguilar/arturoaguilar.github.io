@@ -636,7 +636,7 @@ nav {
 
 @media (max-width: 600px) {
 
-  .hero__desc__p {
+  .hero__inner {
     padding-inline: 30px;
     margin-block-end: 60px;
   }
