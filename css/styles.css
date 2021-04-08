@@ -175,7 +175,7 @@ body {
 
 .hero__main-paragraph {
   position: relative;
-  top: -40px;
+  top: -60px;
   animation: desplazamiento 8s infinite linear;
 }
 
