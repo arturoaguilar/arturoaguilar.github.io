@@ -634,7 +634,7 @@ nav {
 
 /*=====Fin menú responsive ======*/
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
 
   .hero__inner {
     padding-inline: 30px;
