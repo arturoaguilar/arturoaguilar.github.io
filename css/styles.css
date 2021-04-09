@@ -47,7 +47,7 @@ body {
 @font-face {
   font-family: "SpaceGrotesk";
   src: url("fonts/spaceg/static/SpaceGrotesk-Light.ttf");
-  font-weight: 100;
+  font-weight: 300;
 }
 @font-face {
   font-family: "SpaceGrotesk";
@@ -244,7 +244,6 @@ body {
 
 .hero__desc__p {
   font-size: 1.5rem;
-  font-style: italic;
 }
 
 .projects {
