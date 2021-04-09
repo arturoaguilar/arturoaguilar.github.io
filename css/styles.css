@@ -659,6 +659,9 @@ nav {
 /*=====Fin menú responsive ======*/
 
 @media (max-width: 800px) {
+  .hero__main-image {
+  margin-top: 90px;
+  }
   .hero__main-image-back {
     display: none;
   }
