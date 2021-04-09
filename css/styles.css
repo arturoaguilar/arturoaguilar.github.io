@@ -32,11 +32,34 @@ body {
   padding: 0;
 }
 
+
+
 @font-face {
   font-family: "SpaceGrotesk";
-  src: url("fonts/spaceg/SpaceGrotesk-VariableFont_wght.ttf");
+  src: url("fonts/spaceg/static/SpaceGrotesk-Regular.ttf");
+  font-weight: regular;
 }
-
+@font-face {
+  font-family: "SpaceGrotesk";
+  src: url("fonts/spaceg/static/SpaceGrotesk-Bold.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "SpaceGrotesk";
+  src: url("fonts/spaceg/static/SpaceGrotesk-Light.ttf");
+  font-weight: light;
+}
+@font-face {
+  font-family: "SpaceGrotesk";
+  src: url("fonts/spaceg/static/SpaceGrotesk-Medium.ttf");
+  font-weight: medium;
+}
+@font-face {
+  font-family: "SpaceGrotesk";
+  src: url("fonts/spaceg/static/SpaceGrotesk-SemiBold.ttf");
+  font-weight: semiBold;
+}
+/*
 @font-face {
   font-family: "AnonymousPro";
   src: url("fonts/AnonymousPro-Regular.ttf");
@@ -60,6 +83,7 @@ body {
   font-weight: bold;
   font-style: italic;
 }
+*/
 
 body {
   font-family: 'SpaceGrotesk', sans-serif;
