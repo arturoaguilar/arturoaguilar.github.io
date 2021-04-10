@@ -95,13 +95,14 @@ const escHero = {
 
 <div data-aos="fade-down" data-aos-duration="1500" class="hero--esc__inner row">
 
-<div class="col-md-3">
+<div class="col-md-3 hero__main-image-container">
 <img class="hero__main-image-back" src="img/space003.png">
 <img class="hero__main-image" src="img/space001__ship.png">
 <p class="hero__main-paragraph">Baja para explorar</p>
 </div>
 
-<div class="col-md-9">
+<div class="col-md-9 ">
+<div class="hero__writer__text-container">
 <span class="hero__desc__p">Hola, soy </span><h3> {{ portfolio.name }}.</h3>  
 <p class="hero__desc__p">{{portfolio.message}}</p>
 <div> 
@@ -109,7 +110,7 @@ const escHero = {
     {{ profession.name }}
      </span>-->
   </div>
-
+  </div>
 </div>
 </div>
 </section>

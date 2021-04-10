@@ -489,7 +489,10 @@ body {
   font-size: 2rem;
   /*width: 30%;*/
 }
-
+.hero__writer__text-container{
+  margin-left: 100px;
+  width: 400px;
+}
 .projects--esc {
   width: 100vw;
   padding-top: 150px;
