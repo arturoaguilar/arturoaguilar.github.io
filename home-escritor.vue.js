@@ -93,7 +93,7 @@ const escHero = {
 
 <section class="hero--esc">
 
-<div data-aos="fade-down" data-aos-duration="1500" class="hero--esc__inner row">
+<div data-aos="fade-down" data-aos-duration="1500" class="hero--esc__inner row end-xs">
 
 <div class="col-md-3 col-xs-12 hero__main-image-container">
 <img class="hero__main-image-back" src="img/space003.png">
