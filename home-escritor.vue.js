@@ -101,7 +101,7 @@ const escHero = {
 <p class="hero__main-paragraph">Baja para explorar</p>
 </div>
 
-<div class="col-md-9 ">
+<div class="col-md-8 col-xs-12 ">
 <div class="hero__writer__text-container">
 <span class="hero__desc__p">Hola, soy </span><h3> {{ portfolio.name }}.</h3>  
 <p class="hero__desc__p">{{portfolio.message}}</p>
