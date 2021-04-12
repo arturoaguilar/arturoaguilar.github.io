@@ -95,7 +95,7 @@ const escHero = {
 
 <div data-aos="fade-down" data-aos-duration="1500" class="hero--esc__inner row">
 
-<div class="col-md-3 hero__main-image-container">
+<div class="col-md-3 col-xs-12 hero__main-image-container">
 <img class="hero__main-image-back" src="img/space003.png">
 <img class="hero__main-image" src="img/space001__ship.png">
 <p class="hero__main-paragraph">Baja para explorar</p>
