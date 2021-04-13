@@ -277,6 +277,14 @@ const Hero = {
 </span>
 </div>
 </div>
+
+<div class="row">
+<div class="col-xs-12">
+<img class="tools__monster-planet" src="img/planet001.png">
+</div>
+
+</div>
+
 </section>
 
 <section class="contact">

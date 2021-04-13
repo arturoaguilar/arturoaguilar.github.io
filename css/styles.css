@@ -203,6 +203,14 @@ body {
   top: -60px;
   animation: desplazamiento 8s infinite linear;
 }
+.tools__monster-planet{
+  width: 300px;
+  animation: xmove 8s infinite linear;
+}
+
+.tools__monster-planet-container{
+  text-align: center;
+}
 
 .hero__main-image-container {
   text-align: center;
@@ -235,6 +243,18 @@ body {
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+@keyframes xmove {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(30px);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
 
@@ -279,7 +299,7 @@ body {
 .tools {
   width: 100vw;
   padding-top: 150px;
-  padding-bottom: 300px;
+  /*padding-bottom: 300px;*/
 }
 
 .tool__block {
