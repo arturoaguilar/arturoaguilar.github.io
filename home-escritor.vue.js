@@ -210,6 +210,12 @@ const escHero = {
 </div>
 </div>
 
+<div class="row">
+<div class="col-xs-12 tools__monster-planet-container">
+<img class="tools__monster-planet" src="img/planet003.png">
+</div>
+
+</div>
 </section>
 
 
