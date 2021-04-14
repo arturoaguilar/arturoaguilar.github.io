@@ -720,6 +720,22 @@ nav {
 /*=====Fin menú responsive ======*/
 
 @media (max-width: 800px) {
+
+
+  .section__tool__translate-screen {
+    display: inline-block;
+    width: 300px;
+    text-align: left;
+    font-size: 1.5rem;
+    background-color: var(--soft-black-color);
+    color: var(--soft-gray);
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    top: 70px;
+    z-index: 3;
+  }
+
   .section__title__icon {
     display: inline-block;
     width: 20px;
