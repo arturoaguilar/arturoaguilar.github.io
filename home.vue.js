@@ -93,7 +93,8 @@ const Hero = {
             id: "005", order: 5, align: "v", name: "Role master", cliente: "Arturo Aguilar", desc: "", functs: "", portImg: "img/thumbnailRolemProy.png",
             habilidades: [{ id: 1, name: "User Experience" }, { id: 2, name: "Desarrollo frontend" }, { id: 3, name: "User Research" }, { id: 4, name: "gamification" }, { id: 5, name: "Desarrollo Backend" }]
           }
-        ]
+        ],
+        spaceshipTranslate:false,
     }
   },
   created() {
@@ -280,7 +281,8 @@ const Hero = {
 
 <div class="row">
 <div class="col-xs-12 tools__monster-planet-container">
-<img class="tools__monster-planet" src="img/planet001.png">
+<p v-show="spaceshipTranslate" class="section__tool__translate-screen">Bienvenido al planeta del diseño de productos y desarrollo de ideas innovadoras. Gracias por hacer contacto. Espero que podamos trabajar juntos.</p>
+<img @click="spaceshipTranslate=!spaceshipTranslate" class="tools__monster-planet" src="img/planet001.png">
 </div>
 
 </div>

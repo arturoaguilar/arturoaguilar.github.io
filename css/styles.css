@@ -765,6 +765,21 @@ nav {
 
 @media (min-width: 600px) {
 
+  .section__tool__translate-screen{
+    display: inline-block;
+    width: 300px;
+    text-align: left;
+    font-size: 1.5rem;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    left: 70px;
+    bottom: 70px;
+    z-index: 3;
+  }
+
   .section__title__icon{
     display: inline-block;
     width: 30px;
