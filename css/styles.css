@@ -205,7 +205,8 @@ body {
 }
 .tools__monster-planet{
   width: 300px;
-  animation: xmove 8s infinite linear;
+  animation: xmove 5s infinite linear;
+  vertical-align:bottom;
 }
 
 .tools__monster-planet-container{
@@ -250,8 +251,16 @@ body {
   0% {
     transform: translateX(0);
   }
-  50% {
+  25% {
     transform: translateX(10px);
+    
+  }
+  50% {
+    transform: translateX(0px);
+    transform: translateY(30px);
+  }
+  75% {
+    transform: translateX(-10px);
   }
   100% {
     transform: translateX(0);
