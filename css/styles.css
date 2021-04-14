@@ -322,6 +322,7 @@ body {
 
 .contact {
   position: relative;
+  z-index: 2;
   background-color: var(--soft-gray);
   color: var(--soft-black-color);
   width: 100vw;
