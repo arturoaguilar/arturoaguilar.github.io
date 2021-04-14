@@ -204,6 +204,8 @@ body {
   animation: desplazamiento 8s infinite linear;
 }
 .tools__monster-planet{
+  z-index: 1;
+  position: relative;
   width: 300px;
   animation: xmove 5s infinite linear;
   vertical-align:bottom;
@@ -319,6 +321,7 @@ body {
 }
 
 .contact {
+  position: relative;
   background-color: var(--soft-gray);
   color: var(--soft-black-color);
   width: 100vw;
