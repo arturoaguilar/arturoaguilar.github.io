@@ -214,6 +214,7 @@ body {
 .translate-screen__close-button{
   border-radius: 10px;
   border: solid 1px var(--soft-gray);
+  padding: 20px;
 }
 
 .tools__monster-planet-container{
