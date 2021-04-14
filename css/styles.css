@@ -204,6 +204,7 @@ body {
   animation: desplazamiento 8s infinite linear;
 }
 .tools__monster-planet{
+  cursor:pointer;
   z-index: 1;
   position: relative;
   width: 300px;
@@ -698,6 +699,10 @@ nav {
   color: var(--red-color);
 }
 
+.translate-screen__title{
+  display: block;
+  font-weight: bold;
+}
 /*=====Fin menú responsive ======*/
 
 @media (max-width: 800px) {
@@ -770,8 +775,8 @@ nav {
     width: 300px;
     text-align: left;
     font-size: 1.5rem;
-    background-color: black;
-    color: white;
+    background-color: var(--soft-black-color);
+    color: var(--soft-gray);
     padding: 20px;
     border-radius: 10px;
     position: relative;
