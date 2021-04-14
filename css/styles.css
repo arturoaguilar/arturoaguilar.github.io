@@ -316,8 +316,8 @@ body {
   background-color: var(--yellow);
   width: 100vw;
   transform: skewY(-7deg);
-  background-image: url(../img/space005__space.png);
-  background-repeat: repeat;
+  /*background-image: url(../img/space005__space.png);
+  background-repeat: repeat;*/
 }
 
 .abilities__inner {
