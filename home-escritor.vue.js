@@ -41,7 +41,8 @@ const escHero = {
             cliente: "Proyecto Personal ", desc: "Podcast que cubre los extraños sucesos que ocurren en la ficticia ciudad de Laguna Roja.", functs: "", portImg: "img/thumbnailEstacionAverno.png", 
             habilidades:[{ id:1,name:"Copywriting" },{ id:3,name:"Escritura ficción" },{ id:4,name:"Escritura de guión podcast" }]
           }
-        ]
+        ],
+        spaceshipTranslate:false
     }
   },
   created() {
