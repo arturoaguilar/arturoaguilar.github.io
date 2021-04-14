@@ -212,7 +212,8 @@ const escHero = {
 
 <div class="row">
 <div class="col-xs-12 tools__monster-planet-container">
-<img class="tools__monster-planet" src="img/planet003.png">
+<p v-show="spaceshipTranslate" class="section__tool__translate-screen"><span class="translate-screen__title">Traductor de tu nave:</span>Bienvenido al planeta del diseño de productos y desarrollo de ideas innovadoras. Gracias por hacer contacto. Espero que podamos trabajar juntos. <button @click="spaceshipTranslate=!spaceshipTranslate" class="translate-screen__close-button">Cerrar</button></p>
+<img @click="spaceshipTranslate= !spaceshipTranslate" class="tools__monster-planet" src="img/planet003.png">
 </div>
 
 </div>
