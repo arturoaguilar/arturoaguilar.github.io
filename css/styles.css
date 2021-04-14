@@ -524,7 +524,6 @@ body {
 }
 .hero__writer__text-container{
   margin-left: 100px;
-  width: 600px;
 }
 .projects--esc {
   width: 100vw;
@@ -758,6 +757,9 @@ nav {
 }
 
 @media (min-width: 600px) {
+  .hero__writer__text-container{
+    width: 600px;
+  }
   .hero {
     height: 80vh;
     padding-left: 7%;
