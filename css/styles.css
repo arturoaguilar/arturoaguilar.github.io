@@ -317,7 +317,7 @@ body {
   width: 100vw;
   transform: skewY(-7deg);
   background-image: url(../img/space005__space.png);
-    background-repeat: repeat;
+  background-repeat: repeat;
 }
 
 .abilities__inner {
@@ -505,6 +505,8 @@ body {
   padding-top: 100px;
   padding-bottom: 100px;
   background-color: var(--soft-black-color);
+  background-image: url("../img/space001__space.png");
+  background-repeat: repeat;
 }
 
 .project_abilities {

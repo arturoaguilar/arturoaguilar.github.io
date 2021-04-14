@@ -94,7 +94,7 @@ const Hero = {
             habilidades: [{ id: 1, name: "User Experience" }, { id: 2, name: "Desarrollo frontend" }, { id: 3, name: "User Research" }, { id: 4, name: "gamification" }, { id: 5, name: "Desarrollo Backend" }]
           }
         ],
-        spaceshipTranslate:false,
+      spaceshipTranslate: false,
     }
   },
   created() {
