@@ -170,7 +170,7 @@ const Hero = {
 <div class="row">
 
 <div class="section__title__recip col-md-12">
-<span class="section__title section__title--projects" ><img class="section__title__icon" src="img/space_ship_dark_icon.png">Proyectos</span>
+<span class="section__title section__title--projects" ><img class="section__title__icon" src="img/space_ship_light_icon.png">Proyectos</span>
 </div>
 </div>
 
