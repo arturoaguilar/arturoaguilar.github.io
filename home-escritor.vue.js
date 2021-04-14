@@ -213,7 +213,7 @@ const escHero = {
 
 <div class="row">
 <div class="col-xs-12 tools__monster-planet-container">
-<p v-show="spaceshipTranslate" class="section__tool__translate-screen"><span class="translate-screen__title">Traductor de tu nave:</span>Bienvenido al planeta de las historias interesantes. Entra a cualquiera de los productos y las encontrarás. Gracias por hacer contacto.  <button @click="spaceshipTranslate=!spaceshipTranslate" class="translate-screen__close-button">Cerrar</button></p>
+<p v-show="spaceshipTranslate" class="section__tool__translate-screen"><span class="translate-screen__title">Traductor de tu nave:</span>Bienvenido al planeta de las historias interesantes. Entra a cualquiera de los productos y las encontrarás. Gracias por hacer contacto.  <button @click="spaceshipTranslate=!spaceshipTranslate" class="translate-screen__close-button">Entendido</button></p>
 <img @click="spaceshipTranslate= !spaceshipTranslate" class="tools__monster-planet" src="img/planet003.png">
 </div>
 
