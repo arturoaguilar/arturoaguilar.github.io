@@ -9,7 +9,7 @@ const escProjects = {
 						id: "001", name: "Carcocha Cósmica",
 						client: "Viva ",
 						links:[{id:1,name:"Ver Reseñas",link:"https://www.instagram.com/carcochacosmica/"}],
-						habilidades: [{ id: 1, name: "User Experience" }, { id: 2, name: "Desarrollo frontend" }, { id: 3, name: "User Research" }, { id: 4, name: "gamification" }],
+						habilidades: [{ id: 1, name: "Redacción" }, { id: 2, name: "Diseño" }, { id: 3, name: "Copy Writing" }],
 						infoBlocks: [{
 							title: "Descripción",
 							blockType: 2,
@@ -22,7 +22,7 @@ const escProjects = {
 						id: "002", name: "Insomnes y patriotas",
 						client: "Viva ",
 						links:[{id:1,name:"Ver libro",link:"https://amzn.to/38AnrJ3"}],
-						habilidades: [{ id: 1, name: "User Experience" }, { id: 2, name: "Desarrollo frontend" }, { id: 3, name: "User Research" }, { id: 4, name: "gamification" }],
+						habilidades: [{ id: 1, name: "Escritura" }, { id: 2, name: "Diseño de producto" }, { id: 3, name: "Marketing" }],
 						infoBlocks: [{
 							title: "Descripción",
 							blockType: 2,
@@ -35,7 +35,7 @@ const escProjects = {
 						id: "003", name: "Estación Averno",
 						client: "Viva ",
 						links:[{id:1,name:"Podcast en Spotify",link:"https://open.spotify.com/show/1372kt9XHsv8DUyjheMCYb?si=I5HvbFhhRVWWQkhD-CZKIA&utm_source=copy-link"},{id:1,name:"Podcast en Youtube",link:"https://youtube.com/channel/UCWphfZg8JeebZfqlGtu_Ecg"}],
-						habilidades: [{ id: 1, name: "User Experience" }, { id: 2, name: "Desarrollo frontend" }, { id: 3, name: "User Research" }, { id: 4, name: "gamification" }],
+						habilidades: [{ id: 1, name: "Escritura de guión" }, { id: 2, name: "Voz" }, { id: 3, name: "Diseño de producto" }],
 						infoBlocks: [{
 							title: "Descripción",
 							blockType: 2,
