@@ -92,7 +92,11 @@ body {
   font-family: 'SpaceGrotesk', sans-serif;
   font-weight: 300;
 }
-
+.all--pages__footer{
+  background-color: var(--soft-black-color);
+  color: var(--soft-gray);
+  text-align: center;
+}
 .row {
   margin-right: 0px;
   margin-left: 0px;
