@@ -16,10 +16,12 @@ const Hero = {
       abilities: [
         { id: "001", name: "User Research", type: 1, typeName: "Product Design", level: 3 },
         { id: "002", name: "Design Thinking", type: 1, typeName: "Product Design", level: 3 },
+        { id: "005", name: "Scrum", type: 1, typeName: "Product Design", level: 3 },
+        { id: "002", name: "Human Centered Design", type: 1, typeName: "Product Design", level: 3 },
+        { id: "002", name: "Double Diamond Design", type: 1, typeName: "Product Design", level: 3 },
         { id: "003", name: "Lean Ux", type: 1, typeName: "Product Design", level: 3 },
         { id: "003", name: "Lean Startup", type: 1, typeName: "Product Design", level: 3 },
         { id: "004", name: "Google Design Sprint", type: 1, typeName: "Product Design", level: 3 },
-        { id: "005", name: "Scrum", type: 1, typeName: "Product Design", level: 3 },
         { id: "006", name: "Gamification", type: 1, typeName: "Product Design", level: 3 },
         { id: "007", name: "Html", type: 2, typeName: "Frontend Development", level: 3 },
         { id: "008", name: "Javascript", type: 2, typeName: "Frontend Development", level: 3 },
