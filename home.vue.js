@@ -7,10 +7,10 @@ const Hero = {
         profession: [
           { name: "Diseño de experiencias del usuario (UX)", link: "url UX", state: 1, icono: "url imagen ícono A " },
           /* { name: "User Research", link: "Link User Research", state: 1, icono: "url imagen C" },*/
-          { name: "Desarrollo Frontend ", link: "Link Fron end", state: 1, icono: "url imagen D" },
-          { name: "Escritor", link: "Link escritor", state: 1, icono: "url imagen escritor" },
+          { name: "Desarrollo Web", link: "Link Fron end", state: 1, icono: "url imagen D" },
+          { name: "Gestión ágil de proyectos", link: "Link escritor", state: 1, icono: "url imagen escritor" },
         ],
-        message: "Me encanta la innovación, el desarrollo de software y contar historias. Los campos en los que trabajo son:"
+        message: "Me encanta la innovación, el diseño de productos/servicios digitales y el desarrollo de software. Los campos en los que trabajo son:"
 
       },
       abilities: [
@@ -27,6 +27,8 @@ const Hero = {
         { id: "009", name: "Arquitectura de la Información", type: 2, typeName: "Frontend Development", level: 3 },
         { id: "010", name: "Vue3", type: 2, typeName: "Frontend Development", level: 3 },
         { id: "011", name: "CSS", type: 2, typeName: "Frontend Development", level: 3 },
+        { id: "011", name: "Grid CSS / Flexbox", type: 2, typeName: "Frontend Development", level: 3 },
+        { id: "011", name: "Heroku", type: 2, typeName: "Frontend Development", level: 3 },
         { id: "012", name: "Google Firestore", type: 2, typeName: "Frontend Development", level: 3 },
         { id: "012", name: "Git/Github", type: 2, typeName: "Frontend Development", level: 3 },
         { id: "012", name: "Flexbox Grid", type: 2, typeName: "Frontend Development", level: 3 },
@@ -229,7 +231,7 @@ const Hero = {
 <div  class="abilities__inner row">
 
 <div data-aos="fade-up"  data-aos-duration="1000" class="abilities__block col-md-6 col-xs-12">
-<h2 class="col-md-12">Frontend Development</h2>
+<h2 class="col-md-12">Web Development</h2>
 <span  class="ability__block--dev hvr-grow col-xs-12 col-md-12" v-for="ability in abilitiesDev">
 {{ability.name }}
 </span>
