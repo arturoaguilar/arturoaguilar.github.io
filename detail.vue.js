@@ -94,7 +94,7 @@ const Projects = {
 						client: "Pawadin",
 						otherProjectText:"Otros Proyectos que puedes ver",
 						otherProjectLink: [{projectId:"003", name: "Sistema de entregas online"},{projectId:"005", name: "Role Master"}],
-						links:[{id:1,name:"Ver página",link:"http://www.pawadin.com/"}],
+						/*links:[{id:1,name:"Ver página",link:"http://www.pawadin.com/"}],*/
 						habilidades:[{ id:1,name:"User Experience" },{ id:2,name:"Desarrollo frontend" },{ id:3,name:"User Research" },{ id:4,name:"Lean Startup"},{id:5,name:"Design Thinking"}],
 						infoBlocks: [{
 							title: "Contexto",
