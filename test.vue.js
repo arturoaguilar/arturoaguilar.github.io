@@ -55,7 +55,7 @@ const Test = {
     
     <div class="test__body__image-container">
 
-  <img class="test__body__image" src="/image/testBackgroundImage.png">
+  <img class="test__body__image" src="/img/testBackgroundImage.png">
     </div>
 
 
