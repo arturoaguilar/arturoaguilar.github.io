@@ -15,6 +15,16 @@
   --font: 1.8rem;
   --small-sapace: 16px;
   --yellow: #FFDC00;
+
+/*for testing*/
+
+  --pink:#fc1478;
+  --blue:#1cabe3;
+  --black:#1d1d1b;
+  --gray: #E8E9EB;
+  --font: 1.8rem;
+
+
 }
 
 html {
@@ -808,8 +818,17 @@ nav {
 
 .test__body {
   height: 100vh;
+  display: grid;
+  grid-template-areas: "call image";
+  grid-template-columns: 2fr 1fr;
 }
+.test__body__image {
+grid-area: image;
+}  
 
+.test__body__call-to-action{
+grid-area: call;
+}
 
 @media (min-width: 600px) {
   .section__tool__translate-screen {
