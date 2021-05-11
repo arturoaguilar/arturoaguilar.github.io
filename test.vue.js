@@ -16,7 +16,7 @@ const Test = {
      
         async SendFile() {
   
-           const API_URL = "http://voltiumlab.com/imptest/back/sendDocument.php";
+           const API_URL = "https://voltiumlab.com/imptest/back/sendDocument.php";
 
              const response = await fetch(API_URL, {
                method: "POST",
@@ -44,7 +44,7 @@ const Test = {
   <div class="test__body">
   
 <form id="fileForm"  @submit.prevent="SendFile">
-3 {{mensaje}}
+4 {{mensaje}}
   <label for="userfile"> Upload your pdf</label>
   <input   id="userfile" @change="changeFiles" name="userfile" type="file" accept="application/pdf"/>
   <button> Upload </button>
