@@ -4,17 +4,15 @@ const Test = {
             selection: [],
             mensaje: "this is a test",
             file:'',
-            newPDF:''
+            newpdf:''
 
         }
     },
     methods: {
         async SendFile() {
   
-
            const API_URL = "http://voltiumlab.com/imptest/back/sendDocument.php";
- 
-               
+
              const response = await fetch(API_URL, {
                method: "POST",
                headers: {
@@ -38,11 +36,10 @@ const Test = {
 
 },
     template:/* vue-html */ `
-
   <div class="test__body">
-<form id="fileForm" action="back/sendDocument.php" @submit.prevent="SendFile">
+<form id="fileForm"  @submit.prevent="SendFile">
   <label for="userfile"> Upload your pdf</label>
-  <input  v-model="newPDF" id="userfile" name="userfile" type="file" accept="application/pdf"/>
+  <input   id="userfile" v-model="newpdf" name="userfile" type="file" accept="application/pdf"/>
   <button> Upload </button>
  </form>
 </div>
