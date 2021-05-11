@@ -15,7 +15,7 @@ const Test = {
         },
      
         async SendFile() {
-  console.log(this.files[0]);
+            console.log(this.files[0]);
            const API_URL = "https://voltiumlab.com/imptest/back/sendDocument.php";
            var data = new FormData()
            data.append('files', this.files[0])
@@ -25,8 +25,8 @@ const Test = {
                  "Content-Type": "application/json",
                },
                body:
-                //JSON.stringify({ data }),
-                data,
+              JSON.stringify({ data }),
+               // data,
              });
              const json = await response.json();
              console.log(json);
@@ -44,7 +44,7 @@ const Test = {
   <div class="test__body">
   
 <form id="fileForm"  @submit.prevent="SendFile">
-20 {{mensaje}}
+26 {{mensaje}}
   <label for="userfile"> Upload your pdf</label>
   <input   id="userfile" @change="changeFiles" name="userfile" type="file" accept="application/pdf"/>
   <button> Upload </button>
