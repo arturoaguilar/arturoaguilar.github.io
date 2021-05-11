@@ -21,12 +21,12 @@ const Test = {
            data.append('files', this.files[0])
              const response = await fetch(API_URL, {
                method: "POST",
-               headers: {
+              /* headers: {
                  "Content-Type": "application/json",
-               },
+               },*/
                body:
-              JSON.stringify({ data }),
-               // data,
+             // JSON.stringify({ data }),
+               data,
              });
              const json = await response.json();
              console.log(json);
@@ -44,9 +44,9 @@ const Test = {
   <div class="test__body">
   
 <form id="fileForm"  @submit.prevent="SendFile">
-26 {{mensaje}}
+35 {{mensaje}}
   <label for="userfile"> Upload your pdf</label>
-  <input   id="userfile" @change="changeFiles" name="userfile" type="file" accept="application/pdf"/>
+  <input  id="userfile" @change="changeFiles" name="userfile" type="file" accept="application/pdf"/>
   <button> Upload </button>
  </form>
 </div>
