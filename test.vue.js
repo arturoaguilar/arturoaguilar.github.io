@@ -9,6 +9,10 @@ const Test = {
         }
     },
     methods: {
+        changeFiles(){
+            console.log(this.$refs.miarchivo.files);
+        },
+     
         async SendFile() {
   
            const API_URL = "http://voltiumlab.com/imptest/back/sendDocument.php";
@@ -37,9 +41,10 @@ const Test = {
 },
     template:/* vue-html */ `
   <div class="test__body">
+  
 <form id="fileForm"  @submit.prevent="SendFile">
   <label for="userfile"> Upload your pdf</label>
-  <input   id="userfile" v-model="newpdf" name="userfile" type="file" accept="application/pdf"/>
+  <input   id="userfile" @change="changeFiles" name="userfile" type="file" accept="application/pdf"/>
   <button> Upload </button>
  </form>
 </div>
