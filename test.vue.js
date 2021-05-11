@@ -24,7 +24,9 @@ const Test = {
                headers: {
                  "Content-Type": "application/json",
                },
-               body: data,
+               body: JSON.stringify({
+                  data
+               }),
              });
              const json = await response.json();
              console.log(json);
@@ -42,7 +44,7 @@ const Test = {
   <div class="test__body">
   
 <form id="fileForm"  @submit.prevent="SendFile">
-6 {{mensaje}}
+9 {{mensaje}}
   <label for="userfile"> Upload your pdf</label>
   <input   id="userfile" @change="changeFiles" name="userfile" type="file" accept="application/pdf"/>
   <button> Upload </button>
