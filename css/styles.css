@@ -804,6 +804,13 @@ nav {
   }
 }
 
+/*Values fir test */
+
+.test__body {
+  height: 100vh;
+}
+
+
 @media (min-width: 600px) {
   .section__tool__translate-screen {
     display: inline-block;
