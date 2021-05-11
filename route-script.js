@@ -14,7 +14,8 @@ const routes = [
   { path: '/escproject/:name', name: 'detail-esc', component: escProjects },
   { path: '/eschome', name: 'home-escritor', component: escHero },
   { path: '/project/:name', name: 'project', component: Projects },
-  { path: '/', name: 'hero', component: Hero }
+  { path: '/', name: 'hero', component: Hero },
+  {path: '/test',name: 'test', component: Test}
 ]
 
 // 3. Create the router instance and pass the `routes` option
