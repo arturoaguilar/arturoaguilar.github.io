@@ -10,7 +10,7 @@ const Test = {
     },
     methods: {
         changeFiles(){
-            console.log(this.$refs.miarchivo.files);
+            console.log(this.$refs.userfile.files);
         },
      
         async SendFile() {
