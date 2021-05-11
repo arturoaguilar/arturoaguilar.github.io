@@ -49,11 +49,13 @@ const Test = {
     <input  id="userfile" @change="changeFiles" name="userfile" type="file" accept="application/pdf"/>
         <button> Submit </button>
     </form>
+
+    <button> ¡Design with canva! </button>
     </div>
     
-    <div class="test__body__image">
+    <div class="test__body__image-container">
 
-    image
+  <img class"test__body__image" src="/image/testBackgroundImage.png">
     </div>
 
 

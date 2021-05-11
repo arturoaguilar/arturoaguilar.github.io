@@ -822,7 +822,7 @@ nav {
   grid-template-areas: "call image";
   grid-template-columns: 2fr 1fr;
 }
-.test__body__image {
+.test__body__image-container {
 grid-area: image;
 }  
 
