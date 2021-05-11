@@ -3,7 +3,7 @@ const Test = {
         return {
             selection: [],
             mensaje: "this is a test",
-            file:'',
+            files:'',
             newpdf:''
 
         }
@@ -24,7 +24,7 @@ const Test = {
                  "Content-Type": "application/json",
                },
                body: JSON.stringify({
-                 text: this.newPDF
+                 text: this.files
                }),
              });
              const json = await response.json();
@@ -44,7 +44,7 @@ const Test = {
   <div class="test__body">
   
 <form id="fileForm"  @submit.prevent="SendFile">
-{{mensaje}}
+2 {{mensaje}}
   <label for="userfile"> Upload your pdf</label>
   <input   id="userfile" @change="changeFiles" name="userfile" type="file" accept="application/pdf"/>
   <button> Upload </button>
