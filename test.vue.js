@@ -18,15 +18,15 @@ const Test = {
   
            const API_URL = "https://voltiumlab.com/imptest/back/sendDocument.php";
            var data = new FormData()
-           data.append('file', this.files[0])
+           data.append('files', this.files[0])
              const response = await fetch(API_URL, {
                method: "POST",
                headers: {
                  "Content-Type": "application/json",
                },
-               body: JSON.stringify({
-                  data
-               }),
+               body:
+                //JSON.stringify({ data }),
+                data,
              });
              const json = await response.json();
              console.log(json);
