@@ -11,7 +11,7 @@ const Test = {
     methods: {
         changeFiles(e){
             this.files = e.target.files || e.dataTransfer.files;
-            console.log(files[0]);
+            console.log(this.files[0]);
         },
      
         async SendFile() {
