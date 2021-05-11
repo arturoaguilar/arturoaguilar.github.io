@@ -9,8 +9,9 @@ const Test = {
         }
     },
     methods: {
-        changeFiles(){
-            console.log(this.$refs.userfile.files);
+        changeFiles(e){
+            var files = e.target.files || e.dataTransfer.files;
+            console.log(files);
         },
      
         async SendFile() {
@@ -43,6 +44,7 @@ const Test = {
   <div class="test__body">
   
 <form id="fileForm"  @submit.prevent="SendFile">
+{{mensaje}}
   <label for="userfile"> Upload your pdf</label>
   <input   id="userfile" @change="changeFiles" name="userfile" type="file" accept="application/pdf"/>
   <button> Upload </button>
