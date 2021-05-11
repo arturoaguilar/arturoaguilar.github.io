@@ -44,7 +44,7 @@ const Test = {
   <div class="test__body">
   
 <form id="fileForm"  @submit.prevent="SendFile">
-9 {{mensaje}}
+15 {{mensaje}}
   <label for="userfile"> Upload your pdf</label>
   <input   id="userfile" @change="changeFiles" name="userfile" type="file" accept="application/pdf"/>
   <button> Upload </button>
