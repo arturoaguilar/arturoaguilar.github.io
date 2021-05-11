@@ -19,20 +19,13 @@ const Test = {
 
 	},
 	template:/* vue-html */ `
-  <div class="project__body">
-<section class="project__text__body">
-
-SDFSDFSD
-  <div class="project__text__body__inner">
-
+  <div class="test__body">
+<form action="back/sendDocument.php" @submit.prevent="addNewLink">
+  <label for="userfile"> Upload your pdf</label>
+  <input id="userfile" name="userfile" type="file" accept="application/pdf"/>
+  <button> Upload </button>
+ </form>
 </div>
-
-  </section>
-  
-  
-
-
-    </div>
   `
 };
 
