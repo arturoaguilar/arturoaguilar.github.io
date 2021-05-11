@@ -22,11 +22,9 @@ const Test = {
   <div class="project__body">
 <section class="project__text__body">
 
-  <div class="project__text__body__inner">
-  <div @click="clickFunct">
-  
 SDFSDFSD
-</div>
+  <div class="project__text__body__inner">
+
 </div>
 
   </section>
