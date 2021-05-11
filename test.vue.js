@@ -3,19 +3,19 @@ const Test = {
         return {
             selection: [],
             mensaje: "this is a test",
-            files:[],
+            files:'',
             newpdf:''
 
         }
     },
     methods: {
         changeFiles(e){
-            var files = e.target.files || e.dataTransfer.files;
+            this.files = e.target.files || e.dataTransfer.files;
             console.log(files[0]);
         },
      
         async SendFile() {
-  
+  console.log(files[0]);
            const API_URL = "https://voltiumlab.com/imptest/back/sendDocument.php";
            var data = new FormData()
            data.append('files', this.files[0])
@@ -44,7 +44,7 @@ const Test = {
   <div class="test__body">
   
 <form id="fileForm"  @submit.prevent="SendFile">
-15 {{mensaje}}
+18 {{mensaje}}
   <label for="userfile"> Upload your pdf</label>
   <input   id="userfile" @change="changeFiles" name="userfile" type="file" accept="application/pdf"/>
   <button> Upload </button>
