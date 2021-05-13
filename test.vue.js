@@ -22,23 +22,24 @@ const Test = {
             const response = await fetch(API_URL, {
                 method: "POST",
                 headers: {
-                   "Content-Type": "multipart/form-data",
-                 },
+                    "Content-Type": "multipart/form-data",
+                },
                 body:
                     // JSON.stringify({ data }),
                     data,
             });
 
-        
 
-           
+
+
             const json = "";
             (async () => {
-                this.dogImage =  await response.json();
-              })();
-
+                this.dogImage = await response.json();
+            })();
+            console.log("PRUEBA ");
             console.log(json);
             if (response.ok) {
+
                 //props.updateLinkList();
             } else {
                 console.log("Fail");
