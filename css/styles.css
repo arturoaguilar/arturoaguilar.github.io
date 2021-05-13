@@ -22,6 +22,7 @@
   --blue:#1cabe3;
   --black:#1d1d1b;
   --gray: #E8E9EB;
+  --softback:#E6F4F1;
   --font: 1.8rem;
 
 
@@ -851,6 +852,13 @@ margin-inline: 60px;
   color: white;
   padding-block: 10px;
   
+}
+.test__form__design{
+  background-color: var(--softback);
+    padding-block: 10px;
+    border-radius: 5px;
+    border: solid var(--softback);
+    color: black;
 }
 
 @media (min-width: 600px) {
