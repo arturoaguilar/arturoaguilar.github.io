@@ -821,7 +821,7 @@ nav {
   height: 100vh;
   display: grid;
   grid-template-areas: "call image";
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 .test__body__image-container {
 grid-area: image;
@@ -851,14 +851,13 @@ margin-inline: 60px;
   border-radius: 5px;
   color: white;
   padding-block: 10px;
-  
 }
 .test__form__design{
   background-color: var(--softback);
-    padding-block: 10px;
-    border-radius: 5px;
-    border: solid var(--softback);
-    color: black;
+  padding-block: 10px;
+  border-radius: 5px;
+  border: solid var(--softback);
+  color: black;
 }
 
 @media (min-width: 600px) {
