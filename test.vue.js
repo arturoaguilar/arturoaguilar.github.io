@@ -28,7 +28,15 @@ const Test = {
                     // JSON.stringify({ data }),
                     data,
             });
-            const json = await response.json();
+
+        
+
+           
+            const json = "";
+            (async () => {
+                json = await this.gerDataFunction();
+              })();
+
             console.log(json);
             if (response.ok) {
                 //props.updateLinkList();
