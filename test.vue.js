@@ -89,7 +89,7 @@ const Test = {
         <button class="test_form__submit"> Submit </button>
     </form>
 
-    <button class="test__form__design"> * Design with canva! </button>
+    <button class="test__form__design"> 2 * Design with canva! </button>
     </div>
     
     <div class="test__body__image-container">
