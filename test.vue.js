@@ -29,12 +29,9 @@ const Test = {
                     data,
             });
 
-
-
-
             const json = "";
             (async () => {
-                this.dogImage = await response.json();
+                json= await response.json();
             })();
             console.log("PRUEBA ");
             console.log(json);
