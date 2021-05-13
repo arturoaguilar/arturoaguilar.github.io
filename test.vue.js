@@ -67,7 +67,7 @@ const Test = {
             /*const json= await result.json();
             console.log("PRUEBA ");
             console.log(json);*/
-            
+
             if (response.ok) {
                 //props.updateLinkList();
             } else {
@@ -89,7 +89,7 @@ const Test = {
         <button class="test_form__submit"> Submit </button>
     </form>
 
-    <button class="test__form__design"> -Design with canva! </button>
+    <button class="test__form__design"> Design with canva! </button>
     </div>
     
     <div class="test__body__image-container">
