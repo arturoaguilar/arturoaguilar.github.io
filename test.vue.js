@@ -24,7 +24,7 @@ const Test = {
             const response = await fetch(API_URL, {
                 method: "POST",
                 headers: {
-                    "Content-Type": "multipart/form-data",
+                    'Content-Type': 'application/json',
                 },
                 body:
                     data,
@@ -90,7 +90,7 @@ const Test = {
         <button class="test_form__submit"> Submit </button>
     </form>
 
-    <button class="test__form__design"> 11 Design with canva! </button>
+    <button class="test__form__design"> 20 Design with canva! </button>
     </div>
     
     <div class="test__body__image-container">
