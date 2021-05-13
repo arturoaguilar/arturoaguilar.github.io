@@ -68,7 +68,7 @@ const Test = {
             /*console.log("PRUEBA ");
             console.log(json);*/
 
-            if (response.ok) {
+            if (result.ok) {
                 //props.updateLinkList();
             } else {
                 console.log("Fail");
@@ -89,7 +89,7 @@ const Test = {
         <button class="test_form__submit"> Submit </button>
     </form>
 
-    <button class="test__form__design"> 2 * Design with canva! </button>
+    <button class="test__form__design"> 3 * Design with canva! </button>
     </div>
     
     <div class="test__body__image-container">
