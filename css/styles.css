@@ -828,11 +828,21 @@ grid-area: image;
 
 .test__body__call-to-action{
 grid-area: call;
+margin-block-start: 50px;
+display: flex;
+flex-direction: column;
+gap: 10px;
+margin-inline: 60px;
 }
 .test__body__image {
   height: 100vh;
   object-fit: cover;
   max-width: 600;
+}
+.test__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 @media (min-width: 600px) {
