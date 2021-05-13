@@ -838,7 +838,7 @@ margin-inline: 60px;
 .test__body__image {
   height: 100vh;
   object-fit: cover;
-  max-width: 600;
+  max-width: 600px;
 }
 .test__form {
   display: flex;
