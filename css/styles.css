@@ -839,7 +839,7 @@ justify-content: center;
 .test__body__image {
   height: 100vh;
   object-fit: cover;
-  max-width: 600px;
+  max-width: 800px;
 }
 .test__form {
   display: flex;
