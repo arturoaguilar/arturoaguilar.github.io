@@ -46,11 +46,11 @@ const Test = {
     <h2> Welcome to this Imprimu test </h2>
     <form class="test__form" id="fileForm" @submit.prevent="SendFile">
     <label for="userfile"> Upload your pdf to send a email with it</label>
-    <input  id="userfile" @change="changeFiles" name="userfile" type="file" accept="application/pdf"/>
-        <button> Submit </button>
+    <input  id="userfile" class="test__form__userfile" @change="changeFiles" name="userfile" type="file" accept="application/pdf"/>
+        <button class="test_form__submit"> Submit </button>
     </form>
 
-    <button> ¡Design with canva! </button>
+    <button class="test__form__design"> ¡Design with canva! </button>
     </div>
     
     <div class="test__body__image-container">

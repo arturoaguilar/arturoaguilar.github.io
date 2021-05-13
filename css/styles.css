@@ -844,6 +844,11 @@ margin-inline: 60px;
   flex-direction: column;
   gap: 20px;
 }
+.test_form__submit{
+  background-color: var(--blue);
+  border: solid;
+  border-radius: 20px;
+}
 
 @media (min-width: 600px) {
   .section__tool__translate-screen {
