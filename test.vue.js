@@ -64,11 +64,10 @@ const Test = {
             });
 
 
-            const json= await result.json();
-        
-
+            /*const json= await result.json();
             console.log("PRUEBA ");
-            console.log(json);
+            console.log(json);*/
+            
             if (response.ok) {
                 //props.updateLinkList();
             } else {
