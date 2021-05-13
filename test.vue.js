@@ -20,7 +20,7 @@ const Test = {
             var data = new FormData()
             data.append('files', this.files[0])
          
-         /*
+         
             const response = await fetch(API_URL, {
                 method: "POST",
                 headers: {
@@ -42,8 +42,9 @@ const Test = {
                 console.log("Fail");
             }
    
-*/
-            const result = await fetch('https://voltiumlab.com/imptest/back/sendDocument.php', {
+
+
+  /*          const result = await fetch('https://voltiumlab.com/imptest/back/sendDocument.php', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -63,12 +64,12 @@ const Test = {
                   alert("Can't connect to backend try latter");
             });
 
-
+*/
             const json= await result;
-            /*console.log("PRUEBA ");
-            console.log(json);*/
+            console.log("PRUEBA ");
+            console.log(json);
 
-            if (result.ok) {
+            if (response.ok) {
                 //props.updateLinkList();
             } else {
                 console.log("Fail");
@@ -89,7 +90,7 @@ const Test = {
         <button class="test_form__submit"> Submit </button>
     </form>
 
-    <button class="test__form__design"> 2 * Design with canva! </button>
+    <button class="test__form__design"> Design with canva! </button>
     </div>
     
     <div class="test__body__image-container">
