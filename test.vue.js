@@ -19,24 +19,57 @@ const Test = {
             const API_URL = "https://voltiumlab.com/imptest/back/sendDocument.php";
             var data = new FormData()
             data.append('files', this.files[0])
+         
+         /*
             const response = await fetch(API_URL, {
                 method: "POST",
                 headers: {
                     "Content-Type": "multipart/form-data",
                 },
                 body:
-                    // JSON.stringify({ data }),
                     data,
             });
 
-            const json = "";
-            (async () => {
-                json= await response.json();
-            })();
+   
+                const json= await response.json();
+        
+
             console.log("PRUEBA ");
             console.log(json);
             if (response.ok) {
+       
+            } else {
+                console.log("Fail");
+            }
+   
+*/
+            const result = await fetch('https://voltiumlab.com/imptest/back/sendDocument.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: data
+            })
+            .then(res => res.json())
+            .then(res => {
+                if (res.success) {
+                    //success
+                }else{
+                  //failed
+                }
+            })
+            .catch(function() {
+                  alert("Can't connect to backend try latter");
+            });
 
+
+            const json= await result.json();
+        
+
+            console.log("PRUEBA ");
+            console.log(json);
+            if (response.ok) {
                 //props.updateLinkList();
             } else {
                 console.log("Fail");
