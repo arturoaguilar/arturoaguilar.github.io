@@ -21,9 +21,9 @@ const Test = {
             data.append('files', this.files[0])
             const response = await fetch(API_URL, {
                 method: "POST",
-                /* headers: {
+                headers: {
                    "Content-Type": "application/json",
-                 },*/
+                 },
                 body:
                     // JSON.stringify({ data }),
                     data,
@@ -51,7 +51,7 @@ const Test = {
         <button class="test_form__submit"> Submit </button>
     </form>
 
-    <button class="test__form__design"> ¡Design with canva! </button>
+    <button class="test__form__design"> Design with canva! </button>
     </div>
     
     <div class="test__body__image-container">
