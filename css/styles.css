@@ -834,6 +834,7 @@ display: flex;
 flex-direction: column;
 gap: 10px;
 margin-inline: 60px;
+justify-content: center;
 }
 .test__body__image {
   height: 100vh;
