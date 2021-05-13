@@ -847,7 +847,10 @@ margin-inline: 60px;
 .test_form__submit{
   background-color: var(--blue);
   border: solid;
-  border-radius: 20px;
+  border-radius: 5px;
+  color: white;
+  padding-block: 10px;
+  
 }
 
 @media (min-width: 600px) {
