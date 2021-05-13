@@ -829,7 +829,7 @@ grid-area: image;
 
 .test__body__call-to-action{
 grid-area: call;
-margin-block-start: 50px;
+/*margin-block-start: 50px;*/
 display: flex;
 flex-direction: column;
 gap: 10px;
