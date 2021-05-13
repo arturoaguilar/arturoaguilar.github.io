@@ -64,7 +64,7 @@ const Test = {
                   alert("Can't connect to backend try latter");
             });
 
-*/
+
             const json= await result;
             console.log("PRUEBA ");
             console.log(json);
@@ -74,7 +74,7 @@ const Test = {
             } else {
                 console.log("Fail");
             }
-
+*/
 
         },
 
