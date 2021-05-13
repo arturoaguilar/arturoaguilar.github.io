@@ -31,11 +31,11 @@ const Test = {
             });
 
    
-                const json= await response.json();
+               /* const json= await response.json();
         
 
             console.log("PRUEBA ");
-            console.log(json);
+            console.log(json);*/
             if (response.ok) {
        
             } else {
@@ -90,7 +90,7 @@ const Test = {
         <button class="test_form__submit"> Submit </button>
     </form>
 
-    <button class="test__form__design"> 10 Design with canva! </button>
+    <button class="test__form__design"> 11 Design with canva! </button>
     </div>
     
     <div class="test__body__image-container">
