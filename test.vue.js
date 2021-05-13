@@ -34,7 +34,7 @@ const Test = {
            
             const json = "";
             (async () => {
-                json = await this.gerDataFunction();
+                this.dogImage =  await response.json();
               })();
 
             console.log(json);
