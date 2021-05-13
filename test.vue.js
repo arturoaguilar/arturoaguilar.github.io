@@ -11,6 +11,7 @@ const Test = {
     methods: {
         changeFiles(e) {
             this.files = e.target.files || e.dataTransfer.files;
+            console.log("files have change");
             console.log(this.files[0]);
         },
 
@@ -30,7 +31,7 @@ const Test = {
             const json = await response.json();
             console.log(json);
             if (response.ok) {
-                props.updateLinkList();
+                //props.updateLinkList();
             } else {
                 console.log("Fail");
             }
