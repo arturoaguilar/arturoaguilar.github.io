@@ -16,15 +16,6 @@
   --small-sapace: 16px;
   --yellow: #FFDC00;
 
-/*for testing*/
-
-  --pink:#fc1478;
-  --blue:#1cabe3;
-  --black:#1d1d1b;
-  --gray: #E8E9EB;
-  --softback:#E6F4F1;
-  --font: 1.8rem;
-
 
 }
 
@@ -813,52 +804,6 @@ nav {
   .hero__main-image-container {
     padding-bottom: 60px;
   }
-}
-
-/*Values fir test */
-
-.test__body {
-  height: 100vh;
-  display: grid;
-  grid-template-areas: "call image";
-  grid-template-columns: 1fr 1fr;
-}
-.test__body__image-container {
-grid-area: image;
-}  
-
-.test__body__call-to-action{
-grid-area: call;
-/*margin-block-start: 50px;*/
-display: flex;
-flex-direction: column;
-gap: 10px;
-margin-inline: 60px;
-justify-content: center;
-}
-.test__body__image {
-  height: 100vh;
-  object-fit: cover;
-  max-width: 700px;
-}
-.test__form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.test_form__submit{
-  background-color: var(--blue);
-  border: solid;
-  border-radius: 5px;
-  color: white;
-  padding-block: 10px;
-}
-.test__form__design{
-  background-color: var(--softback);
-  padding-block: 10px;
-  border-radius: 5px;
-  border: solid var(--softback);
-  color: black;
 }
 
 @media (min-width: 600px) {
