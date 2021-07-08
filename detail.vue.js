@@ -12,7 +12,8 @@ const Projects = {
 						client: "Viva ",
 						otherProjectText:"Otros Proyectos que puedes ver",
 						otherProjectLink: [{projectId:"002", name: "Sistema de administración entregas"},{projectId:"003", name: "Sistema de entregas online"}],
-						links:[{id:1,name:"Ver página",link:"http://vivagymapps.com/entregandojuntos/"}],
+						/*links:[{id:1,name:"Ver página",link:"http://vivagymapps.com/entregandojuntos/"}],*/
+						links:[],
 						habilidades:[{ id:1,name:"User Experience" },{ id:2,name:"Desarrollo frontend" },{ id:3,name:"User Research" },{ id:4,name:"gamification" }],
 						infoBlocks: [{
 							title: "Escenario",
@@ -30,7 +31,7 @@ const Projects = {
 							title: "Solución",
 							blockType: 2,
 							desc: "Se entrevistó al equipo involucrado en la dirección del proyecto, como también a los colaboradores que serian los voluntarios. Teniendo en cuenta que en poco tiempo emepzarían los primeros eventos del año, se propuso un <b>enfoque ágil</b> en la resolución de este problema. Dividiríamos el proceso total, agrupando los <b>puntos de contacto(touchpoints)</b> y los <b>puntos de dolor painpoints</b> por prioridad, teniendo en cuenta el conocimiento y el valor crítico del que se disponía en ese momento, para luego realizar un prototipo, cubriendo el primer entregable, con el que se comenzarían las iteraciones, para ir validando y construyendo la plataforma de la mano con los usarios y gestores del proyecto. Después de cada evento, teníamos reuniones para conversar los resultados y delimitar las siguientes funciones que se implementarían.<br><br>Ya que la empresa había tenido <b>proyectos anteriores con proveedores bajo la modalidad tradicional de cascada</b>, El desarrollo del proyecto debía incluir también la <b>implementación el enfoque ágil de lean UX</b> en la forma de gestión de la empresa.  Como era de esperar el proyecto fue modificando sus dimensiones en la marcha, permitiendo un mayor entendimiento del problema y abrió puertas a nuevos proyectos.",
-							images: [{ imgId: "dIm001", order: 1, imgUrl: "img/dummyProPort.png" }, { imgId: "dIm002", order: 2, imgUrl: "img/proyEntreJuntos01.png" }, { imgId: "dIm003", order: 1, imgUrl: "img/proyEntreJuntos02.png" }, { imgId: "dIm003", order: 2, imgUrl: "img/proyEntreJuntos03.png" }, { imgId: "dIm003", order: 1, imgUrl: "img/proyEntreJuntos04.png" }],
+							images: [{ imgId: "dIm001", order: 1, imgUrl: "img/proyEntreJuntos05.png" },{ imgId: "dIm001", order: 1, imgUrl: "img/dummyProPort.png" }, { imgId: "dIm002", order: 2, imgUrl: "img/proyEntreJuntos01.png" }, { imgId: "dIm003", order: 1, imgUrl: "img/proyEntreJuntos02.png" }, { imgId: "dIm003", order: 2, imgUrl: "img/proyEntreJuntos03.png" }, { imgId: "dIm003", order: 1, imgUrl: "img/proyEntreJuntos04.png" }],
 							order: 1
 						}]
 					},

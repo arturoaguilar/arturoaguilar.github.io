@@ -59,6 +59,7 @@ const Hero = {
         { id: "005", name: "Design Thinking con Minds Garage", school: "Platzi" },
         { id: "006", name: "Product Designer por Aerolab", school: "Platzi" },
         { id: "005", name: "Metodologías Ágiles", school: "Platzi" },
+        { id: "005", name: "Figma", school: "Platzi" },
         { id: "005", name: "Javascript", school: "Platzi" },
         { id: "005", name: "Angular", school: "Platzi" },
         { id: "005", name: "Vuejs 3", school: "Platzi" },
